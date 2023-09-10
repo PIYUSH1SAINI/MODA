@@ -192,23 +192,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
-<script>
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
-    }
-</script>
+
 
 <body>
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
 
             <div id="navright">
                 <input type="text" id="searchbar" placeholder="  Search">
-                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"><img
+                <a id="navlogin" href="login.html"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU"
                         alt="" height="70px"></a>
                 <a href=""><img
@@ -230,7 +226,39 @@
 
             <p id="demo"></p>
 
+
+            <p id="contents">PRIVACY POLICY
+                <button id="click2" onclick="myFunction2()">+</button>
+            </p>
+
+            <p id="policy"></p>
+
+
+            <p id="contents">RETURN AND EXCHANGE POLICY
+                <button id="click3" onclick="myFunction3()">+</button>
+            </p>
+
+            <p id="Return"></p>
+
+
+            <p id="contents">SHIPPING POLICY
+                <button id="click4" onclick="myFunction4()">+</button>
+            </p>
+
+            <p id="Shipping"></p>
+
+
+            <p id="contents">CONTACT US
+                <button id="click5" onclick="myFunction5()">+</button>
+            </p>
+
+            <p id="contactus"></p>
+            <br>
+
             <script>
+               function myFunction() {
+                  document.getElementById("demo").innerHTML = "Paragraph changed.";
+               }
                 var clicked = false;
                 function myFunction1() {
                     if (!clicked) {
@@ -241,22 +269,8 @@
                         clicked = false;
                         document.getElementById("click1").innerHTML = "-";
                         document.getElementById("demo").innerHTML = "";
-
-
                     }
-
                 }
-
-
-            </script>
-
-            <p id="contents">PRIVACY POLICY
-                <button id="click2" onclick="myFunction2()">+</button>
-            </p>
-
-            <p id="policy"></p>
-
-            <script>
                 var clicked = false;
                 function myFunction2() {
                     if (!clicked) {
@@ -267,22 +281,8 @@
                         clicked = false;
                         document.getElementById("click2").innerHTML = "-";
                         document.getElementById("policy").innerHTML = "";
-
-
                     }
-
                 }
-
-
-            </script>
-
-            <p id="contents">RETURN AND EXCHANGE POLICY
-                <button id="click3" onclick="myFunction3()">+</button>
-            </p>
-
-            <p id="Return"></p>
-
-            <script>
                 var clicked = false;
                 function myFunction3() {
                     if (!clicked) {
@@ -293,22 +293,8 @@
                         clicked = false;
                         document.getElementById("click3").innerHTML = "-";
                         document.getElementById("Return").innerHTML = "";
-
-
                     }
-
                 }
-
-
-            </script>
-
-            <p id="contents">SHIPPING POLICY
-                <button id="click4" onclick="myFunction4()">+</button>
-            </p>
-
-            <p id="Shipping"></p>
-
-            <script>
                 var clicked = false;
                 function myFunction4() {
                     if (!clicked) {
@@ -319,23 +305,8 @@
                         clicked = false;
                         document.getElementById("click4").innerHTML = "-";
                         document.getElementById("Shipping").innerHTML = "";
-
-
                     }
-
                 }
-
-
-            </script>
-
-            <p id="contents">CONTACT US
-                <button id="click5" onclick="myFunction5()">+</button>
-            </p>
-
-            <p id="contactus"></p>
-            <br>
-
-            <script>
                 var clicked = false;
                 function myFunction5() {
                     if (!clicked) {
