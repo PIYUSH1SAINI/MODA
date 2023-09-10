@@ -1,0 +1,570 @@
+<style>
+    body {
+        background-color: white;
+        margin: 0%;
+    }
+
+    #left {
+        float: left;
+        width: 60%;
+        height: 100%;
+        margin-top: 5%;
+        margin-left: 20px;
+        position: fixed;
+    }
+
+    #right {
+        width: 35%;
+        float: right;
+        margin-top: 5%;
+        margin-right: 1%;
+        font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+
+/* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: 0%;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: lightblue;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: blue;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+/* navbar end */
+
+    #rightimg {
+        -webkit-mask-image: linear-gradient(to bottom,black,transparent 80%);
+        mask-image: linear-gradient(to bottom,black,transparent 80%);
+    }
+
+    #right h1 {
+        font-size: 35px;
+        color: gray;
+        margin-top: -67%;
+        margin-bottom: -20px;
+    }
+
+    #right h2 {
+        font-size: 30px;
+        color: black;
+    }
+
+    #right h3 {
+        font-size: 45px;
+        color: black;
+        margin-top: -10px;
+    }
+
+    #tax {
+        font-size: 20px;
+        margin-top: -40px;
+        color: green;
+    }
+
+    #size {
+        margin-top: -20px;
+    }
+
+    #size h4 {
+        font-size: 20px;
+        color: black;
+    }
+
+    /* select size start */
+
+    #sizecloth {
+        margin-left: 0px;
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #mySelect {
+        color: black;
+        font-size: 25px;
+        border: none;
+        overflow: hidden;
+        margin-top: 50px;
+        height: 30px;
+    }
+
+    option {
+        display: inline;
+        color: gray;
+        border-radius: 60%;
+        padding: 30px;
+    }
+
+    option:hover {
+        color: red;
+        border: 2px solid red;
+    }
+
+    #quantity {
+        margin-left: 0px;
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #qtySelect {
+        color: black;
+        font-size: 25px;
+        border: none;
+        overflow: hidden;
+        margin-top: 50px;
+        height: 30px;
+    }
+
+    /* select size end */
+
+    #addtocart {
+        height: 50px;
+        width: 300px;
+        background-color: rgb(255, 55, 55);
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+    }
+
+    #addtocart img {
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+
+    #add {
+        color: white;
+        margin-top: -40px;
+        margin-left: 85px;
+        font-size: 30px;
+    }
+
+    #delivery h4{
+        color: black;
+        font-size: 30px;
+    }
+
+    #delivery input {
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        margin-top: -20px;
+        margin-left: 40px;
+    }
+
+    #policy {
+        margin-top: 40px;
+    }
+
+    #truck {
+        margin-left: 30px;
+    }
+
+    #txt {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -43px;
+        margin-left: 130px;
+    }
+
+    #payon {
+        margin-left: 50px;
+    }
+
+    #exchange {
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    #overview h4 {
+        font-size: 30px;
+        margin-top: 60px;
+        color: black;
+    }
+
+    #overview p {
+        margin-top: -20px;
+        font-size: 18px;
+        color: black;
+    }
+
+    /* bag item */
+
+    #bag h2 {
+        color: black;
+        margin: 30px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    #bag h3 {
+        color: black;
+        margin-left: 580px;
+        margin-top: -60px;
+        font-size: 20px;
+    }
+
+    #bagitem {
+        margin: 0px;
+        height: 410px;
+        width: 600px;
+        border-radius: 10px;
+        border: 2px solid grey;
+        display: none;
+    }
+
+    #bagitem img {
+        margin: 20px;
+    }
+
+    #bagtxt {
+        margin-left: 200px;
+        margin-top: -220px;
+    }
+
+    #bagtxt h2 {
+        color: black;
+        margin-top: -20px;
+        font-size: 25px;
+    }
+
+    #bagtxt h3 {
+        color: gray;
+        margin-top: -20px;
+        font-size: 25px;
+    }
+
+    #d1 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #d2 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: -45px;
+        margin-left: 200px;
+    }
+
+    #d3 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    label {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    select:hover {
+        border: 2px solid red;
+    }
+
+    #arrive {
+        color: black;
+        font-size: 20px;
+        margin-top: -45px;
+        margin-left: 30px;
+    }
+
+    #del img {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    #remove {
+        color: black;
+        font-size: 20px;
+        border-top: 2px solid rgb(218, 218, 218);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -200px;
+        width: 600px;
+    }
+
+    #remove a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #date {
+        margin-top: -46px;
+        margin-left: 145px;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #check:hover {
+        color: navy;
+        border: 2px solid navy;
+    }
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+
+    <div id="left">
+        <table border="2px">
+            <tr>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10557318/2019/9/20/3b3c66b6-a14d-43c9-b9e9-520bd095bfc71568982209067-TISSOT-Men-Navy-Blue-Seastar-1000-Chronograph-Analogue-Watch-2.jpg"
+                        alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10557318/2019/9/20/20e09c1d-d05f-4813-99d8-ae3d5b998ab61568982209038-TISSOT-Men-Navy-Blue-Seastar-1000-Chronograph-Analogue-Watch-3.jpg"
+                        alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10557318/2019/9/20/dea7bff3-f507-40f8-8c92-d26e5c21050f1568982209005-TISSOT-Men-Navy-Blue-Seastar-1000-Chronograph-Analogue-Watch-4.jpg" alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10557318/2019/9/20/7b367c8d-7583-48ed-b3b4-10b119181f5e1568982208917-TISSOT-Men-Navy-Blue-Seastar-1000-Chronograph-Analogue-Watch-7.jpg" alt="" width="100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10557318/2019/9/20/d609c3c0-b42e-474f-b471-08071bc1d5591568982208977-TISSOT-Men-Navy-Blue-Seastar-1000-Chronograph-Analogue-Watch-5.jpg"
+                        alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10557318/2019/9/20/8dc67037-085b-4542-890b-7d006c9151471568982208948-TISSOT-Men-Navy-Blue-Seastar-1000-Chronograph-Analogue-Watch-6.jpg" alt="" width="100%">
+                </td>
+                <td colspan="2">
+                    <img src="https://theperfectmediagroup.com/wp-content/uploads/2019/11/Tissot-Logo-1.png" alt="" width="100%">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="right">
+
+        <img id="rightimg" src="https://images.pexels.com/photos/2860705/pexels-photo-2860705.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="100%">
+
+        <h1>TISSOT</h1>
+        <h2>Men Navy Blue Seastar 1000 Chronograph Analogue Watch T1204171704100</h2>
+        <br>
+        <h3>Rs.xxxx</h3>
+        <p id="tax">including all taxes</p>
+
+        <br>
+
+        <div id="size">
+            <form id="sizecloth">
+                SELECT SIZE (UK Size): <br>
+                <select id="mySelect" size="4">
+                    <option value="Onesize">Onesize</option>
+                </select>
+            </form>
+
+            <form id="quantity">
+                SELECT QUANTITY: <br>
+                <select id="qtySelect" size="4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </form>
+        </div>
+
+        <br>
+
+        <div id="bagitem">
+            <a href=""><img
+                    src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10557318/2019/9/20/3b3c66b6-a14d-43c9-b9e9-520bd095bfc71568982209067-TISSOT-Men-Navy-Blue-Seastar-1000-Chronograph-Analogue-Watch-2.jpg"
+                    alt="" height="200px"></a>
+            <div id="bagtxt">
+                <h2>TISSOT</h2>
+                <h3>Men Navy Blue Seastar 1000 Chronograph Analogue Watch T1204171704100</h3>
+                
+                <p id="d1"></p>
+                <p id="d2"></p>
+                <p id="d3"></p>
+                
+                <div id="del">
+                    <img src="https://www.freeiconspng.com/thumbs/check-tick-icon/tick-mark-icon-png-7.png" alt=""
+                        height="20px">
+                    <p id="arrive">Delivery by :</p>
+                    <p id="date">......</p>
+                </div>
+
+                <div id="remove" onclick="removecont()">
+                    <p><a href="">REMOVE</a></p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <script>
+            function select() {
+                document.getElementById("bagitem").style.display="block";
+
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("d1").innerHTML = "Size : " + x;
+
+                var y = document.getElementById("qtySelect").value;
+                document.getElementById("d2").innerHTML = "Quantity : " + y;
+
+                if (y == 0) 
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.0";
+                }
+
+                else if (y == 1)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.xxxx";
+                }
+
+                else if (y == 2)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.2xxxx";
+                }
+
+                else if (y == 3)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.3xxxx";
+                }
+
+                else
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.4xxxx";
+                }
+
+                var z = document.getElementById("priceof").textContent;
+                // document.getElementById("d3").innerHTML = "Price : " + z;
+            }
+
+            function removecont(){
+                document.getElementById("d1").value="";
+                document.getElementById("d2").value="";
+                document.getElementById("d3").value="";
+            }
+        </script>
+
+        <br><br>
+
+        <div id="cart">
+            <div id="addtocart" onclick="select()">
+                <img src="https://static.thenounproject.com/png/2493776-200.png" alt="" height="40px">
+                <p id="add">ADD TO BAG</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="delivery">
+            <h4>DELIVERY OPTIONS</h4>
+            <input type="text" placeholder="Enter PIN Code" id="pin">
+            <input type="button" value="Check" id="check" onclick="check()">
+        </div>
+
+        <script>
+            function check(){
+                var p = document.getElementById("pin").value;
+                if(p=="134007")
+                {
+                    document.getElementById("date").innerHTML="10 Feb 2022";
+                }
+                else if(p=="134003")
+                {
+                    document.getElementById("date").innerHTML="8 Feb 2022";
+                }
+                else
+                {
+                    document.getElementById("date").innerHTML="Invalid PIN code";
+                }
+            }
+        </script>
+
+        <br>
+
+        <div id="policy">
+            <img id="truck" src="https://media.istockphoto.com/vectors/fast-delivery-truck-icon-fast-shipping-design-for-website-and-mobile-vector-id1302438914?k=20&m=1302438914&s=170667a&w=0&h=8HroNF2rhDbQCruNiN6ExIbplmIIMcD3vmFN6Z2CZNU=" alt="" height="50px">
+            <p id="txt">Get it by Wed, Jan xx</p>
+            <img id="payon" src="https://cdn-icons-png.flaticon.com/512/1554/1554401.png" alt="" height="50px">
+            <p id="txt">Pay on delivery available</p>
+            <img id="exchange" src="https://freepngimg.com/download/money/48819-5-exchange-png-file-hd.png" alt="" height="40px">
+            <p id="txt">Easy 30 days return & exchange available</p>
+        </div>
+
+        <div id="overview">
+            <h4>OVERVIEW</h4>
+            <p>Display: Analogue <br>
+                Movement: Quartz <br>
+                Power source: Battery <br>
+                Dial style: Solid round stainless steel dial <br>
+                Features: Chronograph, Date Aperture, Glow in the Dark Inlays <br>
+                Strap style: Black regular, rubber strap with a tang closure <br>
+                Water resistance: 300 m <br>
+                Warranty: 2 years <br>
+                Warranty provided by brand/manufacturer <br>
+                Comes in a signature TISSOT case <br>
+                <br><br>
+                Size & Fit <br>
+                Dial Width in mm: 45.5 <br>
+                Strap Width in mm: 22</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

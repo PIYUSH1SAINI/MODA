@@ -1,0 +1,680 @@
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: 0%;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: green;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: gold;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* navbar end */
+
+    #left {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 500px;
+        position: fixed;
+        height: 100%;
+        width: 18%;
+        float: left;
+        box-shadow: 5px 15px 8px 8px #ccc;
+        margin-top: 83px;
+    }
+
+    #right {
+        height: 100%;
+        width: 80%;
+        float: right;
+        margin-top: 5%;
+    }
+
+    #catagory {
+        border: none;
+        border-bottom: 3px solid green;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-top: 10px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+        width: 100%;
+        height: 100%;
+    }
+
+    form label {
+        font-size: 15px;
+        margin-left: 10px;
+        color: grey;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    input {
+        height: 20px;
+        width: 20px;
+        margin-left: 15%;
+    }
+
+    /* accessories start */
+
+    #accbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #acchead {
+        font-size: 40px;
+        color: indianred;
+        padding-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 4%;
+        margin-top: 0;
+        letter-spacing: 7px;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    #sportcata {
+        margin-top: 20px;
+        margin-left: 6%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #sportwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14852276/2021/8/31/cafae275-7e56-40ef-8ead-de49c213be541630385888861-Levis-Men-Jeans-5461630385888179-6.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #watchimg {
+        transition: opacity 1s;
+    }
+
+    #watchimg:hover {
+        opacity: 0;
+    }
+
+    #watchtxt {
+        border: 3px solid gold;
+        border-radius: 0px 0px 20px 20px;
+        width: 98%;
+    }
+
+    #watchtxt h4 {
+        text-align: center;
+        margin-top: -20px;
+        padding-top: 30px;
+        font-size: 20px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #watchtxt p {
+        font-size: 13px;
+        color: gray;
+        text-align: center;
+        margin-top: -25px;
+        margin-left: 0px;
+        padding-bottom: 28px;
+        margin-bottom: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #watchtxt h2 {
+        margin-top: -20px;
+        text-align: center;
+        color: red;
+        font-size: 20px;
+    }
+
+    #titancata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #titanwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15506532/2021/9/29/e423b20b-e78d-48cd-9d7f-37042f4362321632918323717-Levis-Men-Shirts-3741632918323174-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #danicata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #daniwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14851112/2021/9/16/c7594983-e36c-450e-80a8-4fc506b429481631795671526-Levis-Men-Tshirts-4311631795670955-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #tissotcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #tissotwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15886282/2021/12/16/ec6d30ed-49c3-46d1-bc5b-68dc59d8008e1639637467570-Levis-Men-Jackets-7011639637466811-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #fossilcata {
+        margin-top: 20px;
+        margin-left: 6%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #fossilwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15506382/2021/9/29/62c06398-4ab7-4275-afc9-a8e7681bf1fd1632917644160-Levis-Women-Jeans-7651632917643601-5.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #fastcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #fastwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15016340/2021/9/29/f1db24c7-9871-4dc2-90d2-d9759a791d621632907672852-Levis-Women-Sweatshirts-3971632907672235-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #dwcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #dwwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14860252/2021/9/21/93091a11-c77d-4766-bd86-a594360c58501632220122922-Levis-Women-Tshirts-8881632220122403-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #roadcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #roadwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15926372/2021/12/7/0a11f7b3-38e6-44b9-963f-c0a9dc2e0c7c1638860459593-Levis-Women-Jackets-9451638860459209-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    /* accessories end */
+
+    #num {
+        display: none;
+    }
+
+    #num1 {
+        display: none;
+    }
+
+    #num2 {
+        display: none;
+    }
+
+    #num3 {
+        display: none;
+    }
+
+    #num4 {
+        display: none;
+    }
+
+    #num5 {
+        display: none;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+
+    <div id="left">
+
+        <table>
+            <tr>
+                <td>
+                    <h1 id="catagory">CATAGORY</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="tshirt()">
+                        <label for="watch">T-shirt</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="shirt()">
+                        <label for="watch">Shirt</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="jacket()">
+                        <label for="watch">Jacket</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="sweatshirt()">
+                        <label for="watch">Sweatshirt</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Hoddie</label>
+                    </form>
+
+                    <script>
+                        function tshirt() {
+                            var a = parseInt(document.getElementById("num").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                        function shirt() {
+                            var a = parseInt(document.getElementById("num1").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num1").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                        function jacket() {
+                            var a = parseInt(document.getElementById("num2").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num2").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                            }
+                        }
+
+                        function sweatshirt() {
+                            var a = parseInt(document.getElementById("num3").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num3").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">Gender</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="men()">
+                        <label for="watch">Men</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="women()">
+                        <label for="watch">Women</label>
+                    </form>
+
+                    <script>
+
+                        function men() {
+                            var a = parseInt(document.getElementById("num4").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num4").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                        function women() {
+                            var a = parseInt(document.getElementById("num5").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num5").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                            }
+                        }
+
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">PRICE</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.0-Rs.5,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.5,000-Rs.10,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.10,000-Rs.20,000</label>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">COLOR</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Black</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Pink</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">White</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Green</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Yellow</label>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+
+    <div id="right">
+        <div id="accbox">
+
+            <div id="sportcata">
+                <div id="sportwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14852276/2021/8/31/e58efe5c-ed6d-4c6b-bbd0-3c5e84be97041630385888879-Levis-Men-Jeans-5461630385888179-4.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis Jeans</h4>
+                    <p>Men Blue 512 Slim Tapered Fit Stretchable Jeans</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="titancata">
+                <div id="titanwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15506532/2021/9/29/e0636582-1170-40cc-8d2d-d6f037778c8a1632918323684-Levis-Men-Shirts-3741632918323174-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis Shirt</h4>
+                    <p>Men Blue Slim Fit Faded Opaque Faded Casual Denim Shirt</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="danicata">
+                <div id="daniwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14851112/2021/9/16/3f030b2d-25c4-4f9f-a2a9-fe3a1eed5ce51631795671495-Levis-Men-Tshirts-4311631795670955-5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis T-shirt</h4>
+                    <p>Men Green Typography Printed T-shirt</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="tissotcata">
+                <div id="tissotwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15886282/2021/12/16/7463e710-1dff-43a8-8974-e3d7660116921639637467507-Levis-Men-Jackets-7011639637466811-5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis Jacket</h4>
+                    <p>Men Olive Green Beige Camouflage Printed Quilted Jacket</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="fossilcata">
+                <div id="fossilwatch">
+                    <a href="http://127.0.0.1:5500/IWT%20assignment/levijeans.html"><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15506382/2021/9/29/ced8a856-469c-4bc8-aea8-2e4d871ce9ac1632917644168-Levis-Women-Jeans-7651632917643601-4.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis Jeans</h4>
+                    <p>Levi's Women Blue 70s High Flare Light Fade Stretchable Jeans</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="fastcata">
+                <div id="fastwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15016340/2021/9/29/28262e2d-e98f-4111-87bd-2a344ec1b2e91632907672822-Levis-Women-Sweatshirts-3971632907672235-5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis Sweatshirt</h4>
+                    <p>Women Pink & Black Printed With Black Strip Arms Sweatshirt</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="dwcata">
+                <div id="dwwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14860252/2021/9/21/4a0bed4e-d315-448f-8ec3-b32329b83e8c1632220122895-Levis-Women-Tshirts-8881632220122403-5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis T-shirt</h4>
+                    <p>Women Violet Brand Logo Printed Pure Cotton T-shirt</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="roadcata">
+                <div id="roadwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15926372/2021/12/7/c8f63fdf-26ee-4738-9018-b10572290dfe1638860459571-Levis-Women-Jackets-9451638860459209-5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Levis Jacket</h4>
+                    <p>Women Lime Green & White Windcheater Hooded Jacket</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="num">0</p>
+    <p id="num1">0</p>
+    <p id="num2">0</p>
+    <p id="num3">0</p>
+    <p id="num4">0</p>
+    <p id="num5">0</p>
+</body>
+
+</html>

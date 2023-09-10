@@ -1,0 +1,679 @@
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: 0%;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: rosybrown;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: orchid;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* navbar end */
+
+    #left {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 500px;
+        position: fixed;
+        height: 100%;
+        width: 18%;
+        float: left;
+        box-shadow: 5px 15px 8px 8px #ccc;
+        margin-top: 83px;
+    }
+
+    #right {
+        height: 100%;
+        width: 80%;
+        float: right;
+        margin-top: 5%;
+    }
+
+    #catagory {
+        border: none;
+        border-bottom: 3px solid orchid;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-top: 12px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+        width: 100%;
+        height: 100%;
+    }
+
+    form label {
+        font-size: 15px;
+        margin-left: 10px;
+        color: grey;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    input {
+        height: 20px;
+        width: 20px;
+        margin-left: 15%;
+    }
+
+    /* accessories start */
+
+    #accbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #acchead {
+        font-size: 40px;
+        color: indianred;
+        padding-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 4%;
+        margin-top: 0;
+        letter-spacing: 7px;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    #sportcata {
+        margin-top: 20px;
+        margin-left: 6%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #sportwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/24678a9e-e15b-4bb0-8a8a-c0c777e7f62d1637239079943Jumper5.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #watchimg {
+        transition: opacity 1s;
+    }
+
+    #watchimg:hover {
+        opacity: 0;
+    }
+
+    #watchtxt {
+        border: 3px solid rosybrown;
+        border-radius: 0px 0px 20px 20px;
+        width: 98%;
+    }
+
+    #watchtxt h4 {
+        text-align: center;
+        margin-top: -20px;
+        padding-top: 30px;
+        font-size: 20px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #watchtxt p {
+        font-size: 13px;
+        color: gray;
+        text-align: center;
+        margin-top: -25px;
+        margin-left: 0px;
+        padding-bottom: 28px;
+        margin-bottom: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #watchtxt h2 {
+        margin-top: -20px;
+        text-align: center;
+        color: red;
+        font-size: 20px;
+    }
+
+    #titancata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #titanwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14905090/2021/9/8/f25164fc-04b8-43ca-9247-245dda970c1f1631083781007-Nike-Sportswear-Mens-Unlined-Core-Track-Jacket-5731631083780-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #danicata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #daniwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16124804/2021/11/23/e522ef24-22d1-4fe3-8795-e60d42198ee11637668940607DressesMANGOWomenJeansMANGOWomenSkirtsMANGOWomenSkirtsMANGOW2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #tissotcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #tissotwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16380708/2021/12/6/f58d6a52-a80a-4bbf-8be9-810abd6bbad91638781346137VeroModaWomenGreenPufferJacket2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #fossilcata {
+        margin-top: 20px;
+        margin-left: 6%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #fossilwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12720592/2020/11/21/0c173591-bf62-4ddc-abff-148ed9d8ac841605951509929MensCottonRegularPrintedOliveTshirtJacketsJackJonesMenJeansJ2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #fastcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #fastwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15925840/2021/11/12/4e052071-8775-4c81-b78d-2593c9ce1e791636695753930-Louis-Philippe-Men-Sweaters-1941636695753846-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #dwcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #dwwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14513866/2021/9/15/cefe78c1-dfe8-4593-a87f-4093de10e5ae1631683750138-Tommy-Hilfiger-Men-Sweaters-9701631683749715-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #roadcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #roadwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15462798/2021/9/23/01b10bfd-7c65-43ef-8ebe-20fd648471981632373968984TrackPantsMadameWomenTrackPantsMadameWomenTrackPantsMadameWo2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    /* accessories end */
+
+    #num {
+        display: none;
+    }
+
+    #num1 {
+        display: none;
+    }
+
+    #num2 {
+        display: none;
+    }
+
+    #num3 {
+        display: none;
+    }
+
+    #num4 {
+        display: none;
+    }
+
+    #num5 {
+        display: none;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+
+    <div id="left">
+
+        <table>
+            <tr>
+                <td>
+                    <h1 id="catagory">CATAGORY</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="jacket()">
+                        <label for="watch">Jacket</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="sweatshirt()">
+                        <label for="watch">Sweatshirt</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="hoddie()">
+                        <label for="watch">Hoddie</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="sweater()">
+                        <label for="watch">Sweater</label>
+                    </form>
+
+                    <script>
+
+                        function jacket() {
+                            var a = parseInt(document.getElementById("num").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                        function sweatshirt() {
+                            var a = parseInt(document.getElementById("num1").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num1").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                        function hoddie() {
+                            var a = parseInt(document.getElementById("num2").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num2").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                        function sweater() {
+                            var a = parseInt(document.getElementById("num3").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num3").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                            }
+                        }
+
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">Gender</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="men()">
+                        <label for="watch">Men</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="women()">
+                        <label for="watch">Women</label>
+                    </form>
+
+                    <script>
+
+                        function men() {
+                            var a = parseInt(document.getElementById("num4").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num4").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                        function women() {
+                            var a = parseInt(document.getElementById("num5").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num5").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                            }
+                        }
+
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">PRICE</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.0-Rs.5,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.5,000-Rs.10,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.10,000-Rs.20,000</label>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">COLOR</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Black</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Pink</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">White</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Green</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Yellow</label>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+
+    <div id="right">
+        <div id="accbox">
+
+            <div id="sportcata">
+                <div id="sportwatch">
+                    <a href="http://127.0.0.1:5500/IWT%20assignment/handm.html"><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/96602e8d-2777-4180-83a8-792c4cccdefb1637239080868Jumper3.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>H And M Jumper</h4>
+                    <p>Women Green Jumper</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="titancata">
+                <div id="titanwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14905090/2021/9/8/7ce6b529-ce0e-46de-8e14-38815ea81dd51631083780983-Nike-Sportswear-Mens-Unlined-Core-Track-Jacket-5731631083780-5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Nike Jacket</h4>
+                    <p>Men Green Track Jacket</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="danicata">
+                <div id="daniwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16124804/2021/11/23/1dad98e5-e373-4e3d-a2e3-953bf6c619091637668940984DressesMANGOWomenJeansMANGOWomenSkirtsMANGOWomenSkirtsMANGOW5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Mango Sweater</h4>
+                    <p>Women Beige SWEATER Pullover</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="tissotcata">
+                <div id="tissotwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16380708/2021/12/6/0626e567-0d62-4fb4-8378-c90dea17d9841638781346283VeroModaWomenGreenPufferJacket5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Vero Moda Jacket</h4>
+                    <p>Women Green Puffer Jacket</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="fossilcata">
+                <div id="fossilwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12720592/2020/11/21/119837cf-9279-4127-91f0-ce2e9b1bd4cf1605951510094MensCottonRegularPrintedOliveTshirtJacketsJackJonesMenJeansJ5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Gap Hoodie</h4>
+                    <p>Men Blue Solid Hoodie</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="fastcata">
+                <div id="fastwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15925840/2021/11/12/34291375-74d7-403f-ac57-1f927ba0e0621636695381191-Louis-Philippe-Men-Sweaters-851636695380709-1.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Louis Philippe</h4>
+                    <p>Men Navy Blue Cable Knit Pullover</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="dwcata">
+                <div id="dwwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14513866/2021/9/15/1cb0ca2f-6816-4dc9-84f2-5275b23116361631683750113-Tommy-Hilfiger-Men-Sweaters-9701631683749715-5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Tommy Hilfiger</h4>
+                    <p>Men Off White Knit Sweater</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="roadcata">
+                <div id="roadwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15462798/2021/9/23/9462151e-1a6e-4808-9c42-2d4ddd0ba7671632373969031TrackPantsMadameWomenTrackPantsMadameWomenTrackPantsMadameWo5.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Madame Sweater</h4>
+                    <p>Women Burgundy Solid Pullover</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="num">0</p>
+    <p id="num1">0</p>
+    <p id="num2">0</p>
+    <p id="num3">0</p>
+    <p id="num4">0</p>
+    <p id="num5">0</p>
+</body>
+
+</html>
