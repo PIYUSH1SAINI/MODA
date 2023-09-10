@@ -523,10 +523,10 @@
 
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
         </ul>
     </div>
 
@@ -568,34 +568,6 @@
                         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
         
-                        <script>
-                            var slideIndex = 1;
-                            showSlides(slideIndex);
-                            
-                            function plusSlides(n) {
-                              showSlides(slideIndex += n);
-                            }
-                            
-                            function currentSlide(n) {
-                              showSlides(slideIndex = n);
-                            }
-                            
-                            function showSlides(n) {
-                              var i;
-                              var slides = document.getElementsByClassName("mySlides");
-                              var dots = document.getElementsByClassName("dot");
-                              if (n > slides.length) {slideIndex = 1}    
-                              if (n < 1) {slideIndex = slides.length}
-                              for (i = 0; i < slides.length; i++) {
-                                  slides[i].style.display = "none";  
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                  dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slides[slideIndex-1].style.display = "block";  
-                              dots[slideIndex-1].className += " active";
-                            }
-                        </script>
                     </div>
         
                     <div class="slideshow-containerbottom">
@@ -627,34 +599,6 @@
                         <a class="prev2" onclick="plusSlide(-1)">&#10094;</a>
                         <a class="next2" onclick="plusSlide(1)">&#10095;</a>
         
-                        <script>
-                            var slideIndex = 1;
-                            showSlide(slideIndex);
-                            
-                            function plusSlide(n) {
-                              showSlide(slideIndex += n);
-                            }
-                            
-                            function currentSlide(n) {
-                              showSlide(slideIndex = n);
-                            }
-                            
-                            function showSlide(n) {
-                              var i;
-                              var slide = document.getElementsByClassName("mySlide");
-                              var dots = document.getElementsByClassName("dot");
-                              if (n > slide.length) {slideIndex = 1}    
-                              if (n < 1) {slideIndex = slide.length}
-                              for (i = 0; i < slide.length; i++) {
-                                  slide[i].style.display = "none";  
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                  dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slide[slideIndex-1].style.display = "block";  
-                              dots[slideIndex-1].className += " active";
-                            }
-                        </script>
                     </div>
         
                     <div class="slideshow-containershoe">
@@ -686,34 +630,6 @@
                         <a class="prev3" onclick="plusSlid(-1)">&#10094;</a>
                         <a class="next3" onclick="plusSlid(1)">&#10095;</a>
         
-                        <script>
-                            var slidIndex = 1;
-                            showSlid(slidIndex);
-                            
-                            function plusSlid(n) {
-                              showSlid(slidIndex += n);
-                            }
-                            
-                            function currentSlid(n) {
-                              showSlid(slidIndex = n);
-                            }
-                            
-                            function showSlid(n) {
-                              var i;
-                              var slid = document.getElementsByClassName("mySlid");
-                              var dots = document.getElementsByClassName("dot");
-                              if (n > slid.length) {slidIndex = 1}    
-                              if (n < 1) {slidIndex = slid.length}
-                              for (i = 0; i < slid.length; i++) {
-                                  slid[i].style.display = "none";  
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                  dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slid[slidIndex-1].style.display = "block";  
-                              dots[slidIndex-1].className += " active";
-                            }
-                        </script>
                     </div>
                 </div>
 
@@ -740,34 +656,6 @@
                         <a class="prev" onclick="plusSlidesw(-1)">&#10094;</a>
                         <a class="next" onclick="plusSlidesw(1)">&#10095;</a>
         
-                        <script>
-                            var slidewIndex = 1;
-                            showSlidesw(slidewIndex);
-                            
-                            function plusSlidesw(n) {
-                              showSlidesw(slidewIndex += n);
-                            }
-                            
-                            function currentSlidew(n) {
-                              showSlidesw(slidewIndex = n);
-                            }
-                            
-                            function showSlidesw(n) {
-                              var i;
-                              var slidesw = document.getElementsByClassName("mySlidesw");
-                              var dots = document.getElementsByClassName("dot");
-                              if (n > slidesw.length) {slidewIndex = 1}    
-                              if (n < 1) {slidewIndex = slidesw.length}
-                              for (i = 0; i < slidesw.length; i++) {
-                                  slidesw[i].style.display = "none";  
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                  dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slidesw[slidewIndex-1].style.display = "block";  
-                              dots[slidewIndex-1].className += " active";
-                            }
-                        </script>
                     </div>
         
                     <div class="slideshow-containerbottom">
@@ -803,34 +691,7 @@
                         <a class="prev2" onclick="plusSlideww(-1)">&#10094;</a>
                         <a class="next2" onclick="plusSlideww(1)">&#10095;</a>
         
-                        <script>
-                            var slidewwIndex = 1;
-                            showSlideww(slidewwIndex);
-                            
-                            function plusSlideww(n) {
-                              showSlideww(slidewwIndex += n);
-                            }
-                            
-                            function currentSlideww(n) {
-                              showSlideww(slidewwIndex = n);
-                            }
-                            
-                            function showSlideww(n) {
-                              var i;
-                              var slideww = document.getElementsByClassName("mySlideww");
-                              var dots = document.getElementsByClassName("dot");
-                              if (n > slideww.length) {slidewwIndex = 1}    
-                              if (n < 1) {slidewwIndex = slideww.length}
-                              for (i = 0; i < slideww.length; i++) {
-                                  slideww[i].style.display = "none";  
-                              }
-                              for (i = 0; i < dots.length; i++) {
-                                  dots[i].className = dots[i].className.replace(" active", "");
-                              }
-                              slideww[slidewwIndex-1].style.display = "block";  
-                              dots[slidewwIndex-1].className += " active";
-                            }
-                        </script>
+                    
                     </div>
         
                     <div class="slideshow-containershoe">
@@ -863,6 +724,136 @@
                         <a class="next3" onclick="plusSlidw(1)">&#10095;</a>
         
                         <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            var slideIndex = 1;
+                            showSlide(slideIndex);
+                            
+                            function plusSlide(n) {
+                              showSlide(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlide(slideIndex = n);
+                            }
+                            
+                            function showSlide(n) {
+                              var i;
+                              var slide = document.getElementsByClassName("mySlide");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slide.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slide.length}
+                              for (i = 0; i < slide.length; i++) {
+                                  slide[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slide[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                            var slidIndex = 1;
+                            showSlid(slidIndex);
+                            
+                            function plusSlid(n) {
+                              showSlid(slidIndex += n);
+                            }
+                            
+                            function currentSlid(n) {
+                              showSlid(slidIndex = n);
+                            }
+                            
+                            function showSlid(n) {
+                              var i;
+                              var slid = document.getElementsByClassName("mySlid");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slid.length) {slidIndex = 1}    
+                              if (n < 1) {slidIndex = slid.length}
+                              for (i = 0; i < slid.length; i++) {
+                                  slid[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slid[slidIndex-1].style.display = "block";  
+                              dots[slidIndex-1].className += " active";
+                            }
+                            var slidewIndex = 1;
+                            showSlidesw(slidewIndex);
+                            
+                            function plusSlidesw(n) {
+                              showSlidesw(slidewIndex += n);
+                            }
+                            
+                            function currentSlidew(n) {
+                              showSlidesw(slidewIndex = n);
+                            }
+                            
+                            function showSlidesw(n) {
+                              var i;
+                              var slidesw = document.getElementsByClassName("mySlidesw");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slidesw.length) {slidewIndex = 1}    
+                              if (n < 1) {slidewIndex = slidesw.length}
+                              for (i = 0; i < slidesw.length; i++) {
+                                  slidesw[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slidesw[slidewIndex-1].style.display = "block";  
+                              dots[slidewIndex-1].className += " active";
+                            }
+                            var slidewwIndex = 1;
+                            showSlideww(slidewwIndex);
+                            
+                            function plusSlideww(n) {
+                              showSlideww(slidewwIndex += n);
+                            }
+                            
+                            function currentSlideww(n) {
+                              showSlideww(slidewwIndex = n);
+                            }
+                            
+                            function showSlideww(n) {
+                              var i;
+                              var slideww = document.getElementsByClassName("mySlideww");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slideww.length) {slidewwIndex = 1}    
+                              if (n < 1) {slidewwIndex = slideww.length}
+                              for (i = 0; i < slideww.length; i++) {
+                                  slideww[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slideww[slidewwIndex-1].style.display = "block";  
+                              dots[slidewwIndex-1].className += " active";
+                            }
                             var slidwIndex = 1;
                             showSlidw(slidwIndex);
                             
