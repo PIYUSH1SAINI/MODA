@@ -445,17 +445,17 @@
 <body>
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
 
             <div id="navright">
                 <input type="text" id="searchbar" placeholder="  Search">
-                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"><img
+                <a id="navlogin" href="login.html"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU"
                         alt="" height="70px"></a>
-                <a href="http://127.0.0.1:5500/IWT%20assignment/addtocart.html"><img
+                <a href="addtocart.html"><img
                         src="https://i.fbcd.co/products/resized/resized-750-500/667ca7502e4e218f01e4fbb26e01e2fc7fe17370f64bf444f60818b9d1b2c2b2.jpg"
                         alt="" height="38px"></a>
             </div>
@@ -504,33 +504,11 @@
         <span class="dot"></span>
     </div>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
-
     <h1 id="offer">CATEGORIES TO BAG</h1>
 
     <div class="gallery">
         <a target="_blank" href="img_5terre.jpg">
-            <a href="http://127.0.0.1:5500/IWT%20assignment/topwearwomen.html">
+            <a href="topwearwomen.html">
                 <img src="https://i5.walmartimages.com/asr/05180c9d-16d8-4a02-a328-086176b7f8cc_1.55e78911d27ee287bcba9da4b960bcf4.jpeg"
                     alt="TOPWEAR"></a>
             <div class="desc">TOPWEAR</div>
@@ -591,7 +569,7 @@
 
     <div class="gallery1">
         <a target="_blank" href="img.jpg">
-            <a href="http://127.0.0.1:5500/IWT%20assignment/winterwomen.html">
+            <a href="winterwomen.html">
                 <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/12/3/9d30008c-b0bc-41ae-9080-319527917f5d1638537726826-Hrx-_Puma_-_More.jpg"
                     alt="TOP WEAR" >
             </a>
@@ -629,7 +607,7 @@
             <div id="sportcata">
 
                 <div id="watch">
-                    <a href="http://127.0.0.1:5500/IWT%20assignment/watchwomen.html"><img id="watchimg"
+                    <a href="watchwomen.html"><img id="watchimg"
                             src="https://ae01.alicdn.com/kf/HTB1Lyx8LNnaK1RjSZFtq6zC2VXa7/Luxury-Diamond-Rose-Gold-Women-Watches-Fashion-Ladies-Starry-Sky-Magnetic-Watch-Casual-Mesh-Steel-Rhinestone.jpg"
                             alt="" width="100%" height="40%"></a>
                 </div>
@@ -699,6 +677,28 @@
 
 
     </div>
+
+   <script>
+      var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+   </script>
 
 </body>
 
