@@ -1,0 +1,533 @@
+<style>
+    body {
+        background-color: white;
+        margin: 0%;
+    }
+
+    #left {
+        float: left;
+        width: 60%;
+        height: 100%;
+        margin-top: 5%;
+        margin-left: 20px;
+        position: fixed;
+    }
+
+    #right {
+        width: 35%;
+        float: right;
+        margin-top: 5%;
+        margin-right: 1%;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: 0%;
+        cursor: pointer;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: rgb(24, 99, 150);
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: rgb(151, 212, 151);
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* navbar end */
+
+    #rightimg {
+        -webkit-mask-image: linear-gradient(to bottom, black, transparent 80%);
+        mask-image: linear-gradient(to bottom, black, transparent 80%);
+    }
+
+    #right h1 {
+        font-size: 35px;
+        color: gray;
+        margin-top: -38%;
+        margin-bottom: -20px;
+    }
+
+    #right h2 {
+        font-size: 30px;
+        color: black;
+    }
+
+    #right h3 {
+        font-size: 45px;
+        color: black;
+        margin-top: -10px;
+    }
+
+    #tax {
+        font-size: 20px;
+        margin-top: -40px;
+        color: green;
+    }
+
+    #size {
+        margin-top: -20px;
+    }
+
+    #size h4 {
+        font-size: 20px;
+        color: black;
+    }
+
+    #sizecloth {
+        margin-left: 0px;
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #mySelect {
+        color: black;
+        font-size: 25px;
+        border: none;
+        overflow: hidden;
+        margin-top: 50px;
+        height: 30px;
+    }
+
+    option {
+        display: inline;
+        color: gray;
+        border-radius: 60%;
+        padding: 30px;
+    }
+
+    option:hover {
+        color: red;
+        border: 2px solid red;
+    }
+
+    #quantity {
+        margin-left: 0px;
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #qtySelect {
+        color: black;
+        font-size: 25px;
+        border: none;
+        overflow: hidden;
+        margin-top: 50px;
+        height: 30px;
+    }
+
+    #addtocart {
+        height: 50px;
+        width: 300px;
+        background-color: rgb(255, 55, 55);
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+        margin-top: -40px;
+    }
+
+    #addtocart img {
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+
+    #add {
+        color: white;
+        margin-top: -40px;
+        margin-left: 85px;
+        font-size: 30px;
+    }
+
+    #delivery h4 {
+        color: black;
+        font-size: 30px;
+    }
+
+    #delivery input {
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        margin-top: -20px;
+        margin-left: 40px;
+    }
+
+    #policy {
+        margin-top: 40px;
+    }
+
+    #truck {
+        margin-left: 30px;
+    }
+
+    #txt {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -43px;
+        margin-left: 130px;
+    }
+
+    #payon {
+        margin-left: 50px;
+    }
+
+    #exchange {
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    #overview h4 {
+        font-size: 30px;
+        margin-top: 60px;
+        color: black;
+    }
+
+    #overview p {
+        margin-top: -20px;
+        font-size: 18px;
+        color: black;
+    }
+
+    /* bag item */
+
+    #bag h2 {
+        color: black;
+        margin: 30px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    #bag h3 {
+        color: black;
+        margin-left: 580px;
+        margin-top: -60px;
+        font-size: 20px;
+    }
+
+    #bagitem {
+        margin: 0px;
+        height: 350px;
+        width: 600px;
+        border-radius: 10px;
+        border: 2px solid grey;
+        display: none;
+    }
+
+    #bagitem img {
+        margin: 20px;
+    }
+
+    #bagtxt {
+        margin-left: 200px;
+        margin-top: -220px;
+    }
+
+    #bagtxt h2 {
+        color: black;
+        margin-top: -20px;
+        font-size: 25px;
+    }
+
+    #bagtxt h3 {
+        color: gray;
+        margin-top: -20px;
+        font-size: 25px;
+    }
+
+    #d1 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #d2 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: -45px;
+        margin-left: 200px;
+    }
+
+    #d3 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    label {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    select:hover {
+        border: 2px solid red;
+    }
+
+    #arrive {
+        color: black;
+        font-size: 20px;
+        margin-top: -45px;
+        margin-left: 30px;
+    }
+
+    #del img {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    #remove {
+        color: black;
+        font-size: 20px;
+        border-top: 2px solid rgb(218, 218, 218);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -200px;
+        width: 600px;
+    }
+
+    #remove a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href=""><b>MEN</b></a></li>
+            <li id="navlink"><a href=""><b>WOMEN</b></a></li>
+            <li id="navlink"><a href=""><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+
+    <div id="left">
+        <table border="2px">
+            <tr>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/96602e8d-2777-4180-83a8-792c4cccdefb1637239080868Jumper3.jpg"
+                        alt="" width="100%">
+                </td>
+                <td rowspan="1">
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/44566655-b8e6-40e7-b1f2-af511792320d1637239081058Jumper1.jpg"
+                        alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/afb1f970-2c05-44ae-b39b-3be11fdf08d61637239082360Jumper2.jpg"
+                        alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/751aca9c-fe2b-412e-90cf-57d8408f55851637239082026Jumper4.jpg"
+                        alt="" width="100%">
+                </td>
+            <tr>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/24678a9e-e15b-4bb0-8a8a-c0c777e7f62d1637239079943Jumper5.jpg"
+                        alt="" width="100%">
+                </td>
+                <td colspan="3">
+                    <img src="http://www.hm.com/entrance/assets/bundle/img/HM-Share-Image.jpg" alt="" width="80%">
+                </td>
+            </tr>
+            </tr>
+
+        </table>
+    </div>
+
+
+    <div id="right">
+
+        <img id="rightimg"
+            src="https://images.pexels.com/photos/2607731/pexels-photo-2607731.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="" width="100%">
+
+        <h1>H&M</h1>
+        <h2>Women Green Jumper</h2>
+        <br>
+        <h3 id="priceof">Rs.xxxx</h3>
+        <p id="tax">including all taxes</p>
+
+        <br>
+
+        <div id="size">
+            <form id="sizecloth">
+                SELECT SIZE (UK Size):
+                <select id="mySelect" size="4">
+                    <option value="Xs">Xs</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </form>
+
+            <form id="quantity">
+                SELECT QUANTITY: <br>
+                <select id="qtySelect" size="4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </form>
+        </div>
+
+        <br>
+
+        <div id="bagitem">
+            <a href=""><img
+                    src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/751aca9c-fe2b-412e-90cf-57d8408f55851637239082026Jumper4.jpg"
+                    alt="" height="200px"></a>
+            <div id="bagtxt">
+                <h2>H&M</h2>
+                <h3>Women Green Jumper</h3>
+                
+                <p id="d1"></p>
+                <p id="d2"></p>
+                <p id="d3"></p>
+                
+                <div id="del">
+                    <img src="https://www.freeiconspng.com/thumbs/check-tick-icon/tick-mark-icon-png-7.png" alt=""
+                        height="20px">
+                    <p id="arrive">Delivery by <b>10 Feb 2022</b></p>
+                </div>
+
+                <div id="remove" onclick="removecont()">
+                    <p><a href="">REMOVE</a></p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <script>
+            function select() {
+                document.getElementById("bagitem").style.display="block";
+
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("d1").innerHTML = "Size : " + x;
+
+                var y = document.getElementById("qtySelect").value;
+                document.getElementById("d2").innerHTML = "Quantity : " + y;
+
+                if (y == 0) 
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.0";
+                }
+
+                else if (y == 1)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.xxxx";
+                }
+
+                else if (y == 2)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.2xxxx";
+                }
+
+                else if (y == 3)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.3xxxx";
+                }
+
+                else
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.4xxxx";
+                }
+
+                var z = document.getElementById("priceof").textContent;
+                // document.getElementById("d3").innerHTML = "Price : " + z;
+            }
+
+            function removecont(){
+                location.reload();
+            }
+        </script>
+
+        <br><br>
+
+        <div id="cart">
+            <div id="addtocart">
+                <img src="https://static.thenounproject.com/png/2493776-200.png" alt="" height="40px">
+                <p id="add" onclick="select()">ADD TO BAG</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="delivery">
+            <h4>DELIVERY OPTIONS</h4>
+            <input type="text" placeholder="Enter PIN Code">
+        </div>
+
+        <br>
+
+        <div id="policy">
+            <img id="truck"
+                src="https://media.istockphoto.com/vectors/fast-delivery-truck-icon-fast-shipping-design-for-website-and-mobile-vector-id1302438914?k=20&m=1302438914&s=170667a&w=0&h=8HroNF2rhDbQCruNiN6ExIbplmIIMcD3vmFN6Z2CZNU="
+                alt="" height="50px">
+            <p id="txt">Get it by Wed, Jan xx</p>
+            <img id="payon" src="https://cdn-icons-png.flaticon.com/512/1554/1554401.png" alt="" height="50px">
+            <p id="txt">Pay on delivery available</p>
+            <img id="exchange" src="https://freepngimg.com/download/money/48819-5-exchange-png-file-hd.png" alt=""
+                height="40px">
+            <p id="txt">Easy 30 days return & exchange available</p>
+        </div>
+
+        <div id="overview">
+            <h4>OVERVIEW</h4>
+            <p>Jumper in a soft knit with low dropped shoulders, extra-long sleeves and ribbing around the neckline,
+                cuffs and hem.
+                <br><br>
+                Material & Care <br>
+                100% Acrylic <br>
+                Machine Wash
+            </p>
+        </div>
+
+    </div>
+</body>
+
+</html>
