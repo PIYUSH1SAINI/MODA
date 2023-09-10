@@ -330,10 +330,10 @@
 
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
         </ul>
     </div>
 
@@ -357,6 +357,70 @@
                         <br>
                         <input type="checkbox" id="watch" onclick="casual()">
                         <label for="watch">Casual Watch</label>
+                    </form>
+
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">BRAND</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="tissot()">
+                        <label for="watch">Tissot</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Omega</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Audemars Piguet </label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rolex</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="titan()">
+                        <label for="watch">Titan</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Casio</label>
+                    </form>
+
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">PRICE</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.0-Rs.5,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.5,000-Rs.10,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.10,000-Rs.20,000</label>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">COLOR</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="black()">
+                        <label for="watch">Black</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Silver</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Gold</label>
                     </form>
 
                     <script>
@@ -453,36 +517,6 @@
                             }
                         }
 
-                    </script>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <h1 id="catagory">BRAND</h1>
-
-                    <form action="">
-                        <input type="checkbox" id="watch" onclick="tissot()">
-                        <label for="watch">Tissot</label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Omega</label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Audemars Piguet </label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Rolex</label>
-                        <br>
-                        <input type="checkbox" id="watch" onclick="titan()">
-                        <label for="watch">Titan</label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Casio</label>
-                    </form>
-
-                    <script>
-
                         function tissot() {
                             var a = parseInt(document.getElementById("num4").textContent);
                             var b = a + 1;
@@ -532,44 +566,6 @@
                                 document.getElementById("roadcata").style.display = "block";
                             }
                         }
-
-                    </script>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <h1 id="catagory">PRICE</h1>
-
-                    <form action="">
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Rs.0-Rs.5,000</label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Rs.5,000-Rs.10,000</label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Rs.10,000-Rs.20,000</label>
-                    </form>
-                </td>
-            </tr>
-
-            <tr>
-                <td>
-                    <h1 id="catagory">COLOR</h1>
-
-                    <form action="">
-                        <input type="checkbox" id="watch" onclick="black()">
-                        <label for="watch">Black</label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Silver</label>
-                        <br>
-                        <input type="checkbox" id="watch">
-                        <label for="watch">Gold</label>
-                    </form>
-
-                    <script>
 
                         function black() {
                             var a = parseInt(document.getElementById("num6").textContent);
