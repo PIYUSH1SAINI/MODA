@@ -1,0 +1,560 @@
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: -7%;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: greenyellow;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: red;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* navbar end */
+
+    #content {
+        margin-top: 7%;
+        text-align: center;
+    }
+
+    #order {
+        color: rgb(0, 184, 0);
+        font-size: 60px;
+        margin-top: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #email {
+        margin-top: -20px;
+        color: black;
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #content p {
+        margin-top: 100px;
+    }
+
+    a {
+        text-decoration: none;
+        color: gray;
+        font-size: 30px;
+    }
+
+    a:hover {
+        color: rgb(0, 184, 0);
+    }
+
+    #arrow {
+        margin-top: -60px;
+        margin-left: 250px;
+    }
+
+    #continueshop {
+        margin-left: 40%;
+    }
+
+    #vans {
+        border: 2px solid black;
+        width: 60%;
+        height: 40%;
+        margin-left: 20%;
+    }
+
+    #vans:hover {
+        box-shadow: 4px 8px 5px 2px #ccc;
+    }
+
+    #vans img {
+        margin-left: -60%;
+        margin-top: 3%;
+    }
+
+    #txt {
+        margin-top: -27%;
+        margin-left: 40%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+    }
+
+    #vanhead {
+        font-size: 40px;
+        color: black;
+
+    }
+
+    #dis {
+        font-size: 25px;
+        color: gray;
+        margin-top: -20px;
+    }
+
+    #price {
+        font-size: 25px;
+        color: red;
+        margin-top: 10px;
+        margin-bottom: -60px;
+    }
+
+    #size {
+        font-size: 25px;
+        color: black;
+    }
+
+    #tick {
+        margin-top: -250px;
+        margin-bottom: -250px;
+    }
+
+    /* suggestion */
+
+    #pngimg {
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+
+    #suggestion {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #sugghead {
+        color: blueviolet;
+        font-size: 40px;
+        margin-left: 3%;
+        letter-spacing: 5px;
+        margin-top: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #segg {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        background-image: url("https://images.pexels.com/photos/2833718/pexels-photo-2833718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-size: 310px;
+        margin-left: 50px;
+    }
+
+    #segg:hover {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        animation-name: growout;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes growout {
+        0% {
+            border: 3px solid red;
+            width: 150px;
+            height: 200px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/2833718/pexels-photo-2833718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 310px;
+            background-position-x: -100px;
+            border-radius: 0px 500px 500px 500px;
+        }
+
+        100% {
+            border: 3px solid blue;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/2833718/pexels-photo-2833718.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 620px;
+            background-position-x: -50px;
+            background-position-y: -50px;
+            border-radius: 0;
+            background-blend-mode: color-burn;
+        }
+    }
+
+    #vantxt {
+        margin-top: 50px;
+        margin-left: -30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #vantxt h1 {
+        color: white;
+        font-size: 35px;
+        margin-top: -30px;
+    }
+
+    #vantxt h2 {
+        color: white;
+        font-size: 20px;
+        margin-top: -20px;
+    }
+
+    #segg1 {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        background-image: url("https://images.pexels.com/photos/6757793/pexels-photo-6757793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-position-y: -50px;
+        background-size: 300px;
+        margin-left: 200px;
+    }
+
+    #segg1:hover {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        animation-name: growout1;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes growout1 {
+        0% {
+            border: 3px solid red;
+            width: 150px;
+            height: 200px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/6757793/pexels-photo-6757793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 310px;
+            background-position-x: -100px;
+            border-radius: 0px 500px 500px 500px;
+        }
+
+        100% {
+            border: 3px solid blue;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/6757793/pexels-photo-6757793.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 620px;
+            background-position-x: -50px;
+            background-position-y: -50px;
+            border-radius: 0;
+            background-blend-mode: color-burn;
+        }
+    }
+
+    #vantxt1 {
+        margin-top: 75px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #vantxt1 h1 {
+        color: white;
+        font-size: 35px;
+        margin-top: -30px;
+    }
+
+    #vantxt1 h2 {
+        color: white;
+        font-size: 20px;
+        margin-top: -20px;
+    }
+
+    #pngimg2 {
+        margin-left: 0px;
+        margin-top: -50px;
+        transform: rotateY(180deg);
+    }
+
+    #segg2 {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        background-image: url("https://images.pexels.com/photos/1612462/pexels-photo-1612462.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-position-y: -50px;
+        background-size: 300px;
+        margin-left: 200px;
+    }
+
+    #segg2:hover {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        animation-name: growout2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes growout2 {
+        0% {
+            border: 3px solid red;
+            width: 150px;
+            height: 200px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/1612462/pexels-photo-1612462.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 310px;
+            background-position-x: -100px;
+            border-radius: 0px 500px 500px 500px;
+        }
+
+        100% {
+            border: 3px solid blue;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/1612462/pexels-photo-1612462.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: 620px;
+            background-position-x: -50px;
+            background-position-y: -50px;
+            border-radius: 0;
+            background-blend-mode: color-burn;
+        }
+    }
+
+    #vantxt2 {
+        margin-top: 20px;
+        margin-left: -10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #vantxt2 h1 {
+        color: white;
+        font-size: 35px;
+        margin-top: -30px;
+    }
+
+    #vantxt2 h2 {
+        color: white;
+        font-size: 20px;
+        margin-top: -20px;
+    }
+
+    #pngimg3 {
+        margin-left: 0px;
+        margin-top: -20px;
+    }
+
+    #segg3 {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        background-image: url("https://images.pexels.com/photos/2921139/pexels-photo-2921139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+        background-repeat: no-repeat;
+        background-position-x: -100px;
+        background-position-y: -50px;
+        background-size: 400px;
+        margin-left: 200px;
+    }
+
+    #segg3:hover {
+        border: 3px solid red;
+        width: 150px;
+        height: 200px;
+        margin-top: 50px;
+        padding-left: 50px;
+        border-radius: 0px 500px 500px 500px;
+        animation-name: growout3;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes growout3 {
+        0% {
+            border: 3px solid red;
+            width: 150px;
+            height: 200px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/2921139/pexels-photo-2921139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 400px;
+            background-position-x: -100px;
+            border-radius: 0px 500px 500px 500px;
+        }
+
+        100% {
+            border: 3px solid blue;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+            padding-left: 50px;
+            background-image: url("https://images.pexels.com/photos/2921139/pexels-photo-2921139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-repeat: no-repeat;
+            background-size: 620px;
+            background-position-x: -50px;
+            background-position-y: -50px;
+            border-radius: 0;
+            background-blend-mode: color-burn;
+        }
+    }
+
+    #vantxt3 {
+        margin-top: -20px;
+        margin-left: -10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #vantxt3 h1 {
+        color: white;
+        font-size: 35px;
+        margin-top: -30px;
+    }
+
+    #vantxt3 h2 {
+        color: white;
+        font-size: 20px;
+        margin-top: -20px;
+    }
+
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <img id="tick" src="https://cdn.dribbble.com/users/841193/screenshots/3144676/dribbble-post.gif" alt="" height="700px">
+        <h1 id="order">Your Order Has Been Placed</h1>
+        <h2 id="email">You Will Receive A Confirmation E-mail</h2>
+        <div id="vans">
+            <a href="http://127.0.0.1:5500/IWT%20assignment/vanshoe.html"><img
+                    src="https://rukminim1.flixcart.com/image/800/960/shoe/h/a/7/black-min-0d5i-vans-10-original-imae5efgkfw2eufe.jpeg?q=50"
+                    alt="" height="250px"></a>
+            <div id="txt">
+                <h1 id="vanhead">VANS</h1>
+                <h3 id="dis">Sk8-Hi High Ankle Sneakers For Men (Black)</h3>
+                <h4 id="price">Rs.xxx</h4>
+                <p id="size"><b>Size :</b> 6 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<b>Qty :</b> 1</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <h2 id="sugghead">SUGGESTIONS</h2>
+
+    <div id="suggestion">
+        <div id="segg">
+            <img id="pngimg" src="https://www.pngplay.com/wp-content/uploads/9/Vans-Transparent-Images.png" alt="" width="250px">
+            <div id="vantxt">
+                <h1>Vans</h1>
+                <h2>Men Black Checkered Sneakers</h2>
+            </div>
+        </div>
+
+        <div id="segg1">
+            <img id="pngimg" src="https://www.nicepng.com/png/full/88-889670_12-vans-old-skool-png.png" alt="" width="250px">
+            <div id="vantxt1">
+                <h1>Vans</h1>
+                <h2>Men Black Classic Sneakers</h2>
+            </div>
+        </div>
+
+        <div id="segg2">
+            <img id="pngimg2" src="https://www.pngall.com/wp-content/uploads/2/White-Sneakers-PNG-Clipart.png" alt="" width="250px">
+            <div id="vantxt2">
+                <h1>Nike</h1>
+                <h2>Men Red Air Force1 Sneakers</h2>
+            </div>
+        </div>
+
+        <div id="segg3">
+            <img id="pngimg3" src="https://img2.pngio.com/adidas-shoe-png-2-png-image-adidas-shoe-png-500_500.png" alt="" width="250px">
+            <div id="vantxt3">
+                <h1>Adidas</h1>
+                <h2>Men White Superstar Sneakers</h2>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div id="continueshop">
+        <a href="http://127.0.0.1:5500/IWT%20assignment/review.html">
+            <p>Continue Shopping</p>
+        </a>
+        <img id="arrow" src="https://cdn0.iconfinder.com/data/icons/feather/96/591276-arrow-right-512.png" alt=""
+            height="30px">
+    </div>
+    
+
+
+</body>
+
+</html>

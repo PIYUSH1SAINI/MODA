@@ -1,0 +1,569 @@
+<style>
+    body {
+        background-color: white;
+        margin: 0%;
+    }
+
+    #left {
+        float: left;
+        width: 60%;
+        height: 100%;
+        margin-top: 5%;
+        margin-left: 20px;
+        position: fixed;
+    }
+
+    #right {
+        width: 35%;
+        float: right;
+        margin-top: 5%;
+        margin-right: 1%;
+        font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+
+/* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: 0%;
+        cursor: pointer;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: pink;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: orange;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+/* navbar end */
+
+    #rightimg {
+        -webkit-mask-image: linear-gradient(to bottom,black,transparent 95%);
+        mask-image: linear-gradient(to bottom,black,transparent 95%);
+    }
+
+    #right h1 {
+        font-size: 35px;
+        color: gray;
+        margin-top: -33%;
+        margin-bottom: -20px;
+    }
+
+    #right h2 {
+        font-size: 30px;
+        color: black;
+    }
+
+    #right h3 {
+        font-size: 45px;
+        color: black;
+        margin-top: -10px;
+    }
+
+    #tax {
+        font-size: 20px;
+        margin-top: -40px;
+        color: green;
+    }
+
+    #size {
+        margin-top: -20px;
+    }
+
+    #size h4 {
+        font-size: 20px;
+        color: black;
+    }
+
+    /* select size start */
+
+    #sizecloth {
+        margin-left: 0px;
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #mySelect {
+        color: black;
+        font-size: 25px;
+        border: none;
+        overflow: hidden;
+        margin-top: 50px;
+        height: 30px;
+    }
+
+    option {
+        display: inline;
+        color: gray;
+        border-radius: 60%;
+        padding: 30px;
+    }
+
+    option:hover {
+        color: red;
+        border: 2px solid red;
+    }
+
+    #quantity {
+        margin-left: 0px;
+        font-size: 30px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #qtySelect {
+        color: black;
+        font-size: 25px;
+        border: none;
+        overflow: hidden;
+        margin-top: 50px;
+        height: 30px;
+    }
+
+    /* select size end */
+
+    #addtocart {
+        height: 50px;
+        width: 300px;
+        background-color: rgb(255, 55, 55);
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+    }
+
+    #addtocart img {
+        margin-left: 35px;
+        margin-top: 5px;
+    }
+
+    #add {
+        color: white;
+        margin-top: -40px;
+        margin-left: 85px;
+        font-size: 30px;
+    }
+
+    #delivery h4{
+        color: black;
+        font-size: 30px;
+    }
+
+    #delivery input {
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        margin-top: -20px;
+        margin-left: 40px;
+    }
+
+    #policy {
+        margin-top: 40px;
+    }
+
+    #truck {
+        margin-left: 30px;
+    }
+
+    #txt {
+        color: black;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: -43px;
+        margin-left: 130px;
+    }
+
+    #payon {
+        margin-left: 50px;
+    }
+
+    #exchange {
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+
+    #overview h4 {
+        font-size: 30px;
+        margin-top: 60px;
+        color: black;
+    }
+
+    #overview p {
+        margin-top: -20px;
+        font-size: 18px;
+        color: black;
+    }
+
+        /* bag item */
+
+        #bag h2 {
+        color: black;
+        margin: 30px;
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    #bag h3 {
+        color: black;
+        margin-left: 580px;
+        margin-top: -60px;
+        font-size: 20px;
+    }
+
+    #bagitem {
+        margin: 0px;
+        height: 380px;
+        width: 600px;
+        border-radius: 10px;
+        border: 2px solid grey;
+        display: none;
+    }
+
+    #bagitem img {
+        margin: 20px;
+    }
+
+    #bagtxt {
+        margin-left: 200px;
+        margin-top: -220px;
+    }
+
+    #bagtxt h2 {
+        color: black;
+        margin-top: -20px;
+        font-size: 25px;
+    }
+
+    #bagtxt h3 {
+        color: gray;
+        margin-top: -20px;
+        font-size: 25px;
+    }
+
+    #d1 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #d2 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: -45px;
+        margin-left: 200px;
+    }
+
+    #d3 {
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    label {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    select:hover {
+        border: 2px solid red;
+    }
+
+    #arrive {
+        color: black;
+        font-size: 20px;
+        margin-top: -45px;
+        margin-left: 30px;
+    }
+
+    #del img {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    #remove {
+        color: black;
+        font-size: 20px;
+        border-top: 2px solid rgb(218, 218, 218);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -200px;
+        width: 600px;
+    }
+
+    #remove a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #date {
+        margin-top: -46px;
+        margin-left: 145px;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #check:hover {
+        color: navy;
+        border: 2px solid navy;
+    }
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+
+    <div id="left">
+        <table border="2px">
+            <tr>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/9/21/95d3a619-bc0c-4cae-a02c-d5fa397798fc1537520216095-DressBerry-Women-Cateye-Sunglasses-3061537520216030-1.jpg"
+                        alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/9/21/60c510d0-00b1-4023-a072-2658939c8c361537520216082-DressBerry-Women-Cateye-Sunglasses-3061537520216030-2.jpg"
+                        alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/9/21/e2e68840-59a4-439f-8766-ac8476f9bcc11537520216072-DressBerry-Women-Cateye-Sunglasses-3061537520216030-3.jpg" alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/9/21/98034185-840a-45ac-b4be-8c5a72ceb72a1537520216108-DressBerry-Women-Cateye-Sunglasses-3061537520216030-4.jpg" alt="" width="100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/10/10/6aaa8245-3c8a-4873-a90a-63ef41af1fdc1539162045148-DressBerry-Women-Cateye-Sunglasses-MFB-PN-RY-G87027-9501539162045106-6.jpg"
+                        alt="" width="100%">
+                </td>
+                <td colspan="2">
+                    <img src="data:image/png;base64,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" alt="" width="100%">
+                </td>
+                <td>
+                    <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/9/21/0c465bab-1e9c-4aba-b103-653eac50af4a1537525713499-DressBerry-Women-Cateye-Sunglasses-MFB-PN-RY-G87027-9261537525713481-5.jpg" alt="" width="100%">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="right">
+
+        <img id="rightimg" src="https://images.pexels.com/photos/1454769/pexels-photo-1454769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="100%">
+
+        <h1>DressBerry</h1>
+        <h2>Women Cateye Sunglasses MFB-PN-RY-G87027</h2>
+        <br>
+        <h3>Rs.xxxx</h3>
+        <p id="tax">including all taxes</p>
+
+        <br>
+
+        <div id="size">
+            <form id="sizecloth">
+                SELECT SIZE (UK Size): <br>
+                <select id="mySelect" size="4">
+                    <option value="M">M</option>
+                </select>
+            </form>
+
+            <form id="quantity">
+                SELECT QUANTITY: <br>
+                <select id="qtySelect" size="4">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </form>
+        </div>
+
+        <br>
+
+        <div id="bagitem">
+            <a href=""><img
+                    src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/9/21/60c510d0-00b1-4023-a072-2658939c8c361537520216082-DressBerry-Women-Cateye-Sunglasses-3061537520216030-2.jpg"
+                    alt="" height="200px"></a>
+            <div id="bagtxt">
+                <h2>DressBerry</h2>
+                <h3>Women Cateye Sunglasses MFB-PN-RY-G87027</h3>
+                
+                <p id="d1"></p>
+                <p id="d2"></p>
+                <p id="d3"></p>
+                
+                <div id="del">
+                    <img src="https://www.freeiconspng.com/thumbs/check-tick-icon/tick-mark-icon-png-7.png" alt=""
+                        height="20px">
+                    <p id="arrive">Delivery by :</p>
+                    <p id="date">......</p>
+                </div>
+
+                <div id="remove" onclick="removecont()">
+                    <p><a href="">REMOVE</a></p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <script>
+            function select() {
+                document.getElementById("bagitem").style.display="block";
+
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("d1").innerHTML = "Size : " + x;
+
+                var y = document.getElementById("qtySelect").value;
+                document.getElementById("d2").innerHTML = "Quantity : " + y;
+
+                if (y == 0) 
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.0";
+                }
+
+                else if (y == 1)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.xxxx";
+                }
+
+                else if (y == 2)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.2xxxx";
+                }
+
+                else if (y == 3)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.3xxxx";
+                }
+
+                else
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.4xxxx";
+                }
+
+                var z = document.getElementById("priceof").textContent;
+                // document.getElementById("d3").innerHTML = "Price : " + z;
+            }
+
+            function removecont(){
+                document.getElementById("d1").value="";
+                document.getElementById("d2").value="";
+                document.getElementById("d3").value="";
+            }
+        </script>
+
+        <br><br>
+
+        <div id="cart">
+            <div id="addtocart" onclick="select()">
+                <img src="https://static.thenounproject.com/png/2493776-200.png" alt="" height="40px">
+                <p id="add">ADD TO BAG</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="delivery">
+            <h4>DELIVERY OPTIONS</h4>
+            <input type="text" placeholder="Enter PIN Code" id="pin">
+            <input type="button" value="Check" id="check" onclick="check()">
+        </div>
+
+        <script>
+            function check(){
+                var p = document.getElementById("pin").value;
+                if(p=="134007")
+                {
+                    document.getElementById("date").innerHTML="10 Feb 2022";
+                }
+                else if(p=="134003")
+                {
+                    document.getElementById("date").innerHTML="8 Feb 2022";
+                }
+                else
+                {
+                    document.getElementById("date").innerHTML="Invalid PIN code";
+                }
+            }
+        </script>
+
+        <br>
+
+        <div id="policy">
+            <img id="truck" src="https://media.istockphoto.com/vectors/fast-delivery-truck-icon-fast-shipping-design-for-website-and-mobile-vector-id1302438914?k=20&m=1302438914&s=170667a&w=0&h=8HroNF2rhDbQCruNiN6ExIbplmIIMcD3vmFN6Z2CZNU=" alt="" height="50px">
+            <p id="txt">Get it by Wed, Jan xx</p>
+            <img id="payon" src="https://cdn-icons-png.flaticon.com/512/1554/1554401.png" alt="" height="50px">
+            <p id="txt">Pay on delivery available</p>
+            <img id="exchange" src="https://freepngimg.com/download/money/48819-5-exchange-png-file-hd.png" alt="" height="40px">
+            <p id="txt">Easy 30 days return & exchange available</p>
+        </div>
+
+        <div id="overview">
+            <h4>OVERVIEW</h4>
+            <p>Lens colour: Brown that graduates to pink <br>
+                Lens feature: UV Protected Lens <br>
+                Frame material: Metal <br>
+                Frame style: Full Rim <br>
+                Best suited for: Oval face shape <br>
+                Comes in a DressBerry cover <br>
+                Warranty: 6 months <br>
+                Warranty provided by brand/manufacturer <br>
+                <br><br>
+                Material & Care <br>
+                Metal <br>
+                Remove dust and grime by gently wiping the lens with a cloth</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

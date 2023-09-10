@@ -1,0 +1,945 @@
+<style>
+
+    body{
+        background-image: url("https://ik.imagekit.io/piysai/pexels-mart-production-7718711_gXrJ1VcBWxc.jpg?updatedAt=1639115168550");
+        background-repeat: no-repeat;
+        background-size: 1650px;
+        background-position-y: -174px;
+        background-position-x: 20px;
+        margin: 0;
+        height: 90%;
+    }
+
+/* navbar start */
+    
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 0%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: -5%;
+    }
+    
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    
+    #navlink a:hover {
+        color: orange;
+        border-style: double;
+    }
+    
+    #home a:hover {
+        color: blanchedalmond;
+        text-decoration: line-through;
+    }
+    
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+    
+/* navbar end */
+
+    #tryon {
+        margin-top: 4.5%;
+        height: 100%;
+        width: 90.5%;
+        margin-left: 0%;
+    }
+
+    #tryonslider {
+        margin-left: 15%;
+        height: 100%;
+        background-image: url("https://ik.imagekit.io/piysai/pexels-mart-production-7718711_gXrJ1VcBWxc.jpg?updatedAt=1639115168550");
+        background-repeat: no-repeat;
+        background-size: 1650px;
+        background-position-y: -250px;
+        background-position-x: -370px;
+        width: 60.5%;
+    }
+
+    /* Slideshow container */
+    .slidesshow-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        margin-left: 0%;
+        margin-top: 0px;
+    }
+
+    /* Next & previous buttons */
+    .prev0, .next0 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: black;
+        font-weight: bold;
+        font-size: 28px;
+        transition: 0.6s ease;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 132px;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next0 {
+        right: 195px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev0:hover, .next0:hover {
+        background-color: rgba(255, 238, 0, 0.8);
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+/* Slideshow containertop */
+    .slideshow-containertop {
+        width: 50%;
+        height: 30%;
+        position: relative;
+        margin-left: 21.5%;
+        padding-top: 30px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(0, 162, 255);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 20px;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 25px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    #top1 {
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    #top {
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    #top2 {
+        margin-left: 15%;
+        margin-top: 5%;
+    }
+
+    #top3 {
+        margin-left: 15%;
+        margin-top: 0%;
+    }
+
+    #top4 {
+        margin-left: 13%;
+        margin-top: 5%;
+    }
+
+    #top5 {
+        margin-left: 20%;
+        margin-top: 0%;
+    }
+
+    #top6 {
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+
+/* Slideshow containerbottom */
+    .slideshow-containerbottom {
+        width: 50%;
+        height: 40%;
+        position: relative;
+        margin-left: 21.5%;
+        margin-top: 20px;
+    }
+
+    /* Next & previous buttons */
+    .prev2, .next2 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(0, 162, 255);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 23px;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next2 {
+        right: 25px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev2:hover, .next2:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    #bottom {
+        margin-left: 20%;
+        margin-top: 8%;
+    }
+
+    #bottom1 {
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    #bottom2 {
+        margin-left: 27%;
+        margin-top: 5%;
+    }
+
+    #bottom3 {
+        margin-left: 18%;
+        margin-top: 5%;
+    }
+
+    #bottom4 {
+        margin-left: 20%;
+        margin-top: 2%;
+    }
+
+/* Slideshow containershoe */
+    .slideshow-containershoe {
+        width: 50%;
+        height: 20%;
+        position: relative;
+        margin-left: 21.5%;
+        margin-top: 0px;
+    }
+
+    /* Next & previous buttons */
+    .prev3, .next3 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(0, 162, 255);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 22px ;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next3 {
+        right: 20px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev3:hover, .next3:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+
+    #shoe1 {
+        margin-left: 28%;
+        margin-top: 5%;
+    }
+
+    #shoe {
+        margin-left: 37%;
+        margin-top: 10%;
+    }
+
+    #shoe2 {
+        margin-left: 33%;
+        margin-top: 3%;
+    }
+
+    #shoe4 {
+        margin-left: 33%;
+        margin-top: 0%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    #shoe3 {
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+
+    /* women slider */
+
+    #topw1 {
+        margin-left: 25%;
+        margin-top: 15%;
+    }
+
+    #topw5 {
+        margin-left: 27%;
+        margin-top: 5%;
+    }
+
+    #topwo1 {
+        margin-left: 24%;
+        margin-top: 5%;
+    }
+
+    #topw {
+        margin-left: 27%;
+        margin-top: 5%;
+    }
+
+    #topw3 {
+        margin-left: 23%;
+        margin-top: 0%;
+    }
+
+    #topw6 {
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    /* bottom */
+
+    #bottomw {
+        margin-left: 20%;
+        margin-top: 4%;
+    }
+
+    #bottomw4 {
+        margin-left: 15%;
+        margin-top: 0%;
+    }
+
+    #bottomw3 {
+        margin-left: 31%;
+        margin-top: 0%;
+    }
+
+    #bottomw2 {
+        margin-left: 23%;
+        margin-top: 0%;
+    }
+
+    #bottomw5 {
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+
+    /* shoe women */
+
+    #shoew1 {
+        margin-left: 38%;
+        margin-top: 8%;
+    }
+
+    #shoew {
+        margin-left: 40%;
+        margin-top: 10%;
+    }
+
+    #shoew5 {
+        margin-left: 35%;
+        margin-top: 8%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    #shoew3 {
+        margin-left: 38%;
+        margin-top: 8%;
+    }
+
+    #shoew4 {
+        margin-left: 35%;
+        margin-top: -5%;
+    }
+
+    #shoew6 {
+        margin-left: 25%;
+        margin-top: -25%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+/* right part start */
+
+    #right {
+        height: 60%;
+        width: 35%;
+        margin-top: -28%;
+        margin-left: 60%;
+        border: 2px solid firebrick;
+        border-radius: 0px 0px 30px 30px;
+        font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+
+    #right h1 {
+        font-size: 40px;
+        color: gray;
+        text-align: center;
+    }
+
+    #right p {
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+    <div id="tryon">
+        <div id="tryonslider">
+            <div class="slidesshow-container">
+
+                <div class="mySlidess fade">
+                    <div class="slideshow-containertop">
+
+                        <div class="mySlides fade">
+                          <img id="top1" src="https://www.createashirt.com/image/catalog/products/996Y/Front/JERZEES-Youth-NuBlend-Pullover-Hooded-Sweatshirt-996Y_Black.png" style="width:50%">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img id="top5" src="https://freepngimg.com/thumb/dress_shirt/7-2-dress-shirt-png-hd.png" style="width:60%">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img id="top1" src="https://purepng.com/public/uploads/large/purepng.com-black-t-shirtclothingblack-t-shirtfashion-dress-shirt-black-cloth-tshirt-631522326927hzzmk.png" style="width:50%">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img id="top1" src="https://webstockreview.net/images/clipart-shirt-polo-16.png" style="width:50%">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img id="top" src="https://www.pngplay.com/wp-content/uploads/2/Men-Sweater-Background-PNG-Image.png" style="width:60%">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img id="top4" src="https://smhttp-ssl-65481.nexcesscdn.net/media/catalog/product/cache/9/image/9df78eab33525d08d6e5fb8d27136e95/z/z/zzaametal-p163-026-open-02_1.png" style="width:75%">
+                        </div>
+        
+                        <div class="mySlides fade">
+                            <img id="top6" src="https://freepngimg.com/thumb/suit/37396-1-suit-image.png" style="width:50%">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+                        <script>
+                            var slideIndex = 1;
+                            showSlides(slideIndex);
+                            
+                            function plusSlides(n) {
+                              showSlides(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlides(slideIndex = n);
+                            }
+                            
+                            function showSlides(n) {
+                              var i;
+                              var slides = document.getElementsByClassName("mySlides");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slides.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slides.length}
+                              for (i = 0; i < slides.length; i++) {
+                                  slides[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slides[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                        </script>
+                    </div>
+        
+                    <div class="slideshow-containerbottom">
+        
+                        <div class="mySlide fade">
+                          <img id="bottom" src="https://www.pngall.com/wp-content/uploads/5/Men-Jeans-PNG-Download-Image.png" style="width:60%">
+                        </div>
+        
+                        <div class="mySlide fade">
+                            <img id="bottom" src="https://www.pngall.com/wp-content/uploads/5/Light-Blue-Men-Jeans-PNG-Image.png" style="width:60%">
+                        </div>
+        
+                        <div class="mySlide fade">
+                            <img id="bottom" src="https://www.downloadclipart.net/large/denim-jean-png-transparent.png" style="width:60%">
+                        </div>
+        
+                        <div class="mySlide fade">
+                            <img id="bottom2" src="https://www.fashion4men.com.au/wp-content/uploads/2017/07/fashion4men-yd-Hyden-Skinny-Dress-Pant.png" style="width: 45%">
+                        </div>
+        
+                        <div class="mySlide fade">
+                            <img id="bottom2" src="https://img.pngio.com/coral-beach-tabs-bermuda-shorts-png-1000_1000.png" style="width: 45%">
+                        </div>
+        
+                        <div class="mySlide fade">
+                            <img id="bottom" src="https://static.nike.com/a/images/t_default/a6f653f4-a3cf-41ce-b69b-987d3c672c6b/trousers-nkRXnV.png" style="width: 60%">
+                        </div>
+                        
+                        <a class="prev2" onclick="plusSlide(-1)">&#10094;</a>
+                        <a class="next2" onclick="plusSlide(1)">&#10095;</a>
+        
+                        <script>
+                            var slideIndex = 1;
+                            showSlide(slideIndex);
+                            
+                            function plusSlide(n) {
+                              showSlide(slideIndex += n);
+                            }
+                            
+                            function currentSlide(n) {
+                              showSlide(slideIndex = n);
+                            }
+                            
+                            function showSlide(n) {
+                              var i;
+                              var slide = document.getElementsByClassName("mySlide");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slide.length) {slideIndex = 1}    
+                              if (n < 1) {slideIndex = slide.length}
+                              for (i = 0; i < slide.length; i++) {
+                                  slide[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slide[slideIndex-1].style.display = "block";  
+                              dots[slideIndex-1].className += " active";
+                            }
+                        </script>
+                    </div>
+        
+                    <div class="slideshow-containershoe">
+        
+                        <div class="mySlid fade">
+                          <img id="shoe1" src="https://i.pinimg.com/originals/37/91/58/37915898667746fbe662ecec4dccfe76.png" style="width:40%">
+                        </div>
+        
+                        <div class="mySlid fade">
+                            <img id="shoe1" src="https://i.pinimg.com/originals/8d/b8/d6/8db8d6b75527fae987efd05086809ebd.png" style="width:40%">
+                        </div>
+        
+                        <div class="mySlid fade">
+                            <img id="shoe2" src="https://static.nike.com/a/images/t_default/tnwsqexrdbk5dqi8fbnp/air-jordan-1-retro-high-og-shoe-a7Zzxm.png" style="width:30%">
+                        </div>
+        
+                        <div class="mySlid fade">
+                            <img id="shoe2" src="https://freepngimg.com/thumb/shoes/6-2-shoes-png-file-thumb.png" style="width:30%">
+                        </div>
+        
+                        <div class="mySlid fade">
+                            <img id="shoe1" src="https://mckinlays.co.nz/content/uploads/hunter-black.png" style="width:40%">
+                        </div>
+        
+                        <div class="mySlid fade">
+                            <img id="shoe4" src="https://freepngimg.com/save/3638-men-shoes-png-image/2000x2000" style="width:30%">
+                        </div>
+                        
+                        <a class="prev3" onclick="plusSlid(-1)">&#10094;</a>
+                        <a class="next3" onclick="plusSlid(1)">&#10095;</a>
+        
+                        <script>
+                            var slidIndex = 1;
+                            showSlid(slidIndex);
+                            
+                            function plusSlid(n) {
+                              showSlid(slidIndex += n);
+                            }
+                            
+                            function currentSlid(n) {
+                              showSlid(slidIndex = n);
+                            }
+                            
+                            function showSlid(n) {
+                              var i;
+                              var slid = document.getElementsByClassName("mySlid");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slid.length) {slidIndex = 1}    
+                              if (n < 1) {slidIndex = slid.length}
+                              for (i = 0; i < slid.length; i++) {
+                                  slid[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slid[slidIndex-1].style.display = "block";  
+                              dots[slidIndex-1].className += " active";
+                            }
+                        </script>
+                    </div>
+                </div>
+
+
+                <div class="mySlidess fade">
+                    <div class="slideshow-containertop">
+
+                        <div class="mySlidesw fade">
+                          <img id="topw1" src="https://i.pinimg.com/originals/1c/49/68/1c4968c60fbaf028bf0c5617d8956fb3.png" style="width:50%">
+                        </div>
+        
+                        <div class="mySlidesw fade">
+                            <img id="topw5" src="https://www.pngarts.com/files/3/Women-T-Shirt-PNG-High-Quality-Image.png" style="width:45%">
+                        </div>
+        
+                        <div class="mySlidesw fade">
+                            <img id="topw" src="https://freepngimg.com/save/150675-leather-jacket-red-download-hd/1100x1350" style="width:45%">
+                        </div>
+        
+                        <div class="mySlidesw fade">
+                            <img id="topw" src="https://www.freepnglogos.com/uploads/jacket-png/jacket-denim-solutions-website-launching-program-denim-solutions-ltd-24.png" style="width:50%">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlidesw(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlidesw(1)">&#10095;</a>
+        
+                        <script>
+                            var slidewIndex = 1;
+                            showSlidesw(slidewIndex);
+                            
+                            function plusSlidesw(n) {
+                              showSlidesw(slidewIndex += n);
+                            }
+                            
+                            function currentSlidew(n) {
+                              showSlidesw(slidewIndex = n);
+                            }
+                            
+                            function showSlidesw(n) {
+                              var i;
+                              var slidesw = document.getElementsByClassName("mySlidesw");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slidesw.length) {slidewIndex = 1}    
+                              if (n < 1) {slidewIndex = slidesw.length}
+                              for (i = 0; i < slidesw.length; i++) {
+                                  slidesw[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slidesw[slidewIndex-1].style.display = "block";  
+                              dots[slidewIndex-1].className += " active";
+                            }
+                        </script>
+                    </div>
+        
+                    <div class="slideshow-containerbottom">
+        
+                        <div class="mySlideww fade">
+                          <img id="bottomw" src="https://freepngimg.com/thumb/jeans/32-women's-jeans-png-image.png" style="width:60%">
+                        </div>
+        
+                        <div class="mySlideww fade">
+                            <img id="bottomw" src="https://pngimg.com/uploads/jeans/jeans_PNG5755.png" style="width:60%">
+                        </div>
+        
+                        <div class="mySlideww fade">
+                            <img id="bottomw4" src="https://i.pinimg.com/originals/87/6b/b5/876bb59bd5acfee02a7845f471c1e801.png" style="width:70%">
+                        </div>
+        
+                        <div class="mySlideww fade">
+                            <img id="bottomw" src="https://www.hummel.fr/dw/image/v2/BDWL_PRD/on/demandware.static/-/Sites-hummel-master-catalog/default/dw3c89881d/images/packshot/212564-2001_1.png?sw=514&sh=685&sm=fit&q=80" style="width:60%">
+                        </div>
+        
+                        <div class="mySlideww fade">
+                            <img id="bottomw3" src="https://i.pinimg.com/originals/ee/a0/5a/eea05ae9f348df50382c1a9da26ff7a6.png" style="width: 40%">
+                        </div>
+        
+                        <div class="mySlideww fade">
+                            <img id="bottomw2" src="https://www.prada.com/content/dam/pradanux_products/U/UP0/UP0141/1YAVF0480/UP0141_1YAV_F0480_S_211_SLF.png" style="width: 55%">
+                        </div>
+        
+                        <div class="mySlideww fade">
+                            <img id="bottomw5" src="https://i.pinimg.com/originals/df/c3/8a/dfc38a25122ebe89f67c45283b7fe520.png" style="width: 30%">
+                        </div>
+                        
+                        <a class="prev2" onclick="plusSlideww(-1)">&#10094;</a>
+                        <a class="next2" onclick="plusSlideww(1)">&#10095;</a>
+        
+                        <script>
+                            var slidewwIndex = 1;
+                            showSlideww(slidewwIndex);
+                            
+                            function plusSlideww(n) {
+                              showSlideww(slidewwIndex += n);
+                            }
+                            
+                            function currentSlideww(n) {
+                              showSlideww(slidewwIndex = n);
+                            }
+                            
+                            function showSlideww(n) {
+                              var i;
+                              var slideww = document.getElementsByClassName("mySlideww");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slideww.length) {slidewwIndex = 1}    
+                              if (n < 1) {slidewwIndex = slideww.length}
+                              for (i = 0; i < slideww.length; i++) {
+                                  slideww[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slideww[slidewwIndex-1].style.display = "block";  
+                              dots[slidewwIndex-1].className += " active";
+                            }
+                        </script>
+                    </div>
+        
+                    <div class="slideshow-containershoe">
+        
+                        <div class="mySlidw fade">
+                          <img id="shoew1" src="https://www.freeiconspng.com/thumbs/shoes-png/women-shoes-png-downloads-image-32.png" style="width:20%">
+                        </div>
+        
+                        <div class="mySlidw fade">
+                            <img id="shoew" src="https://www.transparentpng.com/thumb/flat-shoes/black-girls-women-shoes-png-images-13.png" style="width:20%">
+                        </div>
+                        
+                        <div class="mySlidw fade">
+                            <img id="shoew4" src="https://pngimage.net/wp-content/uploads/2018/05/converse-png-2.png" style="width:30%">
+                        </div>
+        
+                        <div class="mySlidw fade">
+                            <img id="shoe1" src="https://mckinlays.co.nz/content/uploads/hunter-black.png" style="width:40%">
+                        </div>
+        
+                        <div class="mySlidw fade">
+                            <img id="shoew5" src="https://www.pngkit.com/png/full/1-13920_gucci-shoes-for-women-png-free-download-double.png" style="width:30%">
+                        </div>
+        
+                        <div class="mySlidw fade">
+                            <img id="shoew6" src="https://www.prada.com/content/dam/pradanux_products/1/1I8/1I834I/3A9SF0009/1I834I_3A9S_F0009_F_085_SLR.png" style="width:50%">
+                        </div>
+                        
+                        <a class="prev3" onclick="plusSlidw(-1)">&#10094;</a>
+                        <a class="next3" onclick="plusSlidw(1)">&#10095;</a>
+        
+                        <script>
+                            var slidwIndex = 1;
+                            showSlidw(slidwIndex);
+                            
+                            function plusSlidw(n) {
+                              showSlidw(slidwIndex += n);
+                            }
+                            
+                            function currentSlidw(n) {
+                              showSlidw(slidwIndex = n);
+                            }
+                            
+                            function showSlidw(n) {
+                              var i;
+                              var slidw = document.getElementsByClassName("mySlidw");
+                              var dots = document.getElementsByClassName("dot");
+                              if (n > slidw.length) {slidwIndex = 1}    
+                              if (n < 1) {slidwIndex = slidw.length}
+                              for (i = 0; i < slidw.length; i++) {
+                                  slidw[i].style.display = "none";  
+                              }
+                              for (i = 0; i < dots.length; i++) {
+                                  dots[i].className = dots[i].className.replace(" active", "");
+                              }
+                              slidw[slidwIndex-1].style.display = "block";  
+                              dots[slidwIndex-1].className += " active";
+                            }
+                        </script>
+                    </div>
+                </div>
+
+
+                
+                <a class="prev0" onclick="plusSlidess(-1)">&#10094;</a>
+                <a class="next0" onclick="plusSlidess(1)">&#10095;</a>
+
+                <script>
+                    var slidesIndex = 1;
+                    showSlidess(slidesIndex);
+                    
+                    function plusSlidess(n) {
+                      showSlidess(slidesIndex += n);
+                    }
+                    
+                    function currentSlides(n) {
+                      showSlidess(slidesIndex = n);
+                    }
+                    
+                    function showSlidess(n) {
+                      var i;
+                      var slidess = document.getElementsByClassName("mySlidess");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slidess.length) {slidesIndex = 1}    
+                      if (n < 1) {slidesIndex = slidess.length}
+                      for (i = 0; i < slidess.length; i++) {
+                          slidess[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slidess[slidesIndex-1].style.display = "block";  
+                      dots[slidesIndex-1].className += " active";
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+
+    <div id="right">
+        <h1>YESSS !! Now Their Is A Way to See If Your Clothes Match Together</h1>
+        <p>The Following Are The Instructions On How To Operate The Simulator :-</p>
+        <ol>
+            <li>Click On The Arrows Next To The Clothing Item You Want To Change</li>
+            <li>Click The Blue Arrows To Change The Items In the Same Catagory</li>
+            <li>To Change The Catagory(Gender) Click The Black Arrows</li>
+        </ol>
+    </div>
+
+    
+</body>
+</html>
