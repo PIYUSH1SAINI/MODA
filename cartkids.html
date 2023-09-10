@@ -347,10 +347,10 @@
 
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
         </ul>
     </div>
 
@@ -431,52 +431,6 @@
 
         <br><br>
 
-        <script>
-            function select() {
-                document.getElementById("bagitem").style.display="block";
-
-                var x = document.getElementById("mySelect").value;
-                document.getElementById("d1").innerHTML = "Size : " + x;
-
-                var y = document.getElementById("qtySelect").value;
-                document.getElementById("d2").innerHTML = "Quantity : " + y;
-
-                if (y == 0) 
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.0";
-                }
-
-                else if (y == 1)
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.xxxx";
-                }
-
-                else if (y == 2)
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.2xxxx";
-                }
-
-                else if (y == 3)
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.3xxxx";
-                }
-
-                else
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.4xxxx";
-                }
-
-                var z = document.getElementById("priceof").textContent;
-                // document.getElementById("d3").innerHTML = "Price : " + z;
-            }
-
-            function removecont(){
-                document.getElementById("d1").value="";
-                document.getElementById("d2").value="";
-                document.getElementById("d3").value="";
-            }
-        </script>
-
         <br><br>
 
         <div id="cart">
@@ -494,23 +448,6 @@
             <input type="button" value="Check" id="check" onclick="check()">
         </div>
 
-        <script>
-            function check(){
-                var p = document.getElementById("pin").value;
-                if(p=="134007")
-                {
-                    document.getElementById("date").innerHTML="10 Feb 2022";
-                }
-                else if(p=="134003")
-                {
-                    document.getElementById("date").innerHTML="8 Feb 2022";
-                }
-                else
-                {
-                    document.getElementById("date").innerHTML="Invalid PIN code";
-                }
-            }
-        </script>
 
         <br>
 
@@ -533,6 +470,65 @@
         </div>
 
     </div>
+    <script>
+        function select() {
+            document.getElementById("bagitem").style.display="block";
+            var x = document.getElementById("mySelect").value;
+            document.getElementById("d1").innerHTML = "Size : " + x;
+
+            var y = document.getElementById("qtySelect").value;
+            document.getElementById("d2").innerHTML = "Quantity : " + y;
+            
+            if (y == 0) 
+            {
+                document.getElementById("d3").innerHTML = "Price : Rs.0";
+            }
+
+            else if (y == 1)
+            {
+                document.getElementById("d3").innerHTML = "Price : Rs.xxxx";
+            }
+
+            else if (y == 2)
+            {
+                document.getElementById("d3").innerHTML = "Price : Rs.2xxxx";
+            }
+
+            else if (y == 3)
+            {
+                document.getElementById("d3").innerHTML = "Price : Rs.3xxxx";
+            }
+
+            else
+            {
+                document.getElementById("d3").innerHTML = "Price : Rs.4xxxx";
+            }
+
+            var z = document.getElementById("priceof").textContent;
+            // document.getElementById("d3").innerHTML = "Price : " + z;
+        }
+
+        function removecont(){
+            document.getElementById("d1").value="";
+            document.getElementById("d2").value="";
+            document.getElementById("d3").value="";
+        }
+        function check(){
+            var p = document.getElementById("pin").value;
+            if(p=="134007")
+            {
+                document.getElementById("date").innerHTML="10 Feb 2022";
+            }
+            else if(p=="134003")
+            {
+                document.getElementById("date").innerHTML="8 Feb 2022";
+            }
+            else
+            {
+                document.getElementById("date").innerHTML="Invalid PIN code";
+            }
+        }
+    </script>
 </body>
 
 </html>
