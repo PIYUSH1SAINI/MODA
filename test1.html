@@ -336,10 +336,10 @@
 
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href=""><b>MEN</b></a></li>
-            <li id="navlink"><a href=""><b>WOMEN</b></a></li>
-            <li id="navlink"><a href=""><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
         </ul>
     </div>
 
@@ -442,49 +442,7 @@
 
         <br><br>
 
-        <script>
-            function select() {
-                document.getElementById("bagitem").style.display="block";
-
-                var x = document.getElementById("mySelect").value;
-                document.getElementById("d1").innerHTML = "Size : " + x;
-
-                var y = document.getElementById("qtySelect").value;
-                document.getElementById("d2").innerHTML = "Quantity : " + y;
-
-                if (y == 0) 
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.0";
-                }
-
-                else if (y == 1)
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.xxxx";
-                }
-
-                else if (y == 2)
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.2xxxx";
-                }
-
-                else if (y == 3)
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.3xxxx";
-                }
-
-                else
-                {
-                    document.getElementById("d3").innerHTML = "Price : Rs.4xxxx";
-                }
-
-                var z = document.getElementById("priceof").textContent;
-                // document.getElementById("d3").innerHTML = "Price : " + z;
-            }
-
-            function removecont(){
-                location.reload();
-            }
-        </script>
+        
 
         <br><br>
 
@@ -528,6 +486,49 @@
         </div>
 
     </div>
+    <script>
+            function select() {
+                document.getElementById("bagitem").style.display="block";
+
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("d1").innerHTML = "Size : " + x;
+
+                var y = document.getElementById("qtySelect").value;
+                document.getElementById("d2").innerHTML = "Quantity : " + y;
+
+                if (y == 0) 
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.0";
+                }
+
+                else if (y == 1)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.xxxx";
+                }
+
+                else if (y == 2)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.2xxxx";
+                }
+
+                else if (y == 3)
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.3xxxx";
+                }
+
+                else
+                {
+                    document.getElementById("d3").innerHTML = "Price : Rs.4xxxx";
+                }
+
+                var z = document.getElementById("priceof").textContent;
+                // document.getElementById("d3").innerHTML = "Price : " + z;
+            }
+
+            function removecont(){
+                location.reload();
+            }
+        </script>
 </body>
 
 </html>
