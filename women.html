@@ -1,0 +1,708 @@
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    body {
+        background-color: rgb(240, 240, 240);
+        margin: 0;
+    }
+
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: coral;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #navright {
+        float: right;
+        margin-right: 30px;
+        margin-top: -20px;
+    }
+
+    #searchbar {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* navbar end */
+
+    /*WOMEN COLLECTION start*/ 
+    #explore {
+        background-color: rgba(248, 248, 248, 0.637);
+        color: rgb(135, 195, 245);
+        position: relative;
+        text-align: center;
+        margin-top: -40%;
+    }
+
+    #coll {
+        font-family: 'Franklin Gothic medium', 'ArialNarrow', Arial, Sans-serif;
+        font-size: 150px;
+        margin-bottom: 5%;
+    }
+
+    #ex a {
+        font-size: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: ivory;
+        text-decoration: none;
+        padding-bottom: 50px;
+    }
+
+    #ex a:hover {
+        color: bisque;
+        text-decoration: underline;
+    }
+
+    /*WOMEN COLLECTION end/
+    / Slideshow container */
+
+    .slideshow-container {
+        max-width: 99%;
+        position: relative;
+        margin-top: 4%;
+    }
+
+    .mySlides {
+        background-color: white;
+        height: 80%;
+        border-radius: 5px;
+        border: 10px solid black;
+    }
+
+    /* Caption text */
+    .text {
+        background-color: rgba(0, 0, 0, 0.322);
+        color: rgb(235, 219, 219);
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .text2 {
+        color: rgb(31, 29, 29);
+        position: absolute;
+        top: 5%;
+        right: 7%;
+    }
+
+    .text3 {
+        color: rgb(243, 234, 234);
+        position: absolute;
+        top: 5%;
+        left: 3%;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 10px 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+
+
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .7
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .7
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+        .text {
+            font-size: 11px
+        }
+    }
+
+    #ready {
+        color: gold;
+        font-size: 65px;
+        text-align: center;
+        margin-top: 25%;
+        margin-bottom: -20px;
+    }
+
+    #festive {
+        color: gold;
+        font-size: 35px;
+        margin-bottom: 10%;
+    }
+
+    .hr1 {
+        border: 2px solid dimgray;
+        border-radius: 5px;
+    }
+
+    #page a {
+        color: rgb(32, 31, 31);
+        text-decoration: none;
+        font-size: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #winter {
+        color: crimson;
+        font-size: 80px;
+
+        margin-top: 25%;
+        margin-bottom: -20px;
+    }
+
+    #dont {
+        color: dimgray;
+        font-size: 35px;
+        margin-top: -10px;
+    }
+
+    #offer {
+        color: rgb(233, 222, 222);
+        font-size: 35px;
+        margin-bottom: 10%;
+    }
+
+    .hr2 {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding-right: 20px;
+    }
+
+    #page1 a {
+        color: rgb(248, 238, 238);
+        text-decoration: none;
+        font-size: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    /*category start*/ 
+    #offer {
+        font-size: 40px;
+        margin-left: 5%;
+        color: blue;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 7px;
+        margin-top: 0%;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    div.gallery {
+        border: 10px solid black;
+        margin: 60px;
+        float: left;
+        width: 300px;
+        height: 400px;
+    }
+
+    div.gallery img {
+        width: 100%;
+        height: 90%;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /*categary end/ 
+    /winter collection offer start*/
+    
+    #winter {
+        font-size: 40px;
+        color: purple;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        letter-spacing: 7px;
+        margin-top: 40%;
+        padding-top: 50px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    div.gallery1 {
+        border: 10px solid black;
+        margin: 60px;
+        float: left;
+        width: 300px;
+        height: 350px;
+    }
+
+    div.gallery1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    div.desc {
+        padding: 15px;
+        text-align: center;
+    }
+
+    /*winter collection offer end/ 
+    /accesories*/ 
+
+    #accbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #acchead {
+        font-size: 40px;
+        color: black;
+        padding-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 4%;
+        letter-spacing: 7px;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+
+    #sportcata {
+        margin-left: 20%;
+        width: 15%;
+        height: 5%;
+        margin-bottom: 40px;
+    }
+
+    #watch {
+        height: 100%;
+        width: 100%;
+    }
+
+    #watchtxt {
+        background-color: gainsboro;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    #watchtxt h4 {
+        margin-left: 10px;
+        margin-top: -30px;
+        padding-top: 30px;
+        font-size: 20px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #watchtxt p {
+        font-size: 13px;
+        color: gray;
+        text-align: center;
+        margin-top: -27px;
+        margin-left: 10px;
+        padding-bottom: 28px;
+        margin-bottom: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #HANDBAGS {
+        margin-left: 20px;
+        width: 15%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #BAGS {
+        height: 100%;
+        width: 100%;
+    }
+
+    #jewellery {
+        margin-left: 20px;
+        width: 15%;
+        height: 3%;
+        margin-bottom: 30px;
+    }
+
+    #jewellerys {
+        height: 100%;
+        width: 100%;
+    }
+
+    #sunglasscata {
+        margin-left: 20px;
+        width: 15%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #sunglass {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* accessories end */
+
+    /*DICOUNT COUPONS*/
+
+    #startimg {
+        font-size: 40px;
+        color: black;
+        padding-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 4%;
+        letter-spacing: 7px;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+
+    #coupons {
+        margin-right: 20px;
+        margin-left: 20px;
+
+    }
+
+    /*discount coupns end*/
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+
+            <div id="navright">
+                <input type="text" id="searchbar" placeholder="  Search">
+                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU"
+                        alt="" height="70px"></a>
+                <a href="http://127.0.0.1:5500/IWT%20assignment/addtocart.html"><img
+                        src="https://i.fbcd.co/products/resized/resized-750-500/667ca7502e4e218f01e4fbb26e01e2fc7fe17370f64bf444f60818b9d1b2c2b2.jpg"
+                        alt="" height="38px"></a>
+            </div>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://images.pexels.com/photos/1778412/pexels-photo-1778412.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                height="100%" width="100%">
+            <div class="text">
+                <h1 id="coll">WOMEN Collection</h1>
+                <p id="ex"><a href="">EXPLORE</a></p>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://images.pexels.com/photos/1630344/pexels-photo-1630344.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                height="100%">
+            <div class="text2">
+                <h1 id="ready">Wear Your Tradition</h1>
+                <h2 id="festive">Kurtas & Sets At Up To 70% Off </h2>
+                <hr class="hr1">
+                <h3 id="page"><a href="">+ EXPLORE</a></h3>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://images.pexels.com/photos/54202/pexels-photo-54202.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                height="100%" width="100%">
+            <div class="text3">
+                <h1 id="winter">Winter Wear</h1>
+                <h2 id="dont">Don't Let The Heat Escape</h2>
+                <hr class="hr2">
+                <h3 id="page1"><a href="">+ EXPLORE</a></h3>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+    <h1 id="offer">CATEGORIES TO BAG</h1>
+
+    <div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+            <a href="http://127.0.0.1:5500/IWT%20assignment/topwearwomen.html">
+                <img src="https://i5.walmartimages.com/asr/05180c9d-16d8-4a02-a328-086176b7f8cc_1.55e78911d27ee287bcba9da4b960bcf4.jpeg"
+                    alt="TOPWEAR"></a>
+            <div class="desc">TOPWEAR</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_jpg">
+            <img src="https://www.dhresource.com/0x0/f2/albu/g13/M01/0A/85/rBVakl81S-iABaJMAAEYhbDouyU030.jpg/women-casual-straight-jeans-designer-new.jpg"
+                alt="BOOTMWEAR"></a>
+        <div class="desc">BOOTMWEAR</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_jpg">
+            <img src="https://qph.fs.quoracdn.net/main-qimg-1222b6680832e73164fb310d76264436" alt="BOOTMWEAR"
+                ></a>
+        <div class="desc">INDIAN DRESS</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_jpg">
+            <img src="https://th.bing.com/th/id/R.d648a54fdf880884f170f77434f3b9c5?rik=VfCLWXR%2fByEibw&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2016%2f07%2fBeach-Khaki-Dresses.jpg&ehk=VAs4NBFAE45rZA3mlSIXeNEm34R3V9KYh1lJJEtyXwg%3d&risl=&pid=ImgRaw&r=0"
+                alt="DRESS"></a>
+        <div class="desc">DREES</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_jpg">
+            <img src="https://th.bing.com/th/id/OIP.p7X-rLYPeYpwwUw5rp0E0gHaLG?pid=ImgDet&w=705&h=1057&rs=1"
+                alt="WINTER WEAR" ></a>
+        <div class="desc">WINTER WEAR</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_jpg">
+            <img src="https://th.bing.com/th/id/OIP.5oxXNrsa2D8ZdrpwgRYjvQHaHa?pid=ImgDet&rs=1" alt="WINTER WEAR"
+                ></a>
+        <div class="desc">SHOES</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_jpg">
+            <imG SRC="https://ae01.alicdn.com/kf/HTB1pPOMQFXXXXcTXXXXq6xXFXXX3/Color-jewelry-925-silver-inlaid-Natural-Garnet-Bracelet-Jewelry-free-shipping.jpg"
+                alt="WINTER WEAR" ></a>
+        <div class="desc">ACCESSORIES</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_jpg">
+            <imG src="https://th.bing.com/th/id/R.df56c44fad03c807a47b6db18b3ca7f3?rik=iVUUDxBupagkow&riu=http%3a%2f%2ferp.kuamaoyun.com%2fstation%2fstorage1%2fg3%2fM00%2f04%2f1F%2frBVagV2DM2KIdy5lAAJBcDkVf-oAAA-OQDZ5vUAAkGI459.jpg&ehk=qapVuuyX19g46H4nnFp3ivUr0dPq80iUqt933QkGOPY%3d&risl=&pid=ImgRaw&r=0"
+                alt="WINTER WEAR" ></a>
+        <div class="desc">BAGS</div>
+    </div>
+
+    <br></br>
+
+    <h3 id="winter">WINTER WEAR FAVOURITES</h3>
+
+    <div class="gallery1">
+        <a target="_blank" href="img.jpg">
+            <a href="http://127.0.0.1:5500/IWT%20assignment/winterwomen.html">
+                <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/12/3/9d30008c-b0bc-41ae-9080-319527917f5d1638537726826-Hrx-_Puma_-_More.jpg"
+                    alt="TOP WEAR" >
+            </a>
+    </div>
+
+    <div class="gallery1">
+        <a target="blank" href="img.jpg">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/12/3/d5f9b95d-007f-454a-89e9-89ef783b20aa1638537727005-Urbanic.jpg"
+                alt="BOTTOMWEAR" >
+        </a>
+    </div>
+
+    <div class="gallery1">
+        <a target="blank" href="img.jpg">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/12/3/85852198-10da-4d83-9544-74c4758ee0f01638537726861-Mango.jpg"
+                alt="DRESS" >
+        </a>
+    </div>
+
+    <div class="gallery1">
+        <a target="blank" href="img.jpg">
+            <img src="https://assets.myntassets.com/f_webp,w_196,c_limit,fl_progressive,dpr_2.0/assets/images/2021/12/3/893775f7-fe73-492b-a80c-acbcee2f8b9a1638537727046-Women-s_boots.jpg"
+                alt="DRESS" >
+        </a>
+    </div>
+
+    <br></br>
+
+    <div id="accessories">
+
+        <h2 id="acchead">ACCESSORIES TO SHOP</h2>
+
+        <div id="accbox">
+
+            <div id="sportcata">
+
+                <div id="watch">
+                    <a href="http://127.0.0.1:5500/IWT%20assignment/watchwomen.html"><img id="watchimg"
+                            src="https://ae01.alicdn.com/kf/HTB1Lyx8LNnaK1RjSZFtq6zC2VXa7/Luxury-Diamond-Rose-Gold-Women-Watches-Fashion-Ladies-Starry-Sky-Magnetic-Watch-Casual-Mesh-Steel-Rhinestone.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>WATCHES</h4>
+                    <p>50%-80% off</p>
+                </div>
+
+            </div>
+
+            <div id="HANDBAGS">
+
+                <div id="BAGS">
+                    <a href=""><img id="watchimg"
+                            src="https://th.bing.com/th/id/OIP.WsqjyjIEIU60HIEIHaTqfQHaHa?pid=ImgDet&rs=1" alt=""
+                            width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>HANDBAGS</h4>
+                    <p>30%-50% off</p>
+                </div>
+
+            </div>
+
+            <div id="jewellery">
+
+                <div id="jewellerys">
+                    <a href=""><img id="watchimg"
+                            src="https://th.bing.com/th/id/R.87b28e0ed03a57d1582cac823c896ba9?rik=36Uwr5%2bBhu9mtg&riu=http%3a%2f%2fwww.creativeartexpressions.com%2fsites%2fcreativeartexpressions.indiemade.com%2ffiles%2fimagecache%2fim_clientsite_product_zoom%2fjn-144-1_c.jpg&ehk=wyBe0o79pSt5nLKSdqwi3VrtgjQUxZPI2PROPNUrtCE%3d&risl=&pid=ImgRaw&r=0"
+                            alt="" width="100%" height="30%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Jewellery</h4>
+                    <p>50%-60% off</p>
+                </div>
+
+            </div>
+
+            <div id="sunglasscata">
+
+                <div id="sunglass">
+                    <a href=""><img id="watchimg"
+                            src="https://ae01.alicdn.com/kf/HTB1RphGgoR1BeNjy0Fmq6z0wVXaL/Luxury-Brand-Designer-Sunglasses-for-Women-Large-oversized-Women-Gradient-Polarized-Sunglasses-Female-Fashion-Eyewear-Floral.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Sunglasses</h4>
+                    <p>30%-50% off</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="startimg">
+            <h5>Discount Coupons</h5>
+            <img id="coupons"
+                src="https://i.pinimg.com/originals/ce/ad/ac/ceadacaef5cee5a4b7ce58a36c30260b.png"
+                height="80%" width="80%">
+        </div>
+    </div>
+
+
+
+    </div>
+
+</body>
+
+
+</head>
+
+</html>

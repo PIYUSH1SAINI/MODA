@@ -1,0 +1,226 @@
+<style>
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        padding-left: 2%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: 0%;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: yellow;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: green;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* navbar end */
+    * {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-transform: capitalize;
+        transition: all .2s linear;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        min-height: 100vh;
+        /* background: linear-gradient(to right, green, yellow); */
+        background-image: url("https://images.pexels.com/photos/3571551/pexels-photo-3571551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    }
+
+    .container form {
+        padding: 20px;
+        margin-top: 100px;
+        width: 700px;
+        background: #fff;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+        border-radius: 0 0 70px 70px;
+    }
+
+    .container form .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .container form .row .col {
+        flex: 1 1 250px;
+    }
+
+    .container form .row .col .title {
+        font-size: 20px;
+        color: #333;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    .container form .row .col .inputBox {
+        margin: 15px 0;
+    }
+
+    .container form .row .col .inputBox span {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .container form .row .col .inputBox input {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-transform: none;
+    }
+
+    .container form .row .col .inputBox input:focus {
+        border: 1px solid #000;
+    }
+
+    .container form .row .col .flex {
+        display: flex;
+        gap: 15px;
+    }
+
+    .container form .row .col .flex .inputBox {
+        margin-top: 5px;
+    }
+
+    .container form .row .col .inputBox img {
+        height: 34px;
+        margin-top: 5px;
+        filter: drop-shadow(0 0 1px #000);
+    }
+
+    #submit {
+        width: 100%;
+        padding: 12px;
+        font-size: 25px;
+        background: linear-gradient(to right, darkgreen,limegreen, yellow);
+        color: #fff;
+        margin-top: 5px;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 0 0 70px 70px;
+    }
+
+    #submit:hover {
+        background: #a7ada9;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+
+        <form action="home.html">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">registration form</h3>
+
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text" placeholder="Full Name Here" id="name" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email" placeholder="Email : user@gmail.com" id="email" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text" placeholder="#223 , ABC Road , FGH City" id="address" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text" placeholder="City Name">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text" placeholder="State">
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text" placeholder="Pin Code : 123 456" required>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <input type="submit" id="submit" value="Register">
+
+        </form>
+
+        <!-- <script>
+            var n = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var a = document.getElementById("address").value;
+
+            if (n == "") {
+                alert("fill your Name!!");
+            }
+
+            else if (email == "") {
+                alert("fill your Email!!");
+            }
+
+            else if (a == "") {
+                alert("fill your Address!!");
+            }
+        </script> -->
+
+    </div>
+
+</body>
+
+</html>
