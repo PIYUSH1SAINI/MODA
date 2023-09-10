@@ -162,10 +162,10 @@
 <body>
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
         </ul>
     </div>
 
@@ -185,12 +185,32 @@
             <input type="password" id="password" placeholder="Type your password" required>
             <input type="submit" onclick="abc()" id="loginbutton" value="Login">
         </form>
-        <p id="forget"><a href="http://127.0.0.1:5500/IWT%20assignment/forget.html">Forget password?</a></p>
+        <p id="forget"><a href="forget.html">Forget password?</a></p>
         
 
-        <script>
 
-            function abc() {
+        <br><br><br>
+
+        <p id="signup">Or Sign Up Using</p>
+
+        <div id="signimg">
+            <a href="https://www.facebook.com/reg/"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
+                    alt="" height="65px"></a>
+            <a href="https://twitter.com/i/flow/signup?"><img id="twitter"
+                    src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png"
+                    alt="" height="85px"></a>
+            <a href=""><img id="insta" src="https://proofmart.com/wp-content/uploads/2021/06/instagram-15-low-png.png"
+                    alt="" height="80px"></a>
+        </div>
+    </div>
+
+    <div>
+        <br>
+    </div>
+
+    <script>
+        function abc() {
 
                 var x = document.createElement("A");
                 var t = document.getElementById("loginbutton");
@@ -216,28 +236,7 @@
                     // document.body.appendChild(x);
                 }
             }
-
-        </script>
-
-        <br><br><br>
-
-        <p id="signup">Or Sign Up Using</p>
-
-        <div id="signimg">
-            <a href="https://www.facebook.com/reg/"><img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png"
-                    alt="" height="65px"></a>
-            <a href="https://twitter.com/i/flow/signup?"><img id="twitter"
-                    src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png"
-                    alt="" height="85px"></a>
-            <a href=""><img id="insta" src="https://proofmart.com/wp-content/uploads/2021/06/instagram-15-low-png.png"
-                    alt="" height="80px"></a>
-        </div>
-    </div>
-
-    <div>
-        <br>
-    </div>
+    </script>
 </body>
 
 </html>
