@@ -352,10 +352,10 @@
 
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
         </ul>
     </div>
 
@@ -454,7 +454,55 @@
 
         <br><br>
 
-        <script>
+
+        <br><br>
+
+        <div id="cart">
+            <div id="addtocart" onclick="select()">
+                <img src="https://static.thenounproject.com/png/2493776-200.png" alt="" height="40px">
+                <p id="add">ADD TO BAG</p>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="delivery">
+            <h4>DELIVERY OPTIONS</h4>
+            <input type="text" placeholder="Enter PIN Code" id="pin">
+            <input type="button" value="Check" id="check" onclick="check()">
+        </div>
+
+        <br>
+
+        <div id="policy">
+            <img id="truck" src="https://media.istockphoto.com/vectors/fast-delivery-truck-icon-fast-shipping-design-for-website-and-mobile-vector-id1302438914?k=20&m=1302438914&s=170667a&w=0&h=8HroNF2rhDbQCruNiN6ExIbplmIIMcD3vmFN6Z2CZNU=" alt="" height="50px">
+            <p id="txt">Get it by Wed, Jan xx</p>
+            <img id="payon" src="https://cdn-icons-png.flaticon.com/512/1554/1554401.png" alt="" height="50px">
+            <p id="txt">Pay on delivery available</p>
+            <img id="exchange" src="https://freepngimg.com/download/money/48819-5-exchange-png-file-hd.png" alt="" height="40px">
+            <p id="txt">Easy 30 days return & exchange available</p>
+        </div>
+
+        <div id="overview">
+            <h4>OVERVIEW</h4>
+            <p>Display: Analogue <br>
+                Movement: Quartz <br>
+                Power source: Battery <br>
+                Dial style: Solid round stainless steel dial <br>
+                Features: Chronograph, Date Aperture, Glow in the Dark Inlays <br>
+                Strap style: Black regular, rubber strap with a tang closure <br>
+                Water resistance: 300 m <br>
+                Warranty: 2 years <br>
+                Warranty provided by brand/manufacturer <br>
+                Comes in a signature TISSOT case <br>
+                <br><br>
+                Size & Fit <br>
+                Dial Width in mm: 45.5 <br>
+                Strap Width in mm: 22</p>
+        </div>
+
+    </div>
+    <script>
             function select() {
                 document.getElementById("bagitem").style.display="block";
 
@@ -498,26 +546,6 @@
                 document.getElementById("d2").value="";
                 document.getElementById("d3").value="";
             }
-        </script>
-
-        <br><br>
-
-        <div id="cart">
-            <div id="addtocart" onclick="select()">
-                <img src="https://static.thenounproject.com/png/2493776-200.png" alt="" height="40px">
-                <p id="add">ADD TO BAG</p>
-            </div>
-        </div>
-
-        <br>
-
-        <div id="delivery">
-            <h4>DELIVERY OPTIONS</h4>
-            <input type="text" placeholder="Enter PIN Code" id="pin">
-            <input type="button" value="Check" id="check" onclick="check()">
-        </div>
-
-        <script>
             function check(){
                 var p = document.getElementById("pin").value;
                 if(p=="134007")
@@ -534,37 +562,6 @@
                 }
             }
         </script>
-
-        <br>
-
-        <div id="policy">
-            <img id="truck" src="https://media.istockphoto.com/vectors/fast-delivery-truck-icon-fast-shipping-design-for-website-and-mobile-vector-id1302438914?k=20&m=1302438914&s=170667a&w=0&h=8HroNF2rhDbQCruNiN6ExIbplmIIMcD3vmFN6Z2CZNU=" alt="" height="50px">
-            <p id="txt">Get it by Wed, Jan xx</p>
-            <img id="payon" src="https://cdn-icons-png.flaticon.com/512/1554/1554401.png" alt="" height="50px">
-            <p id="txt">Pay on delivery available</p>
-            <img id="exchange" src="https://freepngimg.com/download/money/48819-5-exchange-png-file-hd.png" alt="" height="40px">
-            <p id="txt">Easy 30 days return & exchange available</p>
-        </div>
-
-        <div id="overview">
-            <h4>OVERVIEW</h4>
-            <p>Display: Analogue <br>
-                Movement: Quartz <br>
-                Power source: Battery <br>
-                Dial style: Solid round stainless steel dial <br>
-                Features: Chronograph, Date Aperture, Glow in the Dark Inlays <br>
-                Strap style: Black regular, rubber strap with a tang closure <br>
-                Water resistance: 300 m <br>
-                Warranty: 2 years <br>
-                Warranty provided by brand/manufacturer <br>
-                Comes in a signature TISSOT case <br>
-                <br><br>
-                Size & Fit <br>
-                Dial Width in mm: 45.5 <br>
-                Strap Width in mm: 22</p>
-        </div>
-
-    </div>
 </body>
 
 </html>
