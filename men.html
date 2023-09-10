@@ -689,15 +689,15 @@
 <body>
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
 
             <div id="navright">
                 <input type="text" id="searchbar" placeholder="  Search">
-                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU" alt="" height="70px"></a>
-                <a href="http://127.0.0.1:5500/IWT%20assignment/addtocart.html"><img src="https://i.fbcd.co/products/resized/resized-750-500/667ca7502e4e218f01e4fbb26e01e2fc7fe17370f64bf444f60818b9d1b2c2b2.jpg" alt="" height="38px"></a>
+                <a id="navlogin" href="login.html"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU" alt="" height="70px"></a>
+                <a href="addtocart.html"><img src="https://i.fbcd.co/products/resized/resized-750-500/667ca7502e4e218f01e4fbb26e01e2fc7fe17370f64bf444f60818b9d1b2c2b2.jpg" alt="" height="38px"></a>
             </div>
         </ul>
     </div>
@@ -750,27 +750,6 @@
         <span class="dot"></span>
     </div>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
 
     <div class="logo"> <b><i>MENS SECTION</i></b></div>
 
@@ -781,7 +760,7 @@
         </div>
 
         <div id="box">
-            <a href="http://127.0.0.1:5500/IWT%20assignment/tshirtmen.html"><img
+            <a href="tshirtmen.html"><img
                     src="https://cdna.lystit.com/photos/boohooman/29c1eb88/boohoo-designer-navy-Slim-Fit-Short-Sleeve-Grandad-Collar-Shirt.jpeg"></a>
             <b>
                 <div class="TSHIRT">PRODUCT:TSHIRTS</div>
@@ -857,6 +836,28 @@
             <h2><b>JACKETS</b></h2>
         </div>
     </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
 
 </body>
 
