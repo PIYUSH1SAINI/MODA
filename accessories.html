@@ -1,0 +1,611 @@
+<style>
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: 0%;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: gray;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: paleturquoise;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* navbar end */
+
+    #left {
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: 500px;
+        position: fixed;
+        height: 100%;
+        width: 18%;
+        float: left;
+        box-shadow: 5px 15px 8px 8px #ccc;
+        margin-top: 83px;
+    }
+
+    #right {
+        height: 100%;
+        width: 80%;
+        float: right;
+        margin-top: 5%;
+    }
+
+    #catagory {
+        border: none;
+        border-bottom: 3px solid paleturquoise;
+        font-size: 20px;
+        margin-left: 5%;
+        margin-top: 10px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    table {
+        width: 100%;
+        height: 90%;
+    }
+
+    form label {
+        font-size: 15px;
+        margin-left: 10px;
+        color: grey;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    input {
+        height: 20px;
+        width: 20px;
+        margin-left: 15%;
+    }
+
+    /* accessories start */
+
+    #accbox {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #acchead {
+        font-size: 40px;
+        color: indianred;
+        padding-top: 60px;
+        margin-bottom: 20px;
+        margin-left: 4%;
+        margin-top: 0;
+        letter-spacing: 7px;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    #sportcata {
+        margin-top: 20px;
+        margin-left: 6%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #sportwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/9/21/60c510d0-00b1-4023-a072-2658939c8c361537520216082-DressBerry-Women-Cateye-Sunglasses-3061537520216030-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -15px;
+        background-size: 270px;
+    }
+
+    #watchimg {
+        transition: opacity 1s;
+    }
+
+    #watchimg:hover {
+        opacity: 0;
+    }
+
+    #watchtxt {
+        border: 3px solid gray;
+        border-radius: 0px 0px 20px 20px;
+        width: 98%;
+    }
+
+    #watchtxt h4 {
+        text-align: center;
+        margin-top: -20px;
+        padding-top: 30px;
+        font-size: 20px;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #watchtxt p {
+        font-size: 13px;
+        color: gray;
+        text-align: center;
+        margin-top: -25px;
+        margin-left: 0px;
+        padding-bottom: 28px;
+        margin-bottom: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #watchtxt h2 {
+        margin-top: -20px;
+        text-align: center;
+        color: red;
+        font-size: 20px;
+    }
+
+    #titancata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #titanwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2311896/2018/6/4/17c6f6d6-7b35-41e7-80a4-f3336e12827f1528117828856-HRX-by-Hrithik-Roshan-Men-Square-Sunglasses-MFB-PN-CY-80249-7151528117828405-1.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-size: 270px;
+    }
+
+    #danicata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #daniwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8408845/2019/2/1/d6b92a45-2323-4d30-8cbf-39d6a0600dc01549016967465-Calvin-Klein-Unisex-Sunglasses-3091549016967099-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -15px;
+        background-size: 270px;
+    }
+
+    #tissotcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #tissotwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7294114/2018/11/5/fe2b35f2-b2db-48af-95e5-ac0b5f7f58771541417680435-Flying-Machine-Men-Aviator-Sunglasses-7951541417680325-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -15px;
+        background-size: 270px;
+    }
+
+    #fossilcata {
+        margin-top: 20px;
+        margin-left: 6%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #fossilwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13133520/2020/12/21/eb832934-69a3-4111-bd17-1e7626a146c21608534357063-Carlton-London-Women-Round-Sunglasses-B80-314-18316085343563-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -15px;
+        background-size: 270px;
+    }
+
+    #fastcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #fastwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15583598/2021/11/8/b8c85b30-5334-41f7-8a19-1654cbf419341636372737455-Carlton-London-Women-Yellow-Lens--Brown-Oversized-Sunglasses-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -15px;
+        background-size: 270px;
+    }
+
+    #dwcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #dwwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9038397/2019/8/2/b53d6623-78d8-47f5-a2d7-30f34ca54ca81564736846425-Mast--Harbour-Unisex-Mirrored-Shield-Sunglasses-MFB-PN-PS-DS-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -15px;
+        background-size: 270px;
+    }
+
+    #roadcata {
+        margin-top: 20px;
+        margin-left: 5%;
+        width: 18%;
+        height: 5%;
+        margin-bottom: 30px;
+    }
+
+    #roadwatch {
+        height: 100%;
+        width: 100%;
+        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5614184/2018/9/21/9e0ed65c-7b8c-42e7-ac78-88c35d4a08561537523875973-Roadster-Unisex-Aviator-Sunglasses-7631537523875898-2.jpg");
+        background-repeat: no-repeat;
+        background-position-y: -50px;
+        background-position-x: -15px;
+        background-size: 270px;
+    }
+
+    /* accessories end */
+
+    #num {
+        display: none;
+    }
+
+    #num1 {
+        display: none;
+    }
+
+    #num2 {
+        display: none;
+    }
+
+    #num3 {
+        display: none;
+    }
+
+    #num4 {
+        display: none;
+    }
+
+    #num5 {
+        display: none;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+
+    <div id="left">
+
+        <table>
+            <tr>
+                <td>
+                    <h1 id="catagory">CATAGORY</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Sunglasses</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Sunglasses Care</label>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">Gender</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="men()">
+                        <label for="watch">Men</label>
+                        <br>
+                        <input type="checkbox" id="watch" onclick="women()">
+                        <label for="watch">Women</label>
+                    </form>
+
+                    <script>
+
+                        function men() {
+                            var a = parseInt(document.getElementById("num").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("fastcata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("sportcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("fastcata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("sportcata").style.display = "block";
+                            }
+                        }
+
+                        function women() {
+                            var a = parseInt(document.getElementById("num1").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num1").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("titancata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("dwcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("titancata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("dwcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                            }
+                        }
+
+                    </script>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">PRICE</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.0-Rs.5,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.5,000-Rs.10,000</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Rs.10,000-Rs.20,000</label>
+                    </form>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h1 id="catagory">COLOR</h1>
+
+                    <form action="">
+                        <input type="checkbox" id="watch" onclick="black()">
+                        <label for="watch">Black</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Pink</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">White</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Green</label>
+                        <br>
+                        <input type="checkbox" id="watch">
+                        <label for="watch">Yellow</label>
+                    </form>
+
+                    <script>
+
+                        function black() {
+                            var a = parseInt(document.getElementById("num2").textContent);
+                            var b = a + 1;
+
+                            document.getElementById("num2").innerHTML = b;
+                            if (a % 2 == 0) {
+                                document.getElementById("danicata").style.display = "none";
+                                document.getElementById("fossilcata").style.display = "none";
+                                document.getElementById("sportcata").style.display = "none";
+                                document.getElementById("tissotcata").style.display = "none";
+                                document.getElementById("roadcata").style.display = "none";
+                                document.getElementById("fastcata").style.display = "none";
+                            }
+                            else {
+                                document.getElementById("danicata").style.display = "block";
+                                document.getElementById("fossilcata").style.display = "block";
+                                document.getElementById("sportcata").style.display = "block";
+                                document.getElementById("tissotcata").style.display = "block";
+                                document.getElementById("roadcata").style.display = "block";
+                                document.getElementById("fastcata").style.display = "block";
+                            }
+                        }
+
+                    </script>
+                </td>
+            </tr>
+        </table>
+
+
+    </div>
+
+
+    <div id="right">
+        <div id="accbox">
+
+            <div id="sportcata">
+                <div id="sportwatch">
+                    <a href="http://127.0.0.1:5500/IWT%20assignment/sunglass.html"><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5595572/2018/10/10/6aaa8245-3c8a-4873-a90a-63ef41af1fdc1539162045148-DressBerry-Women-Cateye-Sunglasses-MFB-PN-RY-G87027-9501539162045106-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>DressBerry</h4>
+                    <p>Women Cateye Sunglasses MFB-PN-RY-G87027</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="titancata">
+                <div id="titanwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2311896/2018/6/4/a6ebd9cb-0168-47f3-a419-ddfb2f3db92d1528117828496-HRX-by-Hrithik-Roshan-Men-Square-Sunglasses-MFB-PN-CY-80249-7151528117828405-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>HRX</h4>
+                    <p>Men Square Sunglasses MFB-PN-CY-51804</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="danicata">
+                <div id="daniwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8408845/2019/2/14/c1cd6dde-84c6-4cec-a4ad-d2f91c0788cc1550147175092-Calvin-Klein-Unisex-Square-Sunglasses-Ck-3198-213-55-S-72815-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Calvin Klein</h4>
+                    <p>Unisex Square Sunglasses Ck 3198 213 55 S</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="tissotcata">
+                <div id="tissotwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7294114/2018/12/24/6f3ed130-e0cc-4eca-b726-2904c72e8b6c1545649997094-Flying-Machine-Men-Aviator-Sunglasses-FMAE0200-5321545649996-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Flying Machine</h4>
+                    <p>Men Aviator Brown Sunglasses FMAE0200</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="fossilcata">
+                <div id="fossilwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13133520/2020/12/21/c0de4326-afae-40d1-9248-b30d362e7da51608534356871-Carlton-London-Women-Round-Sunglasses-B80-314-18316085343563-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Carlton London</h4>
+                    <p>Women Round Rosegold Sunglasses B80-314</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="fastcata">
+                <div id="fastwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15583598/2021/11/8/ffa90454-9c05-4c67-9e7f-8f04ba466b921636372737404-Carlton-London-Women-Yellow-Lens--Brown-Oversized-Sunglasses-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Carlton London</h4>
+                    <p>Women Yellow Lens & Brown Oversized Sunglasses CLSW007</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="dwcata">
+                <div id="dwwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/9038397/2019/8/2/6cf76a70-e555-42fb-ad13-5a94b794f6d21564736846354-Mast--Harbour-Unisex-Mirrored-Shield-Sunglasses-MFB-PN-PS-DS-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Mast & Harbour</h4>
+                    <p>Unisex Mirrored Shield Sunglasses MFB-PN-PS-DSA2073</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+
+            <div id="roadcata">
+                <div id="roadwatch">
+                    <a href=""><img id="watchimg"
+                            src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/5614184/2018/10/10/11ead825-0953-496a-bd60-5fb1686ed3db1539166012757-Roadster-Unisex-Aviator-Sunglasses-MFB-PN-SR-SM2888-7131539166012736-6.jpg"
+                            alt="" width="100%" height="40%"></a>
+                </div>
+
+                <div id="watchtxt">
+                    <h4>Roadster</h4>
+                    <p>Unisex Aviator Sunglasses MFB-PN-SR-SM2888</p>
+                    <h2>Rs.xxx</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p id="num">0</p>
+    <p id="num1">0</p>
+    <p id="num2">0</p>
+    <p id="num3">0</p>
+    <p id="num4">0</p>
+    <p id="num5">0</p>
+</body>
+
+</html>
