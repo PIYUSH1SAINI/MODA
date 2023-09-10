@@ -1,0 +1,216 @@
+<style>
+    * {box-sizing: border-box;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    body {
+        background-color: rgb(240, 240, 240);
+        margin: 0;
+    }
+    
+/* navbar start */
+    
+        #navbar {
+            background-color: white;
+            width: 100%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            position: fixed;
+            box-shadow: 2px 2px 14px 1px gray;
+        }
+    
+        #navbar li {
+            display: inline;
+            width: 100%;
+            overflow: hidden;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+    
+        #navlink a:hover {
+            color: rgb(135, 195, 245);
+            border-style: double;
+        }
+    
+        #home a:hover {
+            color: coral;
+            text-decoration: line-through;
+        }
+    
+        #navbar a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #navright {
+            float: right;
+            margin-right: 30px;
+            margin-top: -20px;
+        }
+        
+        #searchbar {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+/* navbar end */
+
+
+    #topbrands {
+        margin-bottom: 7%;
+    }
+    
+    #brandcata {
+        display: flex;
+        flex-wrap:wrap  ;
+    }
+    
+    #topbrandhead {
+        font-size: 40px;
+        color: black;
+        padding-top: 20px;
+        margin-bottom: 30px;
+        margin-top: 5%;
+        margin-left: 4%;
+        letter-spacing: 7px;
+        font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        text-align: center;
+    }
+    
+    #brandtxt {
+        padding-top: 0%;
+    }
+    
+    #brandoff {
+        background-color: white;
+        color: black;
+        margin-top: -5%;
+        margin-bottom: 2px;
+        font-size: 27px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        font-weight: 500;
+        text-align: center;
+    }
+    
+    #uspolo {
+        background-size: 220px;
+        height: 40%;
+        width: 15%;
+        border: 2px solid black;
+        margin-left: 60px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+    }
+    
+    
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+
+            <div id="navright">
+                <input type="text" id="searchbar" placeholder="  Search" >
+                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU" alt="" height="70px"></a>
+                <a href="http://127.0.0.1:5500/IWT%20assignment/addtocart.html"><img src="https://i.fbcd.co/products/resized/resized-750-500/667ca7502e4e218f01e4fbb26e01e2fc7fe17370f64bf444f60818b9d1b2c2b2.jpg" alt="" height="38px"></a>
+            </div>
+        </ul>
+    </div>
+
+    <br>
+    
+     <h2 id="topbrandhead">WOMEN'S JACKET & HOODIES</h2>
+    
+     <div id="brandcata">
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://i.pinimg.com/736x/66/0d/45/660d455d4521d24bef19b81198c4ee0f.jpg"alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://ae01.alicdn.com/kf/HTB1kt.enznD8KJjSspbq6zbEXXag/Women-s-Brand-Clothing-Print-This-Is-What-a-Feminist-Looks-Like-Hoodies-For-Women-2019.jpg" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/589157/51/mod01/fnd/IND/fmt/png/Evostripe-Full-Zip-Regular-Fit-Women's-Hoodie" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/597180/02/mod01/fnd/IND/fmt/png/PUMA-x-CENTRAL-SAINT-MARTINS-Women's-Cropped-Hoody" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/586891/73/mod01/fnd/IND/fmt/png/Essential+-Metallic-Women's-Cropped-Hoodie" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/531623/01/mod01/fnd/IND/fmt/png/Iconic-T7-Women's-Crop-Jacket" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/530388/85/mod01/fnd/IND/fmt/png/PUMA-x-Felipe-Pantone-Women's-Relaxed-Jacket" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/518925/03/fnd/IND/fmt/png/Be-Bold-Woven-Raglan-Sleeves-Women's-Jacket" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/520248/75/mod01/fnd/IND/fmt/png/PUMA-x-FIRST-MILE-Lightweight-Women's-Training-Hoodie" alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+         <div id="uspolo">
+             <div id="brandtxt">
+                 <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/530135/01/mod01/fnd/IND/fmt/png/Cloud-9-Corrupted-Women's-Windbreaker"alt="" height="20%" width="100%">
+                 <p id="brandoff">price=xxx</p>
+             </div>
+         </div>
+    
+    
+    </body>   
+    
+             
+     </head>   
+    </html>

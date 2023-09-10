@@ -1,0 +1,200 @@
+<style>
+    body {
+        background-color: white;
+    }
+
+    /* recently viewed */
+    #recentswipe {
+        width: 200%;
+        margin-top: 0%;
+        margin-left: 0%;
+        height: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #tommyre {
+        height: 100%;
+        width: 140%;
+        margin-left: 10%;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vQieXEvsKZI-I2goS-qYaIIlbe71zBloRMUhjRmHjIGSgq_P8oee2IgMKw29xW74yJ0&usqp=CAU");
+        background-position-y: 35px;
+        background-position-x: -10px;
+        background-size: 300px;
+    }
+
+    #tommyre:hover {
+        animation: up;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes up {
+        0% {
+            height: 100%;
+            width: 140%;
+        }
+
+        100% {
+            height: 110%;
+            width: 150%;
+            box-shadow: 5px 5px 8px 8px #ccc;
+        }
+    }
+
+    #tommyre img {
+        margin-top: 20px;
+        margin-left: 15px;
+        mask-image: linear-gradient(black 80%, transparent);
+        -webkit-mask-image: linear-gradient(black 80%, transparent)
+    }
+
+    #recenttxt {
+        text-align: center;
+        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background-color: white;
+        height: 50%;
+        width: 90%;
+        margin-left: 15px;
+        margin-top: -90px;
+    }
+
+    #recenttxt h5 {
+        padding-top: 80px;
+        color: black;
+        font-size: 20px;
+    }
+
+    #recenttxt p {
+        margin-top: -38px;
+        color: gray;
+        font-size: 15px;
+    }
+
+    #recenttxt h6 {
+        margin-top: 10px;
+        color: black;
+        font-size: 17px;
+    }
+
+    #zarare {
+        height: 100%;
+        width: 140%;
+        margin-left: 40px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9vQieXEvsKZI-I2goS-qYaIIlbe71zBloRMUhjRmHjIGSgq_P8oee2IgMKw29xW74yJ0&usqp=CAU");
+        background-position-y: -5px;
+        background-position-x: -25px;
+        background-size: 350px;
+    }
+
+    #zarare:hover {
+        animation: up;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes up {
+        0% {
+            height: 100%;
+            width: 140%;
+        }
+
+        100% {
+            height: 110%;
+            width: 150%;
+            box-shadow: 5px 5px 8px 8px #ccc;
+        }
+    }
+
+    #zarare img {
+        margin-top: 20px;
+        margin-left: 15px;
+        mask-image: linear-gradient(black 80%, transparent);
+        -webkit-mask-image: linear-gradient(black 80%, transparent)
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="recentswipe">
+
+        <div id="tommyre">
+            <img src="https://akns-images.eonline.com/eol_images/Entire_Site/201811/rs_1024x768-180201102425-1024.Tommy-x-Gigi-5.jpg"
+                alt="" width="90%" height="55%">
+            <div id="recenttxt">
+                <h5>Tommy Hilfiger Jeans</h5>
+                <p>Denim Ice Blue Jeans</p>
+                <h6>Price : Rs.xxx</h6>
+            </div>
+        </div>
+
+        <div id="zarare">
+            <img src="https://www.essence.com/wp-content/uploads/2020/02/nick-wolf-tout.jpg" alt="" width="90%"
+                height="55%">
+            <div id="recenttxt">
+                <h5>Zara Jacket</h5>
+                <p>Brown Bikers Leather Jacket</p>
+                <h6>Price : Rs.xxx</h6>
+            </div>
+        </div>
+        <div id="zarare">
+            <img src="https://alexis.lindaikejisblog.com/photos/shares/5d8489940a333.PNG" alt="" width="90%"
+                height="55%">
+            <div id="recenttxt">
+                <h5>H and M Hoodie Kid</h5>
+                <p>Blue Flower Hoddie Kids</p>
+                <h6>Price : Rs.xxx</h6>
+            </div>
+        </div>
+        <div id="zarare">
+            <img src="https://media.gqindia.com/wp-content/uploads/2016/07/Van-Heusen-09.05.2016231745.jpg" alt=""
+                width="90%" height="55%">
+            <div id="recenttxt">
+                <h5>Van Heusen Shirt</h5>
+                <p>Light Blue Pattern Shirt</p>
+                <h6>Price : Rs.xxx</h6>
+            </div>
+        </div>
+        <div id="zarare">
+            <a href="http://127.0.0.1:5500/IWT%20assignment/vanshoe.html" target="_blank">
+                <img src="https://images.unsplash.com/photo-1574946176568-b0baa3c91466?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80"
+                    alt="" width="90%" height="55%">
+            </a>
+            <div id="recenttxt">
+                <h5>Vans Shoes</h5>
+                <p>Black And White Shoe</p>
+                <h6>Price : Rs.xxx</h6>
+            </div>
+        </div>
+        <div id="zarare">
+            <img src="https://media.okmagazine.com/brand-img/2fET-WzGi/0x0/hailey-bieber-models-for-levis-4-1621364572655.jpg"
+                alt="" width="90%" height="55%">
+            <div id="recenttxt">
+                <h5>Levi's Jacket</h5>
+                <p>Denim Jacket For Women</p>
+                <h6>Price : Rs.xxx</h6>
+            </div>
+        </div>
+        <div id="zarare">
+            <img src="https://www.horobox.com/Cms_Data/Contents/SampleBusiness/Media/Haberler/Audemars-Piguet-Royal-Oak-Sihh-2019/15500-audemars-piguet-royal-oak-sihh-2019-6.jpg"
+                alt="" width="90%" height="55%">
+            <div id="recenttxt">
+                <h5>Audermars Piguet Watch</h5>
+                <p>Royal Oak Silver Watch</p>
+                <h6>Price : Rs.xxx</h6>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
