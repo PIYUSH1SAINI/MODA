@@ -685,17 +685,17 @@
 <body>
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
 
             <div id="navright">
                 <input type="text" id="searchbar" placeholder="  Search">
-                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"><img
+                <a id="navlogin" href="login.html"><img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU"
                         alt="" height="70px"></a>
-                <a href="http://127.0.0.1:5500/IWT%20assignment/addtocart.html"><img
+                <a href="addtocart.html"><img
                         src="https://i.fbcd.co/products/resized/resized-750-500/667ca7502e4e218f01e4fbb26e01e2fc7fe17370f64bf444f60818b9d1b2c2b2.jpg"
                         alt="" height="38px"></a>
             </div>
@@ -740,28 +740,6 @@
         <span class="dot"></span>
     </div>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
-
     <div class="box">
         <h1 id="SHOPBYAGE" style=font-size:60px> SHOP BY AGE</h1>
         <div class="gallery">
@@ -781,7 +759,7 @@
         </div>
 
         <div class="gallery">
-            <a target="blank" href="http://127.0.0.1:5500/IWT%20assignment/3-5kids.html">
+            <a target="blank" href="3-5kids.html">
                 <img src="https://i.pinimg.com/originals/6f/4a/c9/6f4ac93450b07b766bea29e4260560df.jpg" alt="3-5 YEAR"
                     width="600" height="400">
             </a>
@@ -880,7 +858,7 @@
         <div class="gallery2">
             <img src="https://cdn.wccftech.com/wp-content/uploads/2021/06/iPhone-12-Pro.jpg" height="35%" width="35%">
             <button id="button"><span>
-                    <a id="playnow" href="http://127.0.0.1:5500/IWT%20assignment/index.html" style="font-size: 30px;">
+                    <a id="playnow" href="index2.html" style="font-size: 30px;">
                         <span><b> PLAY NOW </b></span></a></button>
 
         </div>
@@ -913,7 +891,7 @@
 
             <div id="JEANS">
                 <div id="clothingtxt">
-                    <a href="http://127.0.0.1:5500/IWT%20assignment/levipage.html">
+                    <a href="levipage.html">
                         <img src="https://www.kidsarmyshop.com/wp-content/uploads/2014/02/dpm-trousers.jpg" alt=""
                         height="20%" width="100%">
                     </a>
@@ -998,10 +976,31 @@
     </div>
     <hr id="new">
 
-    <button id="explore"><a href="http://127.0.0.1:5500/IWT%20assignment/explorekids.html">EXPLORE + </a></button>
+    <button id="explore"><a href="explorekids.html">EXPLORE + </a></button>
 
     <br>
     <br>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
 </body>
 
 </html>
