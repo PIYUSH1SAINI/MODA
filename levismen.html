@@ -85,36 +85,6 @@
                                                 </li> -->
                                             </ul>
                                         </div>
-
-                                        <script>
-                                            function number(){
-                                                var a=document.getElementById("qty").value;
-                                                if(a==1)
-                                                {
-                                                    document.getElementById("itemval").innerHTML="xyz";   
-                                                }
-
-                                                else if(a==2)
-                                                {
-                                                    document.getElementById("itemval").innerHTML="2"+"xyz";
-                                                }
-
-                                                else if(a==3)
-                                                {
-                                                    document.getElementById("itemval").innerHTML="3"+"xyz";
-                                                }
-
-                                                else if(a==4)
-                                                {
-                                                    document.getElementById("itemval").innerHTML="4"+"xyz";
-                                                }
-
-                                                else
-                                                {
-                                                    document.getElementById("itemval").innerHTML="Invalid Input";
-                                                }
-                                            }
-                                        </script>
                                     </div>
                                     <!-- //remover move and price -->
                                     <div class="row">
@@ -122,14 +92,6 @@
                                             <button onclick="remove()"><i class="fas fa-trash-alt"></i> REMOVE QTY</button>
                                             <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
                                         </div>
-
-                                        <script>
-                                            function remove(){
-                                                document.getElementById("itemval").innerHTML="0";
-                                            }
-                                        </script>
-
-
                                         <div class="col-4 d-flex justify-content-end price_money">
                                             <h3>Rs.<span id="itemval">xyz </span></h3>
                                         </div>
@@ -217,7 +179,7 @@
                                 <p>The total amount of (including VAT)</p>
                                 <p>Rs.<span id="total_cart_amt">xyz</span></p>
                             </div>
-                            <button id="but"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html">Checkout</a> </button>
+                            <button id="but"><a href="men.html">Checkout</a> </button>
                         </div>
 
                         <!-- discount code ends -->
@@ -232,6 +194,37 @@
             </div>
         </div>
     </div>
+    <script>
+        function number(){
+            var a=document.getElementById("qty").value;
+            if(a==1)
+            {
+                document.getElementById("itemval").innerHTML="xyz";   
+            }
+            else if(a==2)
+            {
+                document.getElementById("itemval").innerHTML="2"+"xyz";
+            }
+
+            else if(a==3)
+            {
+                document.getElementById("itemval").innerHTML="3"+"xyz";
+            }
+
+            else if(a==4)
+            {
+                document.getElementById("itemval").innerHTML="4"+"xyz";
+            }
+
+            else
+            {
+                document.getElementById("itemval").innerHTML="Invalid Input";
+            }
+        }
+        function remove(){
+            document.getElementById("itemval").innerHTML="0";
+        }
+    </script>
 </body>
 
 </html>
