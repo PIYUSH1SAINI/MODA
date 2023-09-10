@@ -1,0 +1,1007 @@
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        body {
+            background-color: rgb(240, 240, 240);
+            margin: 0;
+        }
+
+        /* navbar start */
+
+        #navbar {
+            background-color: white;
+            width: 100%;
+            padding-top: 0.5%;
+            padding-bottom: 0.5%;
+            position: fixed;
+            box-shadow: 2px 2px 14px 1px gray;
+        }
+
+        #navbar li {
+            display: inline;
+            width: 100%;
+            overflow: hidden;
+            margin-right: 20px;
+            font-size: 30px;
+        }
+
+        #navlink a:hover {
+            color: rgb(135, 195, 245);
+            border-style: double;
+        }
+
+        #home a:hover {
+            color: coral;
+
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #navright {
+            float: right;
+            margin-right: 30px;
+            margin-top: -20px;
+        }
+
+        #searchbar {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* navbar end */
+
+        /* 2021 collection start */
+
+        #startimg {
+            width: 100%;
+        }
+
+        #coll {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 200px;
+            margin-bottom: 5%;
+            margin-top: 7%;
+        }
+
+        #ex a {
+            font-size: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: ivory;
+            text-decoration: none;
+            padding-bottom: 50px;
+        }
+
+        #ex a:hover {
+            color: bisque;
+            text-decoration: underline;
+        }
+
+        /* 2021 collection end */
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 99%;
+            position: relative;
+            margin-top: 4%;
+        }
+
+        .mySlides {
+            background-color: darksalmon;
+            height: 80%;
+            border-radius: 5px;
+            border: 10px solid black;
+        }
+
+        /* Caption text */
+        .text {
+            background-color: rgba(0, 0, 0, 0.322);
+            color: white;
+            position: absolute;
+            top: 0%;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .text2 {
+            color: white;
+            position: absolute;
+            top: 5%;
+            right: 7%;
+        }
+
+        .text3 {
+            color: white;
+            position: absolute;
+            top: 5%;
+            left: 3%;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 10px 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .7
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .7
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        #ready {
+            color: rgb(12, 11, 14);
+            font-size: 40px;
+            text-align: RIGHT;
+            margin-top: 15%;
+            margin-bottom: -10px;
+            margin-right: 10%;
+        }
+
+        #festive {
+            color: rgb(5, 15, 17);
+            font-size: 20px;
+            margin-bottom: 5%;
+            margin-right: 10%;
+            text-align: right;
+        }
+
+        #page {
+            color: rgb(20, 16, 16);
+            font-size: 30px;
+            text-align: right;
+            margin-right: 10%;
+        }
+
+        #winter {
+            color: rgb(15, 15, 8);
+            font-size: 80px;
+            padding: 10px;
+
+        }
+
+        #dont {
+            color: rgb(12, 10, 10);
+            font-size: 20px;
+            margin-top: 5%;
+            margin-right: 100%;
+            margin-left: 40%;
+        }
+
+        #offer {
+            color: rgba(45, 129, 94, 0.253);
+            font-size: 35px;
+            margin-bottom: 90%;
+        }
+
+        .hr2 {
+            border: 2px solid black;
+            border-radius: 5px;
+            padding-right: 20px;
+        }
+
+        #page1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        /*SHOP BY AGE STARTS */
+        div.box {
+            box-shadow: 10px 15px 8px rgb(26, 214, 189);
+            height: 125%;
+            width: 95%;
+            margin-left: 2%;
+            background-image: radial-gradient(rgb(26, 82, 79), rgb(245, 245, 235));
+            align-self: right;
+            border-radius: 30px;
+
+        }
+
+        div.gallery {
+            margin: 30px;
+            border-radius: 10px;
+            border: 10px solid #ccc;
+            float: left;
+            width: 300px;
+            height: 335px;
+        }
+
+        div.gallery:hover {
+            border: 20px solid rgba(66, 117, 124, 0.37);
+            outline-style: dotted;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        #SHOPBYAGE {
+            font-size: 40px;
+            margin-left: 5%;
+            color: rgb(11, 13, 14);
+            font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 7px;
+            margin-top: 5%;
+            margin-bottom: -10px;
+            padding-top: 20px;
+
+        }
+
+        div.desc {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+
+        }
+
+        /* SEASON CATAGORY start */
+
+        #season {
+            margin-bottom: 0%;
+            background-image: url("https://sims4updates.net/wp-content/uploads/2016/12/845.jpg");
+            background-position: 20%;
+            background-size: 99.48%;
+            background-position-x: 1200%;
+            background-position-y: 20%;
+            box-shadow: 10px 15px 8px rgb(248, 3, 195);
+            height: 60%;
+            border-radius: 30px;
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+
+        #shopbyseason {
+            font-size: 40px;
+            margin-left: 5%;
+            color: purple;
+            font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 7px;
+            margin-top: 5%;
+            padding-top: 20px;
+        }
+
+        #seasoncata {
+            border-radius: 40%;
+            margin: 5px;
+            padding: 10px 40px 10px 40px;
+            float: left;
+            width: auto;
+            margin-left: 4%;
+            background-image: url("https://wallpapercave.com/wp/wp3218761.gif");
+        }
+
+        #inner {
+            border: 5px solid black;
+        }
+
+        #disc {
+            color: darkgreen;
+            background-color: white;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 10px;
+            margin-top: 10%;
+            padding-bottom: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        #seasoncata2 {
+            border-radius: 40%;
+            margin: 5px;
+            padding: 10px 40px 10px 40px;
+            float: left;
+            width: auto;
+            margin-left: 4%;
+            background-image: url("https://wallpapercave.com/wp/wp3218761.gif");
+        }
+
+        #seasoncata3 {
+            border-radius: 40%;
+            margin: 5px;
+            padding: 10px 40px 10px 40px;
+            float: left;
+            width: auto;
+            margin-left: 4%;
+            background-image: url("https://wallpapercave.com/wp/wp3218761.gif");
+        }
+
+        #imageflip:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+
+        }
+
+        /* /PLAY QUIZ AND WIN CATEGORY/ */
+        #quiz {
+            box-shadow: 10px 15px 8px rgb(11, 12, 12);
+            height: 90%;
+            width: 95%;
+            margin-left: 2%;
+            background-color: black;
+            align-self: right;
+            border-radius: 30px;
+
+        }
+
+        #PLAYQUIZANDWIN {
+            font-size: 40px;
+            margin-left: 5%;
+            color: rgb(251, 251, 253);
+            font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            letter-spacing: 7px;
+            margin-top: 5%;
+            padding-top: 20px;
+
+        }
+
+        #ANSWERANDWIN {
+            font-size: 60px;
+            margin-left: 10%;
+            color: rgb(251, 251, 253);
+            font-weight: bold;
+            letter-spacing: 7px;
+            margin-top: 5%;
+            padding-top: 20px;
+
+        }
+
+        #tc {
+            font-size: 20px;
+            margin-left: -70%;
+            color: rgb(250, 11, 11);
+        }
+
+        div.gallery2 {
+            margin-top: auto;
+            margin-left: 70%;
+            margin-right: 10%;
+            margin-bottom: auto;
+            border-radius: none;
+            border: none;
+            width: 1200px;
+            height: 1000px;
+
+
+        }
+
+        #button {
+            background-color: #f7f4fc;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            width: 300px;
+            transition: all 0.5s;
+            cursor: pointer;
+            box-shadow: white;
+            margin: -100%;
+            border-style: double;
+            border-radius: 30px;
+        }
+
+        #button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 1s;
+        }
+
+        #button span:after {
+            content: '\00bb';
+            position: relative;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 1s;
+        }
+
+        #button:hover span {
+            padding-right: 25px;
+        }
+
+        #button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+        #playnow {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            align-self: center;
+
+
+        }
+
+        #new {
+            border: 5px solid grey;
+            border-radius: 0px;
+        }
+
+        /* /MORE CLOTHING STARTS/ */
+
+        #moreclothing {
+            margin-bottom: 5%;
+        }
+
+        #clothing {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #uptooff {
+            font-size: 60px;
+            color: black;
+            padding-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 4%;
+            letter-spacing: 7px;
+            font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #DRESSES {
+            background-image: url("https://i.pinimg.com/originals/5a/ec/f4/5aecf4b7367ce3cc6f2f7b0ca290abd1.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(252, 13, 13);
+            margin-left: 6%;
+        }
+
+        #clothingtxt {
+            padding-top: 70%;
+        }
+
+        #para {
+            background-color: white;
+            color: black;
+            margin-top: -5%;
+            margin-bottom: 0px;
+            font-size: 27px;
+            padding-bottom: 15px;
+            font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        #TSHIRTS {
+            background-image: url("https://media.sssports.com/1028x1028/media/catalog/product/1/9/192500765821_1.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(50, 47, 255);
+            margin-left: 30px;
+        }
+
+        #JEANS {
+            background-image: url("https://i.pinimg.com/736x/31/08/6d/31086d0cefbd36a1cadc9ac5e6493cb8.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(226, 53, 203);
+            margin-left: 30px;
+        }
+
+        #ETHNIC {
+            background-image: url("https://www.pinkblueindia.com/blog/wp-content/uploads/2016/12/latest-kids-ethnic-wear.png");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(6, 248, 236);
+            margin-left: 30px;
+        }
+
+        #SWEATSHIRTS {
+            background-image: url("https://media.customon.com/unsafe/1200x1200/img.customon.com/img/5040818/16095,36,2,0,23,192,196.20209545984,24,0,2661542ab3cb809d57695ed4b0605815/merchantimagenew/roblox-head-kids-sweatshirt-gray.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(75, 252, 5);
+            margin-left: 30px;
+        }
+
+        #COATS {
+            background-image: url("https://www.winterkids.com/media/catalog/product/cache/2/image/9df78eab33525d08d6e5fb8d27136e95/2/0/20142015spyderboysminiupsidedownjacketelbbrightgreen1.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(230, 197, 13);
+            margin-left: 30px;
+        }
+
+        #WATCHES {
+            background-image: url("https://i5.walmartimages.com/asr/c450357a-1309-4f78-9049-83077cf045de_1.e6e5ef74169b049f91fdaf6380b82998.jpeg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(15, 7, 15);
+            margin-left: 6%;
+            margin-top: 30px;
+        }
+
+        #BACKPACKS {
+            background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-backpack-1529432902.gif?crop=1.00xw:1.00xh;0,0&resize=1200:*");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(253, 166, 4);
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        #SUNGLASSES {
+            background-image: url("https://i.pinimg.com/736x/41/b3/b2/41b3b2787d8ab0369b3534dc502682bf.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid red;
+            margin-left: 30px;
+            margin-top: 33px;
+        }
+
+        #FOOTWEAR {
+            background-image: url("http://www.heydudeshoes.co.uk/blog/wp-content/uploads/2017/04/FartyKids-1.gif");
+            background-repeat: no-repeat;
+            background-size: 280px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(5, 250, 17);
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        #JEWELLERY {
+            background-image: url("https://www.fashionlady.in/wp-content/uploads/2015/10/kids-diamond-jewelry.jpg");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid gold;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+        #SWEATERS {
+            background-image: url("https://images.garmentory.com/images/2890687/original/Cable-Knit-Sweater-20190808002638.jpg?1565224002");
+            background-repeat: no-repeat;
+            background-size: 220px;
+            height: 30%;
+            width: 13%;
+            border: 2px solid rgb(60, 7, 252);
+            margin-left: 30px;
+            margin-top: 33px;
+        }
+
+        /* clothing and more ends */
+        #backtohome {
+            font-size: 50px;
+            color: rgb(245, 16, 16);
+            padding-top: 20px;
+            margin-bottom: 30px;
+            margin-left: 30%;
+            letter-spacing: 7px;
+            font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #explore {
+            background-color: lawngreen;
+            padding: 10px 20px 10px 20px;
+            border-radius: 10px;
+            font-size: 50px;
+            margin-left: 40%;
+        }
+
+        #explore a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+
+            <div id="navright">
+                <input type="text" id="searchbar" placeholder="  Search">
+                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU"
+                        alt="" height="70px"></a>
+                <a href="http://127.0.0.1:5500/IWT%20assignment/addtocart.html"><img
+                        src="https://i.fbcd.co/products/resized/resized-750-500/667ca7502e4e218f01e4fbb26e01e2fc7fe17370f64bf444f60818b9d1b2c2b2.jpg"
+                        alt="" height="38px"></a>
+            </div>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://i.pinimg.com/originals/b7/ac/d7/b7acd7136079e857e2f3f698634f044a.jpg" height="100%"
+                width="100%">
+            <div class="text">
+                <h1 id="coll">2022 Collection</h1>
+                <p id="ex"><a href="">EXPLORE</a></p>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="http://img.edilportale.com/products/prodotti-86888-reld1f6e99661434d0891c78e9e6d360d34.jpg"
+                height="100%">
+            <div class="text2">
+                <h1 id="ready">SHOP TOYS & SCHOOL SUPPLIES </h1>
+                <h2 id="festive">WIN EXCITING PRIZES EVERYDAY!</h2>
+                <h3 id="page"><a href="">UP TO 70% OFF</a></h3>
+            </div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="http://www.rookiemoms.com/wp-content/uploads/2013/09/selling-used-baby-clothes.jpg" height="100%"
+                width="100%">
+            <div class="text3">
+                <h1 id="winter">FOR ALL AGES AND OCCASIONS</h1>
+            </div>
+        </div>
+    </div>
+
+    <div style=text-align:center>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+    <div class="box">
+        <h1 id="SHOPBYAGE" style=font-size:60px> SHOP BY AGE</h1>
+        <div class="gallery">
+            <a target="_blank" href="img_5terre.jpg">
+                <img src="https://i.pinimg.com/originals/2a/d7/4a/2ad74ab6658273278d90a323cb283340.jpg" alt="0-1 YEAR"
+                    width="600" height="400">
+            </a>
+            <div class="desc">O-1 YEAR KID</div>
+        </div>
+
+        <div class="gallery">
+            <a target="blank" href="img.jpg">
+                <img src="https://cdn.shopify.com/s/files/1/2638/7858/files/daydream5_900x_5e12149f-1bcb-489e-b611-321d62b61836_grande.jpg?v=1534018328"
+                    alt="1-3 YEAR" width="600" height="400">
+            </a>
+            <div class="desc">1-3 YEARS</div>
+        </div>
+
+        <div class="gallery">
+            <a target="blank" href="http://127.0.0.1:5500/IWT%20assignment/3-5kids.html">
+                <img src="https://i.pinimg.com/originals/6f/4a/c9/6f4ac93450b07b766bea29e4260560df.jpg" alt="3-5 YEAR"
+                    width="600" height="400">
+            </a>
+            <div class="desc">3-5 YEARS</div>
+        </div>
+
+        <div class="gallery">
+            <a target="blank" href="img.jpg">
+                <img src="https://i.pinimg.com/736x/5a/c4/a2/5ac4a257332fac71a0f9440374489575.jpg" alt="5-8 YEAR"
+                    width="600" height="400">
+            </a>
+            <div class="desc">5-8 YEARS</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img.jpg">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61wAsxfnF6L._SL1000_.jpg" alt="8-11 YEARS"
+                    width="600" height="400">
+            </a>
+            <div class="desc">8-11 YEARS</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img.jpg">
+                <img src="https://itizen-production.s3.amazonaws.com/uploads/image_asset/image/40644681/thumbnail_item-image-0.jpg"
+                    alt="12+YEARS" width="600" height="400">
+            </a>
+            <div class="desc">11-13 YEARS</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img.jpg">
+                <img src="https://i.pinimg.com/736x/67/99/54/679954ef90c51a83dab886d830729af7--teal-outfits-tween-fashion.jpg "
+                    alt="13-15 YEARS" width="600" height="400">
+            </a>
+            <div class="desc">13- 15 YEARS</div>
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="img.jpg">
+                <img src="http://4.imimg.com/data4/XV/FI/MY-15677381/fancy-girls-party-frock-500x500.jpg"
+                    alt="15+ YEARS" width="600" height="400">
+            </a>
+            <div class="desc">15+YEARS </div>
+        </div>
+
+    </div>
+    <div id="season">
+
+        <h1 id="shopbyseason">SHOP BY SEASON</h1>
+
+
+
+        <div id="seasoncata2">
+            <div id="inner">
+                <a href="">
+                    <img src="https://i.pinimg.com/originals/53/0b/d3/530bd333ee9a5595d933dd6408c54c29.jpg"
+                        id="imageflip" alt="" height="40%" width="100%">
+                </a>
+                <div id="disc">
+                    SUMMER
+                </div>
+            </div>
+        </div>
+
+        <div id="seasoncata3">
+            <div id="inner">
+                <a href="">
+                    <img src="https://i.pinimg.com/originals/ed/6f/53/ed6f53e805be5d9fce82c06f670af924.png"
+                        id="imageflip" alt="" height="40%" width="100%">
+                </a>
+                <div id="disc">
+                    AUTUMN
+                </div>
+            </div>
+        </div>
+
+        <div id="seasoncata">
+            <div id="inner">
+                <a href="">
+                    <img src="https://www.childrensplace.com/wp-content/uploads/2018/10/3IN1final.jpg" id="imageflip"
+                        alt="" height="40%" width="100%">
+                </a>
+                <div id="disc">
+                    WINTER
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="quiz">
+        <h1 id="playquizandwin" style=font-size:60px;>APPLE IPHONE 13 PRO QUIZ</h1>
+        <h2 id="answerandwin">ANSWER AND WIN </h2>
+        <div class="gallery2">
+            <img src="https://cdn.wccftech.com/wp-content/uploads/2021/06/iPhone-12-Pro.jpg" height="35%" width="35%">
+            <button id="button"><span>
+                    <a id="playnow" href="http://127.0.0.1:5500/IWT%20assignment/index.html" style="font-size: 30px;">
+                        <span><b> PLAY NOW </b></span></a></button>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <hr id="new">
+
+    <div id="moreclothing">
+
+        <h2 id="uptooff"><b>EXPLORE MORE !!!</b> UPTO 70% OFF</h2>
+
+        <div id="clothing">
+
+            <div id="DRESSES">
+                <div id="clothingtxt">
+                    <img src="https://i.ebayimg.com/images/i/291638654602-0-1/s-l1000.jpg" alt="" height="20%"
+                        width="100%">
+                    <p id="para">DRESSES AND JUMPSUITS</p>
+                </div>
+            </div>
+
+            <div id="TSHIRTS">
+                <div id="clothingtxt">
+                    <img src="https://inspiredcreativedesign.co.uk/image/cache/catalog/Products/Kids_Tshirts/2017/volleyball-tshirt-1400x1400.jpg"
+                    alt="" height="20%" width="100%">
+                    <p id="para">T-SHIRTS AND POLOS</p>
+                </div>
+            </div>
+
+            <div id="JEANS">
+                <div id="clothingtxt">
+                    <a href="http://127.0.0.1:5500/IWT%20assignment/levipage.html">
+                        <img src="https://www.kidsarmyshop.com/wp-content/uploads/2014/02/dpm-trousers.jpg" alt=""
+                        height="20%" width="100%">
+                    </a>
+                    <p id="para">JEANS AND TROUSERS</p>
+                </div>
+            </div>
+
+            <div id="ETHNIC">
+                <div id="clothingtxt">
+                    <img src="https://cdn.shopclues.com/images/thumbnails/87769/320/320/123451994667BLUEA1511331226.jpg"
+                        alt="" height="20%" width="100%">
+                    <p id="para">ETHNIC AND PARTY WEAR</p>
+                </div>
+            </div>
+
+            <div id="SWEATSHIRTS">
+                <div id="clothingtxt">
+                    <img src="https://i5.walmartimages.com/asr/c7a07d34-b139-4c31-898c-1fc2106d950b.402d5efe28379950da65da1f5dfd4c06.jpeg"
+                        alt="" height="20%" width="100%">
+                    <p id="para">SWEATSHIRTS AND HOODIES</p>
+                </div>
+            </div>
+
+            <div id="COATS">
+                <div id="clothingtxt">
+                    <img src="https://content.backcountry.com/images/items/900/CHT/CHT00HN/CARBN.jpg" alt=""
+                        height="20%" width="100%">
+                    <p id="para">COATS AND JACKETS</p>
+                </div>
+            </div>
+
+            <div id="WATCHES">
+                <div id="clothingtxt">
+                    <img src="https://www.dhresource.com/0x0/f2/albu/g8/M00/65/79/rBVaVF7suRGAAC8kAAVu5YlQjLE157.jpg/led-digital-watch-stainless-steel-strap-alarm.jpg"
+                        alt="" height="20%" width="100%">
+                    <p id="para"> WATCHES UPTO 50% OFF</p>
+                </div>
+            </div>
+
+            <div id="BACKPACKS">
+                <div id="clothingtxt">
+                    <img src="https://thumbs.gfycat.com/GrandSaltyAndalusianhorse-size_restricted.gif" alt=""
+                        height="20%" width="100%">
+                    <p id="para"> BACKPACKS UPTO 40% Off</p>
+                </div>
+            </div>
+
+            <div id="SUNGLASSES">
+                <div id="clothingtxt">
+                    <img src="https://i.ebayimg.com/images/i/112211822049-0-1/s-l1000.jpg" alt="" height="20%"
+                        width="100%">
+                    <p id="para">SUNGLASSES AND GOGGLES</p>
+                </div>
+            </div>
+
+            <div id="FOOTWEAR">
+                <div id="clothingtxt">
+                    <img src="https://red.pusatkerajinantembaga.net/wp-content/uploads/2021/12/6c4e475f5c1c3116ca227c060ecd00af.gif"
+                        alt="" height="50%" width="100%">
+                    <p id="para"> <i>SPOTLIGHT</i> FOOTWEAR UPTO 60% OFF</p>
+                </div>
+            </div>
+
+            <div id="JEWELLERY">
+                <div id="clothingtxt">
+                    <img src="https://c.shld.net/rpx/i/s/i/spin/10000119/prod_1952037112??hei=64&wid=64&qlt=50" alt=""
+                        height="20%" width="100%">
+                    <p id="para"> JEWELLERY Min.20% Off</p>
+                </div>
+            </div>
+
+            <div id="SWEATERS">
+                <div id="clothingtxt">
+                    <img src="https://www.mothermag.com/wp-content/uploads/2016/12/F4613_ST6461.jpg" alt="" height="20%"
+                        width="100%">
+                    <p id="para"> SWEATERS Upto 50% Off</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <hr id="new">
+
+    <button id="explore"><a href="http://127.0.0.1:5500/IWT%20assignment/explorekids.html">EXPLORE + </a></button>
+
+    <br>
+    <br>
+</body>
+
+</html>

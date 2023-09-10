@@ -1,0 +1,237 @@
+<style>
+    #but a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #but {
+        border: 1px solid black;
+        padding: 5px 10px 5px 10px;
+        font-size: 20px;
+    }
+
+    #but:hover {
+        color: blue;
+        border: 3px solid blue;
+        border-radius: 10px;
+    }
+
+</style>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cart</title>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                    <!-- left side div -->
+                    <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                        <div class="card1">
+                            <h2 class="py-4 font-weight-bold"> 2 ITEM</h2>
+                            <div class="row">
+                                <!-- cart images div -->
+                                <div
+                                    class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                    <img src="https://images.asos-media.com/products/levis-rainbow-t-shirt/14335084-1-black?$XXL$&wid=513&fit=constrain"
+                                        class="img-fluid" alt="cart img">
+                                </div>
+
+
+
+
+                                <!-- cart product details -->
+                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                    <div class="errase">
+                                        <!-- product name  -->
+                                        <div class="col-6 card-title">
+                                            <h1 class="mb-4 product_name"> LEVI'S <br> </h1>
+                                            <p class="mb-2">SHIRT - BLACK LEVI'S</p>
+                                            <p class="mb-2">COLOR: BLACK</p>
+                                            <p class="mb-3">SIZE: M/XL/XXL</p>
+                                        </div>
+                                        <!-- quantity inc dec -->
+                                        <div class="col-6">
+
+                                            <input type="text" id="qty" placeholder="Quantity Here">
+                                            <input type="button" value="Done" onclick="number()">
+
+                                            <!-- <ul class="pagination justify-content-end set_quantity">
+                                                <li class="page-item">
+                                                    <button class="page-link "
+                                                        onclick="decreaseNumber('textbox','itemval')">
+                                                        <i class="fas fa-minus"></i> </button>
+                                                </li>
+                                                <li class="page-item"><input type="text" name="" class="page-link"
+                                                        value="0" id="textbox">
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link"
+                                                        onclick="increaseNumber('textbox','itemval')"> <i
+                                                            class="fas fa-plus"></i></button>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+
+                                        <script>
+                                            function number(){
+                                                var a=document.getElementById("qty").value;
+                                                if(a==1)
+                                                {
+                                                    document.getElementById("itemval").innerHTML="xyz";   
+                                                }
+
+                                                else if(a==2)
+                                                {
+                                                    document.getElementById("itemval").innerHTML="2"+"xyz";
+                                                }
+
+                                                else if(a==3)
+                                                {
+                                                    document.getElementById("itemval").innerHTML="3"+"xyz";
+                                                }
+
+                                                else if(a==4)
+                                                {
+                                                    document.getElementById("itemval").innerHTML="4"+"xyz";
+                                                }
+
+                                                else
+                                                {
+                                                    document.getElementById("itemval").innerHTML="Invalid Input";
+                                                }
+                                            }
+                                        </script>
+                                    </div>
+                                    <!-- //remover move and price -->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <button onclick="remove()"><i class="fas fa-trash-alt"></i> REMOVE QTY</button>
+                                            <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
+                                        </div>
+
+                                        <script>
+                                            function remove(){
+                                                document.getElementById("itemval").innerHTML="0";
+                                            }
+                                        </script>
+
+
+                                        <div class="col-4 d-flex justify-content-end price_money">
+                                            <h3>Rs.<span id="itemval">xyz </span></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <!-- 2nd cart product -->
+                        <div class="card p-4">
+                            <div class="row">
+                                <!-- cart images div -->
+                                <div
+                                    class="col-md-5 col-11 mx-auto bg-light d-flex justify-content-center align-items-center shadow product_img">
+                                    <img src="https://www.kapadaa.com/wp-content/uploads/2018/05/79.jpg"
+                                        class="img-fluid" alt="cart img">
+                                </div>
+
+
+
+
+                                <!-- cart product details -->
+                                <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                                    <div class="row">
+                                        <!-- product name  -->
+                                        <div class="col-6 card-title">
+                                            <h1 class="mb-4 product_name">LEVI'S</h1>
+                                            <p class="mb-2">SHIRT - YELLOW LEVI'S</p>
+                                            <p class="mb-2">COLOR: YELLOE</p>
+                                            <p class="mb-3">SIZE: M/XL/XXL</p>
+                                        </div>
+                                        <!-- quantity inc dec -->
+                                        <div class="col-6">
+                                            <ul class="pagination justify-content-end set_quantity">
+                                                <li class="page-item">
+                                                    <button class="page-link "
+                                                        onclick="decreaseNumber('textbox1','itemval1')"> <i
+                                                            class="fas fa-minus"></i> </button>
+                                                </li>
+                                                <li class="page-item"><input type="text" name="" class="page-link"
+                                                        value="0" id="textbox1">
+                                                </li>
+                                                <li class="page-item">
+                                                    <button class="page-link"
+                                                        onclick="increaseNumber('textbox1','itemval1')"> <i
+                                                            class="fas fa-plus"></i></button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- //remover move and price -->
+                                    <div class="row">
+                                        <div class="col-8 d-flex justify-content-between remove_wish">
+                                            <p><i class="fas fa-trash-alt"></i> REMOVE ITEM</p>
+                                            <p><i class="fas fa-heart"></i>MOVE TO WISH LIST </p>
+                                        </div>
+                                        <div class="col-4 d-flex justify-content-end price_money">
+                                            <h3>Rs.<span id="itemval1">xyz </span> </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right side div -->
+                    <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                        <div class="right_side p-3 shadow bg-white">
+                            <h2 class="product_name mb-5">CART</h2>
+                            <div class="price_indiv d-flex justify-content-between">
+                                <img src="https://www.kapadaa.com/wp-content/uploads/2018/05/79.jpg" height="120px">
+                                <br>
+                            
+
+                                <br><p>PRICE :</p>
+        
+                                <p>Rs.<span id="product_total_amt">xyz</span></p>
+                                <p>QUANTITY : </p>
+                                <p><span id="shipping_charge">1</span></p>
+                            </div>
+                            <div class="price_indiv d-flex justify-content-between">
+                               
+                            </div>
+                            <hr />
+                            <div class="total-amt d-flex justify-content-between font-weight-bold">
+                                <p>The total amount of (including VAT)</p>
+                                <p>Rs.<span id="total_cart_amt">xyz</span></p>
+                            </div>
+                            <button id="but"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html">Checkout</a> </button>
+                        </div>
+
+                        <!-- discount code ends -->
+                        <div class="mt-3 shadow p-3 bg-white">
+                            <div class="pt-4">
+                                <h5 class="mb-4">Expected delivery date</h5>
+                                <p>July 27th 2020 - July 29th 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
