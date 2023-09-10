@@ -352,10 +352,10 @@
 <body>
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
         </ul>
     </div>
 
@@ -363,7 +363,7 @@
         <div id="address">
             Deliver to:<b> Alex , 19002</b> <br> #244 xyzab city , near abc road , India
             <div id="changeadd">
-                <a href="http://127.0.0.1:5500/IWT%20assignment/paymentgatway.html">CHANGE ADDRESS</a>
+                <a href="paymentgatway.html">CHANGE ADDRESS</a>
             </div>
         </div>
 
@@ -373,7 +373,7 @@
         </div>
 
         <div id="bagitem">
-            <a href="http://127.0.0.1:5500/IWT%20assignment/vanshoe.html"><img
+            <a href="vanshoe.html"><img
                     src="https://rukminim1.flixcart.com/image/800/960/shoe/h/a/7/black-min-0d5i-vans-10-original-imae5efgkfw2eufe.jpeg?q=50"
                     alt="" height="200px"></a>
             <div id="bagtxt">
@@ -448,70 +448,6 @@
                 </form>
             </div>
 
-            <script>
-                function apply() {
-                    var a = parseInt(document.getElementById("num").textContent);
-                    var b = a + 1;
-
-                    document.getElementById("num").innerHTML = b;
-                    if (a % 2 == 0) {
-                        document.getElementById("cou").style.display = "block";
-                    }
-                    else {
-                        document.getElementById("cou").style.display = "none";
-                    }
-                }
-
-                function couponadd() {
-                    var a = parseInt(document.getElementById("num1").textContent);
-                    var b = a + 1;
-                    document.getElementById("num1").innerHTML = b;
-                    if (a % 2 == 0) {
-                        document.getElementById("dis").innerHTML="Rs.aaa";
-                    }
-                    else {
-                        document.getElementById("dis").innerHTML="Rs.0"
-                    }
-                }
-
-                function couponadd1() {
-                    var a = parseInt(document.getElementById("num2").textContent);
-                    var b = a + 1;
-                    document.getElementById("num2").innerHTML = b;
-                    if (a % 2 == 0) {
-                        document.getElementById("dis").innerHTML="Rs.wwww";
-                    }
-                    else {
-                        document.getElementById("dis").innerHTML="Rs.0"
-                    }
-                }
-
-                function couponadd2() {
-                    var a = parseInt(document.getElementById("num3").textContent);
-                    var b = a + 1;
-                    document.getElementById("num3").innerHTML = b;
-                    if (a % 2 == 0) {
-                        document.getElementById("dis").innerHTML="Rs.hhh";
-                    }
-                    else {
-                        document.getElementById("dis").innerHTML="Rs.0"
-                    }
-                }
-
-                function couponadd3() {
-                    var a = parseInt(document.getElementById("num4").textContent);
-                    var b = a + 1;
-                    document.getElementById("num4").innerHTML = b;
-                    if (a % 2 == 0) {
-                        document.getElementById("dis").innerHTML="Ticket";
-                    }
-                    else {
-                        document.getElementById("dis").innerHTML="Rs.0"
-                    }
-                }
-
-            </script>
-
             <hr id="line"> <br>
 
             <h3>PRICE DETAILS (1 Item)</h3>
@@ -533,7 +469,7 @@
 
             <h2 id="total">Total Amount &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Rs.xyz</h2>
 
-            <a href="http://127.0.0.1:5500/IWT%20assignment/paymentgatway.html?">
+            <a href="paymentgatway.html?">
                 <h4 id="placeorder">PLACE ORDER</h4>
             </a>
         </div>
@@ -541,6 +477,68 @@
 
     <br><br>
 
+    <script>
+        function apply() {
+            var a = parseInt(document.getElementById("num").textContent);
+            var b = a + 1;
+
+            document.getElementById("num").innerHTML = b;
+            if (a % 2 == 0) {
+                document.getElementById("cou").style.display = "block";
+            }
+            else {
+                document.getElementById("cou").style.display = "none";
+            }
+        }
+        function couponadd() {
+            var a = parseInt(document.getElementById("num1").textContent);
+            var b = a + 1;
+            document.getElementById("num1").innerHTML = b;
+            if (a % 2 == 0) {
+                document.getElementById("dis").innerHTML="Rs.aaa";
+            }
+            else {
+                document.getElementById("dis").innerHTML="Rs.0"
+            }
+        }
+
+        function couponadd1() {
+            var a = parseInt(document.getElementById("num2").textContent);
+            var b = a + 1;
+            document.getElementById("num2").innerHTML = b;
+            if (a % 2 == 0) {
+                document.getElementById("dis").innerHTML="Rs.wwww";
+            }
+            else {
+                document.getElementById("dis").innerHTML="Rs.0"
+            }
+        }
+
+        function couponadd2() {
+            var a = parseInt(document.getElementById("num3").textContent);
+            var b = a + 1;
+            document.getElementById("num3").innerHTML = b;
+            if (a % 2 == 0) {
+                document.getElementById("dis").innerHTML="Rs.hhh";
+            }
+            else {
+                document.getElementById("dis").innerHTML="Rs.0"
+            }
+        }
+
+        function couponadd3() {
+            var a = parseInt(document.getElementById("num4").textContent);
+            var b = a + 1;
+            document.getElementById("num4").innerHTML = b;
+            if (a % 2 == 0) {
+                document.getElementById("dis").innerHTML="Ticket";
+            }
+            else {
+                document.getElementById("dis").innerHTML="Rs.0"
+            }
+        }
+
+    </script>
 
 </body>
 
