@@ -1,0 +1,547 @@
+<style>
+    body {
+        margin: 0;
+        background-color: white;
+    }
+
+    /* navbar start */
+
+    #navbar {
+        background-color: white;
+        width: 100%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        position: fixed;
+        box-shadow: 2px 2px 14px 1px gray;
+        margin-top: -7%;
+    }
+
+    #navbar li {
+        display: inline;
+        width: 100%;
+        overflow: hidden;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+
+    #navlink a:hover {
+        color: greenyellow;
+        border-style: double;
+    }
+
+    #home a:hover {
+        color: red;
+        text-decoration: line-through;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* navbar end */
+
+    #content {
+        width: 95%;
+        height: 105%;
+        border: 2px solid gray;
+        border-radius: 20px;
+        margin: 0 auto;
+        margin-top: 7%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #address {
+        padding: 20px 0 0 20px;
+        height: 80px;
+        width: 740px;
+        margin: 20px;
+        border: 2px solid rgb(218, 218, 218);
+        font-size: 20px;
+        color: black;
+        border-radius: 10px;
+    }
+
+    #changeadd {
+        height: 30px;
+        width: 180px;
+        border: 2px solid red;
+        margin-left: 500px;
+        margin-top: -50px;
+        padding: 10px 10px 8px 10px;
+        border-radius: 5px;
+        color: red;
+        text-align: center;
+    }
+
+    #changeadd:hover {
+        animation: buttonbounce;
+        animation-duration: 1s;
+        animation-iteration-count: 1;
+    }
+
+    @keyframes buttonbounce {
+        0% {
+            background-color: none;
+        }
+
+        25% {
+            margin-top: -60px;
+        }
+
+        50% {
+            margin-top: -40px;
+            border-radius: 50px;
+            box-shadow: 2px 2px 5px 5px #ccc;
+        }
+
+        100% {
+            margin-top: -50px;
+        }
+    }
+
+    #changeadd a {
+        text-decoration: none;
+        color: red;
+    }
+
+    #bag h2 {
+        color: black;
+        margin: 30px;
+        margin-left: 50px;
+        font-size: 25px;
+    }
+
+    #bag h3 {
+        color: black;
+        margin-left: 580px;
+        margin-top: -60px;
+        font-size: 25px;
+    }
+
+    #bagitem {
+        margin: 20px;
+        height: 300px;
+        width: 760px;
+        border-radius: 10px;
+        border: 2px solid grey;
+    }
+
+    #bagitem img {
+        margin: 20px;
+    }
+
+    #bagtxt {
+        margin-left: 200px;
+        margin-top: -220px;
+    }
+
+    #bagtxt h2 {
+        color: black;
+        margin-top: -20px;
+        font-size: 30px;
+    }
+
+    #bagtxt h3 {
+        color: gray;
+        margin-top: -20px;
+    }
+
+    #bagtxt h4 {
+        color: black;
+        margin-top: -20px;
+        font-size: 20px;
+        margin-left: 460px;
+        margin-top: -45px;
+    }
+
+    #off {
+        color: red;
+        font-size: 20px;
+        margin-left: 440px;
+        margin-top: -30px;
+    }
+
+    #size {
+        margin-top: -10px;
+    }
+
+    #qtyitem {
+        margin-top: -27px;
+        margin-left: 100px;
+    }
+
+    label {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    select:hover {
+        border: 2px solid red;
+    }
+
+    #arrive {
+        color: black;
+        font-size: 20px;
+        margin-top: -45px;
+        margin-left: 30px;
+    }
+
+    #del img {
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+
+    #remove {
+        color: black;
+        font-size: 20px;
+        border-top: 2px solid rgb(218, 218, 218);
+        text-align: center;
+        margin-top: 40px;
+        margin-left: -200px;
+        width: 760px;
+    }
+
+    #remove a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #offerleft {
+        height: 230px;
+        width: 760px;
+        margin: 20px;
+        border-radius: 10px;
+        border: 2px solid rgb(218, 218, 218);
+        font-size: 20px;
+        color: black;
+    }
+
+    #offerleft img {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    #offerleft p {
+        color: black;
+        margin-top: -25px;
+        margin-left: 60px;
+    }
+
+    #offerleft li {
+        font-size: 17px;
+    }
+
+    /* right */
+
+    #right {
+        float: right;
+        margin-top: -780px;
+        margin-right: 200px;
+    }
+
+    #right h1 {
+        color: darkgrey;
+        font-size: 25px;
+    }
+
+    #right h2 {
+        color: black;
+        font-size: 20px;
+        margin-top: -25px;
+        margin-left: 40px;
+    }
+
+    #apply {
+        border: 2px solid red;
+        height: 30px;
+        width: 100px;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+        color: red;
+        margin-top: -50px;
+        margin-left: 300px;
+        cursor: pointer;
+    }
+
+    #cou {
+        display: none;
+    }
+
+    #num {
+        display: none;
+    }
+
+    #num1 {
+        display: none;
+    }
+
+    #num2 {
+        display: none;
+    }
+
+    #num3 {
+        display: none;
+    }
+
+    #num4 {
+        display: none;
+    }
+
+    #line {
+        border: 1px solid rgb(218, 218, 218);
+        width: 130%;
+        margin-left: -50px;
+    }
+
+    #right h3 {
+        color: darkgray;
+        font-size: 20px;
+    }
+
+    #cost {
+        color: black;
+        font-size: 20px;
+    }
+
+    #total {
+        margin-left: -30px;
+        font-size: 20px;
+        color: black;
+    }
+
+    #placeorder {
+        border: 2px solid red;
+        width: 400px;
+        height: 50px;
+        text-align: center;
+        color: white;
+        background-color: red;
+        font-size: 20px;
+        padding-top: 20px;
+        border-radius: 10px;
+        margin-top: 100px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #placeorder:hover {
+        box-shadow: 1px 2px 5px 2px #ccc;
+    }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div id="address">
+            Deliver to:<b> Alex , 19002</b> <br> #244 xyzab city , near abc road , India
+            <div id="changeadd">
+                <a href="http://127.0.0.1:5500/IWT%20assignment/paymentgatway.html">CHANGE ADDRESS</a>
+            </div>
+        </div>
+
+        <div id="bag">
+            <h2>Bag Items(1 Item)</h2>
+            <h3>Total : Rs.xxx</h3>
+        </div>
+
+        <div id="bagitem">
+            <a href="http://127.0.0.1:5500/IWT%20assignment/vanshoe.html"><img
+                    src="https://rukminim1.flixcart.com/image/800/960/shoe/h/a/7/black-min-0d5i-vans-10-original-imae5efgkfw2eufe.jpeg?q=50"
+                    alt="" height="200px"></a>
+            <div id="bagtxt">
+                <h2>Vans</h2>
+                <h3>Sk8-Hi High Ankle Sneakers For Men (Black)</h3>
+                <h4>Rs.xxx</h4>
+                <p id="off">50% OFF</p>
+                <div id="size">
+                    <label for="size">Size:</label>
+                    <select id="size">
+                        <option value="volvo">5</option>
+                        <option value="saab">6</option>
+                        <option value="opel">7</option>
+                        <option value="audi">8</option>
+                    </select>
+                </div>
+                <div id="qtyitem">
+                    <label for="qty">Qty:</label>
+                    <select id="qty">
+                        <option value="volvo">1</option>
+                        <option value="saab">2</option>
+                        <option value="opel">3</option>
+                        <option value="audi">4</option>
+                    </select>
+                </div>
+
+                <div id="del">
+                    <img src="https://www.freeiconspng.com/thumbs/check-tick-icon/tick-mark-icon-png-7.png" alt=""
+                        height="20px">
+                    <p id="arrive">Delivery by <b>10 Feb 2022</b></p>
+                </div>
+
+                <div id="remove">
+                    <p><a href="">REMOVE</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="offerleft">
+            <img src="https://static.thenounproject.com/png/971055-200.png" alt="" height="25px">
+            <p><b>Avalible Offers</b></p>
+            <ul>
+                <li>Get Rs 600.00 OFF on minimum bill of Rs 2000.00 (One voucher per bill allowed).</li>
+                <li>Get Rs 1000.00 OFF on minimum bill of Rs 2000.00 (One voucher per bill allowed).</li>
+                <li>Get Rs 2000.00 OFF on minimum bill of Rs 2000.00 (One voucher per bill allowed).</li>
+                <li>JUNE WEEKLY OFFER – 20% OFF!</li>
+                <li>2022 END OF SEASON OFFER – 30% OFF</li>
+                <li>ADAC 2022 CAMPING OFFER: 25% OFF</li>
+            </ul>
+        </div>
+
+        <div id="right">
+            <h1>COUPONS</h1>
+            <img src="https://www.pngrepo.com/png/219462/512/coupon.png" alt="" height="25px">
+            <h2>Apply Coupon</h2>
+            <p id="apply" onclick="apply()">APPLY</p>
+            <p id="num">0</p>
+            <br>
+            <div id="cou">
+                <form action="">
+                    <input type="checkbox" id="watch" onclick="couponadd()">
+                    <label for="watch">Get Upto 5% Off on Using HDFC Card</label>
+                    <br>
+                    <input type="checkbox" id="watch" onclick="couponadd1()">
+                    <label for="watch">Flat 20% Off on orders Over Rs.wwww</label>
+                    <br>
+                    <input type="checkbox" id="watch" onclick="couponadd2()">
+                    <label for="watch">CashBack Of Rs.hhh On Using Paytm</label>
+                    <br>
+                    <input type="checkbox" id="watch" onclick="couponadd3()">
+                    <label for="watch">Get a Ticket To Win a Iphone</label>
+                </form>
+            </div>
+
+            <script>
+                function apply() {
+                    var a = parseInt(document.getElementById("num").textContent);
+                    var b = a + 1;
+
+                    document.getElementById("num").innerHTML = b;
+                    if (a % 2 == 0) {
+                        document.getElementById("cou").style.display = "block";
+                    }
+                    else {
+                        document.getElementById("cou").style.display = "none";
+                    }
+                }
+
+                function couponadd() {
+                    var a = parseInt(document.getElementById("num1").textContent);
+                    var b = a + 1;
+                    document.getElementById("num1").innerHTML = b;
+                    if (a % 2 == 0) {
+                        document.getElementById("dis").innerHTML="Rs.aaa";
+                    }
+                    else {
+                        document.getElementById("dis").innerHTML="Rs.0"
+                    }
+                }
+
+                function couponadd1() {
+                    var a = parseInt(document.getElementById("num2").textContent);
+                    var b = a + 1;
+                    document.getElementById("num2").innerHTML = b;
+                    if (a % 2 == 0) {
+                        document.getElementById("dis").innerHTML="Rs.wwww";
+                    }
+                    else {
+                        document.getElementById("dis").innerHTML="Rs.0"
+                    }
+                }
+
+                function couponadd2() {
+                    var a = parseInt(document.getElementById("num3").textContent);
+                    var b = a + 1;
+                    document.getElementById("num3").innerHTML = b;
+                    if (a % 2 == 0) {
+                        document.getElementById("dis").innerHTML="Rs.hhh";
+                    }
+                    else {
+                        document.getElementById("dis").innerHTML="Rs.0"
+                    }
+                }
+
+                function couponadd3() {
+                    var a = parseInt(document.getElementById("num4").textContent);
+                    var b = a + 1;
+                    document.getElementById("num4").innerHTML = b;
+                    if (a % 2 == 0) {
+                        document.getElementById("dis").innerHTML="Ticket";
+                    }
+                    else {
+                        document.getElementById("dis").innerHTML="Rs.0"
+                    }
+                }
+
+            </script>
+
+            <hr id="line"> <br>
+
+            <h3>PRICE DETAILS (1 Item)</h3>
+            <div id="cost">
+                <p>Total MRP &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Rs.xxx</p>
+                <p>Coupon Discount &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; <span id="dis">Rs.0</span></p>
+                <p>Additional Charges &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; Rs.zzz</p>
+            </div>
+
+            <p id="num1">0</p>
+            <p id="num2">0</p>
+            <p id="num3">0</p>
+            <p id="num4">0</p>
+    
+            <br>
+
+            <hr id="line">
+            <br><br>
+
+            <h2 id="total">Total Amount &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; Rs.xyz</h2>
+
+            <a href="http://127.0.0.1:5500/IWT%20assignment/paymentgatway.html?">
+                <h4 id="placeorder">PLACE ORDER</h4>
+            </a>
+        </div>
+    </div>
+
+    <br><br>
+
+
+</body>
+
+</html>
