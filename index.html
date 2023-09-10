@@ -1839,14 +1839,14 @@
 
     <div id="navbar">
         <ul>
-            <li id="home"><a href="http://127.0.0.1:5500/IWT%20assignment/home.html"><b>HOME</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/men.html"><b>MEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/women.html"><b>WOMEN</b></a></li>
-            <li id="navlink"><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html"><b>KIDS</b></a></li>
+            <li id="home"><a href="index.html"><b>HOME</b></a></li>
+            <li id="navlink"><a href="men.html"><b>MEN</b></a></li>
+            <li id="navlink"><a href="women.html"><b>WOMEN</b></a></li>
+            <li id="navlink"><a href="kids.html"><b>KIDS</b></a></li>
 
             <div id="navright">
                 <input type="text" id="searchbar" placeholder="  Search">
-                <a id="navlogin" href="http://127.0.0.1:5500/IWT%20assignment/login.html"> <img
+                <a id="navlogin" href="login.html"> <img
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQLkHEGZo-Sj8I4jJ-AL1kVcqlCTHYNFPxKQ&usqp=CAU"
                         alt="" height="70px"></a>
                 <a href="addtocart.html"><img
@@ -1909,7 +1909,7 @@
                 <h1 id="winter">Winter Wear</h1>
                 <h2 id="dont">Don't Let The Heat Escape</h2>
                 <hr class="hr2">
-                <h3 id="page1"><a href="http://127.0.0.1:5500/IWT%20assignment/shopbyseason.html">+ EXPLORE</a></h3>
+                <h3 id="page1"><a href="shopbyseason.html">+ EXPLORE</a></h3>
             </div>
         </div>
 
@@ -1923,29 +1923,6 @@
         <span class="dot"></span>
     </div>
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 3 seconds
-        }
-    </script>
-
-
 
     <div>
 
@@ -1953,7 +1930,7 @@
 
         <div id="deals">
 
-            <a href="http://127.0.0.1:5500/IWT%20assignment/dealspage.html">
+            <a href="dealspage.html">
                 <div id="dealwatch">
                     <img src="https://i.pinimg.com/originals/21/e4/9a/21e49a91b4882b456180b39ac3220d05.jpg" alt=""
                         height="70%">
@@ -2018,7 +1995,7 @@
 
             <div id="levi">
                 <div id="brandtxt">
-                    <a href="http://127.0.0.1:5500/IWT%20assignment/levipage.html"><img
+                    <a href="levipage.html"><img
                             src="data:image/png;base64,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"
                             alt="" height="20%" width="100%"></a>
                     <p id="brandoff">10-40% Off</p>
@@ -2159,7 +2136,7 @@
 
         <div id="seasoncata">
             <div id="inner">
-                <a href="http://127.0.0.1:5500/IWT%20assignment/shopbyseason.html">
+                <a href="shopbyseason.html">
                     <img src="https://ik.imagekit.io/piysai/Screenshot_20211211-175147_Chrome_ocGk7pZEe.jpg?updatedAt=1639225359380"
                         alt="" height="40%" width="100%">
                 </a>
@@ -2256,7 +2233,7 @@
             <div id="sunglasscata">
 
                 <div id="sunglass">
-                    <a href="http://127.0.0.1:5500/IWT%20assignment/accessories.html"><img id="watchimg"
+                    <a href="accessories.html"><img id="watchimg"
                             src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/2385221/2018/6/4/de62314d-ef2b-4617-bd40-fc7dbe6dde071528117245595-WROGN-Unisex-Round-Sunglasses-2451528117245475-2.jpg"
                             alt="" width="100%" height="40%"></a>
                 </div>
@@ -2279,7 +2256,7 @@
             Clothes Look Together</h3>
         <img src="https://pngimg.com/uploads/cupboard_closet/cupboard_closet_PNG16743.png" alt="" height="60%"
             width="40%">
-        <button><a href="http://127.0.0.1:5500/IWT%20assignment/tryon.html">Try Now</a></button>
+        <button><a href="tryon.html">Try Now</a></button>
     </div>
 
     <br><br>
@@ -2453,23 +2430,79 @@
         <div id="popout">
             <div id="info">
                 <ul id="leftlink">
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/home.html">Home</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/men.html">MEN</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="men.html">MEN</a></li>
                     <li><a href="">WOMEN</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/kids.html">KIDS</a></li>
+                    <li><a href="kids.html">KIDS</a></li>
                 </ul>
                 <ul id="rightlink">
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/login.html">Login</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/register.html">Register</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/review.html">Review</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/index.html">Quiz</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="review.html">Review</a></li>
+                    <li><a href="index2.html">Quiz</a></li>
                 </ul>
             </div>
         </div>
 
         <button type="button" onclick="change()" id="button">Useful Links</button>
 
+        <div id="close1"><img
+                src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1507172113"
+                alt="" width="100%"></div>
+        <div id="open1"><img src="https://i.pinimg.com/originals/34/00/c4/3400c4f6727dca06395ff8aed958f4a1.png" alt=""
+                width="100%"></div>
+        <div id="popout1">
+            <div id="info1">
+                <p><b>Phone :</b><a href="tel:836038xxxx"> 836038xxxx</a></p>
+                <p id="email"><b>Email :</b><a href="mailto:moda@gmail.com"> moda@gmail.com</a></p>
+                <p><b>Location :</b> #219-A , xyz city , Haryana</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564153.4295691503!2d73.78139802482063!3d29.26416189092077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2sHaryana!5e0!3m2!1sen!2sin!4v1642062357765!5m2!1sen!2sin"
+                    width="420px" height="130px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+        <button type="button" onclick="change1()" id="button1">Contact Us</button>
+
+        <div id="close2"><img
+                src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1507172113"
+                alt="" width="100%"></div>
+        <div id="open2"><img src="https://i.pinimg.com/originals/34/00/c4/3400c4f6727dca06395ff8aed958f4a1.png" alt=""
+                width="100%"></div>
+        <div id="popout2">
+            <div id="info2">
+                <ul>
+                    <li><a href="policy.html">Terms of Service</a></li>
+                    <li><a href="policy.html">Privacy policy</a></li>
+                    <li><a href="policy.html">Returns and exchanges policy</a></li>
+                    <li><a href="policy.html">Shipping policy</a></li>
+                    <li><a href="policy.html">Taxes</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <button type="button" onclick="change2()" id="button2">Policy</button>
+
         <script>
+
+           var slideIndex = 0;
+           showSlides();
+           function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";
+               }
+               slideIndex++;
+               if (slideIndex > slides.length) { slideIndex = 1 }
+               for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex - 1].style.display = "block";
+               dots[slideIndex - 1].className += " active";
+               setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
 
             function change() {
                 var a = parseInt(document.getElementById("num").textContent);
@@ -2493,27 +2526,6 @@
                     document.getElementById("close").style.opacity = "1";
                 }
             }
-        </script>
-
-        <div id="close1"><img
-                src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1507172113"
-                alt="" width="100%"></div>
-        <div id="open1"><img src="https://i.pinimg.com/originals/34/00/c4/3400c4f6727dca06395ff8aed958f4a1.png" alt=""
-                width="100%"></div>
-        <div id="popout1">
-            <div id="info1">
-                <p><b>Phone :</b><a href="tel:836038xxxx"> 836038xxxx</a></p>
-                <p id="email"><b>Email :</b><a href="mailto:moda@gmail.com"> moda@gmail.com</a></p>
-                <p><b>Location :</b> #219-A , xyz city , Haryana</p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564153.4295691503!2d73.78139802482063!3d29.26416189092077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2sHaryana!5e0!3m2!1sen!2sin!4v1642062357765!5m2!1sen!2sin"
-                    width="420px" height="130px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-
-        <button type="button" onclick="change1()" id="button1">Contact Us</button>
-
-        <script>
 
             function change1() {
                 var a = parseInt(document.getElementById("num1").textContent);
@@ -2537,28 +2549,6 @@
                     document.getElementById("close1").style.opacity = "1";
                 }
             }
-        </script>
-
-        <div id="close2"><img
-                src="https://gallery.yopriceville.com/var/resizes/Free-Clipart-Pictures/Decorative-Elements-PNG/Envelope_PNG_Clip_Art_Image.png?m=1507172113"
-                alt="" width="100%"></div>
-        <div id="open2"><img src="https://i.pinimg.com/originals/34/00/c4/3400c4f6727dca06395ff8aed958f4a1.png" alt=""
-                width="100%"></div>
-        <div id="popout2">
-            <div id="info2">
-                <ul>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/policy.html">Terms of Service</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/policy.html">Privacy policy</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/policy.html">Returns and exchanges policy</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/policy.html">Shipping policy</a></li>
-                    <li><a href="http://127.0.0.1:5500/IWT%20assignment/policy.html">Taxes</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <button type="button" onclick="change2()" id="button2">Policy</button>
-
-        <script>
 
             function change2() {
                 var a = parseInt(document.getElementById("num2").textContent);
