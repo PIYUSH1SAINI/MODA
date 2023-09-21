@@ -1,16 +1,33 @@
 <style>
     body {
         background-color: white;
-        margin: 0;
+        margin: 0%;
     }
 
-    /* navbar start */
+    #left {
+        float: left;
+        width: 60%;
+        height: 100%;
+        margin-top: 5%;
+        margin-left: 20px;
+        position: fixed;
+    }
+
+    #right {
+        width: 35%;
+        float: right;
+        margin-top: 5%;
+        margin-right: 1%;
+        font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    }
+
+/* navbar start */
 
     #navbar {
         background-color: white;
         width: 100%;
-        padding-top: 0.5%;
-        padding-bottom: 0.5%;
+/*         padding-top: 0.5%; */
+/*         padding-bottom: 0.5%; */
         position: fixed;
         box-shadow: 2px 2px 14px 1px gray;
         margin-top: 0%;
@@ -21,16 +38,20 @@
         width: 100%;
         overflow: hidden;
         margin-right: 20px;
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    #navbar ul{
+       margin-left: -15px;
     }
 
     #navlink a:hover {
-        color: rosybrown;
+        color: greenyellow;
         border-style: double;
     }
 
     #home a:hover {
-        color: orchid;
+        color: red;
         text-decoration: line-through;
     }
 
@@ -39,275 +60,293 @@
         color: black;
     }
 
-    /* navbar end */
-
-    #left {
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: 500px;
-        position: fixed;
-        height: 100%;
-        width: 18%;
-        float: left;
-        box-shadow: 5px 15px 8px 8px #ccc;
-        margin-top: 83px;
-    }
-
-    #right {
-        height: 100%;
-        width: 80%;
+    #navright {
         float: right;
-        margin-top: 5%;
+        margin-right: 20px;
+        margin-top: -15px;
     }
 
-    #catagory {
-        border: none;
-        border-bottom: 3px solid orchid;
-        font-size: 20px;
-        margin-left: 5%;
-        margin-top: 12px;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+/* navbar end */
+
+    #rightimg {
+        -webkit-mask-image: linear-gradient(to bottom,black,transparent 80%);
+        mask-image: linear-gradient(to bottom,black,transparent 80%);
     }
 
-    table {
-        width: 100%;
-        height: 100%;
-    }
-
-    form label {
-        font-size: 15px;
-        margin-left: 10px;
-        color: grey;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    input {
-        height: 20px;
-        width: 20px;
-        margin-left: 15%;
-    }
-
-    /* accessories start */
-
-    #accbox {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #acchead {
-        font-size: 40px;
-        color: indianred;
-        padding-top: 60px;
-        margin-bottom: 20px;
-        margin-left: 4%;
-        margin-top: 0;
-        letter-spacing: 7px;
-        font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    #sportcata {
-        margin-top: 20px;
-        margin-left: 6%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
-    }
-
-    #sportwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16160416/2021/11/18/24678a9e-e15b-4bb0-8a8a-c0c777e7f62d1637239079943Jumper5.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
-    }
-
-    #watchimg {
-        transition: opacity 1s;
-    }
-
-    #watchimg:hover {
-        opacity: 0;
-    }
-
-    #watchtxt {
-        border: 3px solid rosybrown;
-        border-radius: 0px 0px 20px 20px;
-        width: 98%;
-    }
-
-    #watchtxt h4 {
-        text-align: center;
-        margin-top: -20px;
-        padding-top: 30px;
-        font-size: 20px;
-        color: black;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    #watchtxt p {
-        font-size: 13px;
+    #right h1 {
+        font-size: 25px;
         color: gray;
-        text-align: center;
-        margin-top: -25px;
-        margin-left: 0px;
-        padding-bottom: 28px;
-        margin-bottom: 0;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: -67%;
+        margin-bottom: -20px;
     }
 
-    #watchtxt h2 {
+    #right h2 {
+        font-size: 25px;
+        color: black;
+    }
+
+    #right h3 {
+        font-size: 35px;
+        color: black;
+        margin-top: -10px;
+    }
+
+    #tax {
+        font-size: 15px;
+        margin-top: -35px;
+        color: green;
+    }
+
+    #size {
         margin-top: -20px;
-        text-align: center;
+    }
+
+    #size h4 {
+        font-size: 20px;
+        color: black;
+    }
+
+    /* select size start */
+
+    #sizecloth {
+        margin-left: 0px;
+        font-size: 20px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #mySelect {
+        color: black;
+        font-size: 15px;
+        border: none;
+        overflow: hidden;
+        margin-top: 25px;
+        height: 30px;
+    }
+
+    option {
+        display: inline;
+        color: gray;
+        border-radius: 60%;
+        padding: 30px;
+    }
+
+    option:hover {
         color: red;
+        border: 2px solid red;
+    }
+
+    #quantity {
+        margin-left: 0px;
+        font-size: 20px;
+        color: black;
+        margin-top: 20px;
+    }
+
+    #qtySelect {
+        color: black;
+        font-size: 25px;
+        border: none;
+        overflow: hidden;
+        margin-top: 25px;
+        height: 30px;
+    }
+
+    /* select size end */
+
+    #addtocart {
+        height: 45px;
+        width: 200px;
+        background-color: rgb(255, 55, 55);
+        font-size: 20px;
+        padding: 10px 0 10px 0;
+        border-radius: 10px;
+        color: white;
+        padding: 10px 10px 10px 10px;
+        cursor: pointer;
+    }
+
+    #addtocart img {
+        margin-left: 25px;
+        margin-top: 5px;
+    }
+
+    #add {
+        color: white;
+        margin-top: -25px;
+        margin-left: 60px;
         font-size: 20px;
     }
 
-    #titancata {
-        margin-top: 20px;
-        margin-left: 5%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
+    #delivery h4{
+        color: black;
+        font-size: 25px;
     }
 
-    #titanwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14905090/2021/9/8/f25164fc-04b8-43ca-9247-245dda970c1f1631083781007-Nike-Sportswear-Mens-Unlined-Core-Track-Jacket-5731631083780-2.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
+    #delivery input {
+        padding: 10px 10px 10px 10px;
+        font-size: 15px;
+        margin-top: -20px;
+        margin-left: 40px;
     }
 
-    #danicata {
-        margin-top: 20px;
-        margin-left: 5%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
+    #policy {
+        margin-top: 40px;
     }
 
-    #daniwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16124804/2021/11/23/e522ef24-22d1-4fe3-8795-e60d42198ee11637668940607DressesMANGOWomenJeansMANGOWomenSkirtsMANGOWomenSkirtsMANGOW2.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
+    #truck {
+        margin-left: 30px;
     }
 
-    #tissotcata {
-        margin-top: 20px;
-        margin-left: 5%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
+    #txt {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: -43px;
+        margin-left: 130px;
     }
 
-    #tissotwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/16380708/2021/12/6/f58d6a52-a80a-4bbf-8be9-810abd6bbad91638781346137VeroModaWomenGreenPufferJacket2.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
+    #payon {
+        margin-left: 50px;
     }
 
-    #fossilcata {
-        margin-top: 20px;
-        margin-left: 6%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
+    #exchange {
+        margin-left: 50px;
+        margin-top: 5px;
     }
 
-    #fossilwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/12720592/2020/11/21/0c173591-bf62-4ddc-abff-148ed9d8ac841605951509929MensCottonRegularPrintedOliveTshirtJacketsJackJonesMenJeansJ2.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
+    #overview h4 {
+        font-size: 25px;
+        margin-top: 60px;
+        color: black;
     }
 
-    #fastcata {
-        margin-top: 20px;
-        margin-left: 5%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
+    #overview p {
+        margin-top: -20px;
+        font-size: 14px;
+        color: black;
     }
 
-    #fastwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15925840/2021/11/12/4e052071-8775-4c81-b78d-2593c9ce1e791636695753930-Louis-Philippe-Men-Sweaters-1941636695753846-2.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
+    /* bag item */
+
+    #bag h2 {
+        color: black;
+        margin: 30px;
+        margin-left: 50px;
+        font-size: 20px;
     }
 
-    #dwcata {
-        margin-top: 20px;
-        margin-left: 5%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
+    #bag h3 {
+        color: black;
+        margin-left: 580px;
+        margin-top: -60px;
+        font-size: 20px;
     }
 
-    #dwwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/14513866/2021/9/15/cefe78c1-dfe8-4593-a87f-4093de10e5ae1631683750138-Tommy-Hilfiger-Men-Sweaters-9701631683749715-2.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
-    }
-
-    #roadcata {
-        margin-top: 20px;
-        margin-left: 5%;
-        width: 18%;
-        height: 5%;
-        margin-bottom: 30px;
-    }
-
-    #roadwatch {
-        height: 100%;
-        width: 100%;
-        background-image: url("https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/15462798/2021/9/23/01b10bfd-7c65-43ef-8ebe-20fd648471981632373968984TrackPantsMadameWomenTrackPantsMadameWomenTrackPantsMadameWo2.jpg");
-        background-repeat: no-repeat;
-        background-position-y: -50px;
-        background-size: 270px;
-    }
-
-    /* accessories end */
-
-    #num {
+    #bagitem {
+        margin: 0px;
+        height: 300px;
+        width: 450px;
+        border-radius: 10px;
+        border: 2px solid grey;
         display: none;
     }
 
-    #num1 {
-        display: none;
+    #bagitem img {
+        margin: 20px;
     }
 
-    #num2 {
-        display: none;
+    #bagtxt {
+        margin-left: 140px;
+        margin-top: -180px;
     }
 
-    #num3 {
-        display: none;
+    #bagtxt h2 {
+        color: black;
+        margin-top: -20px;
+        font-size: 20px;
     }
 
-    #num4 {
-        display: none;
+    #bagtxt h3 {
+        color: gray;
+        margin-top: -20px;
+        font-size: 20px;
     }
 
-    #num5 {
-        display: none;
+    #d1 {
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
     }
+
+    #d2 {
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: -45px;
+        margin-left: 200px;
+    }
+
+    #d3 {
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    label {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    select {
+        font-size: 20px;
+    }
+
+    select:hover {
+        border: 2px solid red;
+    }
+
+    #arrive {
+        color: black;
+        font-size: 15px;
+        margin-top: -45px;
+        margin-left: 30px;
+    }
+
+    #del img {
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+
+    #remove {
+        color: black;
+        font-size: 15px;
+        border-top: 2px solid rgb(218, 218, 218);
+        text-align: center;
+        margin-top: 30px;
+        margin-left: -140px;
+        width: 450px;
+    }
+
+    #remove a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #date {
+        margin-top: -35px;
+        margin-left: 120px;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    #check:hover {
+        color: navy;
+        border: 2px solid navy;
+    }
+
 </style>
 <!DOCTYPE html>
 <html lang="en">
